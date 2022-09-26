@@ -1,0 +1,272 @@
+header {
+    background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
+    color: #ffff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header:hover {
+    background-image: none;
+    background-color: #000 !important;
+}
+
+.divImg {
+    width: 188px;
+    height: 80px;
+}
+
+.divImg img {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.containerFull {
+    padding: 0px 80px;
+    background-color: #000;
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+.menu ul {
+    margin-bottom: 0px;
+}
+
+.menu ul .liLevel1 {
+    display: inline-block;
+    padding: 25px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.liLevel1 {
+    z-index: 50;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu ul li a i {
+    font-size: 16px;
+}
+
+.ulHover {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    top: -500px;
+    background: black;
+    width: 240px;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.ulHover li {
+    display: list-item !important;
+    border-bottom: 1px solid rgb(69, 69, 69);
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.ulHover li:last-child {
+    border-bottom: 0px;
+}
+
+.ulHover li a {
+    margin-left: -10px;
+}
+
+.menu ul li:hover .aLevel1 {
+    color: #FF6400;
+}
+
+.menu ul li:hover .aLevel1 i {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.menu ul li:hover .ulHover {
+    top: 80px;
+    transition: 800ms;
+}
+
+.ulHover li:hover a {
+    color: #FF6400 !important;
+}
+
+.rightNAV {
+    margin-top: 20px;
+}
+
+.rightNAV ul li {
+    display: inline-block;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.rightNAV ul li a i {
+    font-size: 20px;
+    color: white;
+}
+
+.logoGiga {
+    width: 120px;
+    height: 80px;
+    padding-top: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.rightNAV ul li:hover a i {
+    color: #FF6400;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle i {
+    font-size: 20px;
+}
+
+.toggle i:hover {
+    color: #FF6400;
+}
+
+.menuMobile {
+    background-color: #000;
+}
+
+.formSearch {
+    position: relative;
+}
+
+.formSearch input {
+    padding: 7px 20px;
+    width: 300px;
+    background-color: rgb(52, 52, 52);
+    border: none;
+}
+
+.formSearch i {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    color: rgb(199, 199, 199);
+}
+
+.buttonClose {
+    display: block;
+    color: #ffff;
+    font-size: 20px;
+    background-color: #000;
+    border: none;
+    padding: 5px 10px;
+}
+
+footer {
+    background-color: #000;
+}
+
+footer p {
+    padding: 30px;
+    padding-top: 40px;
+    color: #ffff;
+    margin-bottom: 0px;
+}
+
+.buttonDropdown {
+    width: 300px;
+    border: none;
+    border: 1px solid grey;
+    border-radius: 0px;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #000;
+    color: #ffff;
+}
+
+.buttonDropdown:hover {
+    color: #FF6400 !important;
+    background-color: #000 !important;
+}
+
+.ulDropdown {
+    border-radius: 0px;
+    background-color: #000;
+}
+
+.ulDropdown li {
+    width: 310px;
+    padding: 10px 20px;
+    background-color: #000;
+    border-bottom: 1px solid rgb(55, 55, 55);
+    margin-left: -5px;
+}
+
+.ulDropdown li:hover a {
+    color: #FF6400;
+}
+
+@media screen and (max-width: 1100px) {
+    .toggle {
+        display: block;
+    }
+    .menu {
+        display: none
+    }
+    .liSearch,
+    .logoGiga {
+        display: none !important;
+    }
+    .divImg {
+        margin-left: 65px;
+    }
+    .containerFull {
+        padding: 0px 40px;
+    }
+    .itemSellers .choseItem {
+        padding: 0px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .containerFull {
+        padding: 0px 30px;
+    }
+    .divImg {
+        width: 140px;
+        margin-left: 40px;
+    }
+    .divImg img {
+        margin-top: 22px;
+    }
+    .toggle i {
+        font-size: 16px;
+    }
+    .rightNAV ul li a i {
+        font-size: 16px;
+    }
+    .rightNAV ul {
+        padding-left: 0;
+    }
+    .rightNAV ul li {
+        padding: 0px;
+    }
+    .formSearch input {
+        width: 250px;
+    }
+    .buttonDropdown {
+        width: 290px;
+    }
+}
