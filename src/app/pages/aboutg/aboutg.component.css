@@ -1,0 +1,141 @@
+
+@media (max-width: 768px) {
+    .layout {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .banner {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .layout {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .header h3 {
+        font-size: 32px !important;
+    }
+
+    .about-left {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+}
+@media (max-width:320px){
+    .header h3 {
+       
+        font-size: 30px !important;
+       
+    }
+    .about-left {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+}
+@media (max-width:375px){
+   
+    .about-left {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .containerFull {
+        padding: 0px 30px;
+    }
+
+    .divImg {
+        width: 140px;
+    }
+
+    .divImg img {
+        margin-top: 22px;
+    }
+
+    .toggle i {
+        font-size: 16px;
+    }
+
+    .rightNAV ul li a i {
+        font-size: 16px;
+    }
+
+    .aaaa {}
+}
+
+.body {
+    background: black;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.about {
+    height: auto;
+    width: 100%;
+}
+
+.layout {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.header h3 {
+    color: #FF6400;
+    font-size: 40px;
+    line-height: 2;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.banner {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.about-title {
+    font-size: 18px;
+    color: #FF6400;
+    line-height: 2;
+
+}
+
+.about-text {
+    font-size: 18px;
+    color: white;
+    line-height: 2;
+    margin-bottom: 50px;
+}
+
+.aboutg {
+    background: black;
+}
+
+.about-left {
+    background: #f1f1f1;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+}
+
+.about-left h3 {
+    margin-bottom: 30px;
+}
+
+.aboutg-img {
+    width: 100%;
+    height: 100%;
+}

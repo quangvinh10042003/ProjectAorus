@@ -1,0 +1,519 @@
+.body {
+    background-color: #000;
+}
+
+.height100 {
+    height: 100%;
+}
+
+
+/* header  */
+
+header {
+    background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
+    color: #ffff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header:hover {
+    background-image: none;
+    background-color: #000 !important;
+}
+
+.divImg {
+    width: 188px;
+    height: 80px;
+}
+
+.divImg img {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.containerFull {
+    padding: 0px 80px;
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+.menu ul {
+    margin-bottom: 0px;
+}
+
+.menu ul .liLevel1 {
+    display: inline-block;
+    padding: 25px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.liLevel1 {
+    z-index: 999;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu ul li a i {
+    font-size: 16px;
+}
+
+.menu ul li:hover .aLevel1 {
+    color: #FF6400;
+}
+
+.menu ul li:hover .aLevel1 i {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.menu ul li:hover .ulHover {
+    top: 80px;
+    transition: 500ms;
+}
+
+.ulHover {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    top: -500px;
+    background: black;
+    width: 240px;
+    overflow: hidden;
+    z-index: 995;
+}
+
+.ulHover li {
+    display: list-item !important;
+    border-bottom: 1px solid rgb(69, 69, 69);
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.ulHover li a {
+    margin-left: -10px;
+}
+
+.ulHover li:hover a {
+    color: #FF6400 !important;
+}
+
+.rightNAV {
+    margin-top: 20px;
+}
+
+.rightNAV ul li {
+    display: inline-block;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.rightNAV ul li a i {
+    font-size: 20px;
+    color: white;
+}
+
+.logoGiga {
+    width: 120px;
+    height: 80px;
+    padding-top: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.rightNAV ul li:hover a i {
+    color: #FF6400;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle i {
+    font-size: 20px;
+}
+
+.toggle i:hover {
+    color: #FF6400;
+}
+
+.bannerBOX {
+    padding-top: 80px;
+    overflow: hidden;
+    max-height: 680px;
+    border-radius: 0px !important;
+}
+
+.aaa {
+    border-radius: 0px;
+}
+
+.buttonBanner {
+    display: block;
+    width: 115px;
+    margin: auto;
+    background-color: #FF6400;
+    border: 0px;
+    padding: 8px 20px;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.textBanner {
+    position: absolute;
+    right: 300px;
+    bottom: 50%;
+}
+
+.buttonBanner:hover {
+    background-color: aqua;
+    transition: 500ms;
+}
+
+.carouselButton {
+    width: 100px;
+}
+
+.gamingGears {
+    /* padding: 0px 100px; */
+    margin-top: 80px;
+}
+
+.boxImg {
+    width: 100%;
+}
+
+.bestSeller {
+    margin-top: 100px;
+}
+
+.itemGears {
+    cursor: pointer;
+    /* height: 330px; */
+}
+
+.itemGears img {
+
+    height: 100%;
+    transition: all .3s;
+}
+
+.itemSellers .boxImg {
+    padding: 0px 40px;
+}
+
+.itemSellers {
+    border: 1px solid #FF6400;
+}
+
+.itemSellers .price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.itemSellers .name {
+    padding: 0px 30px;
+}
+
+.choseItem {
+    padding: 0px 60px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.choseItem a {
+    margin-top: 20px;
+    padding: 5px 20px;
+    border: 1px solid rgb(73, 73, 73);
+    color: rgb(94, 94, 94);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.choseItem a:hover {
+    border: 1px solid #ffff;
+    color: #ffff;
+}
+
+.newFeed {
+    margin-top: 80px;
+}
+
+.itemNews {
+    cursor: pointer;
+}
+
+.itemNews:hover h6 {
+    color: #ffff;
+}
+
+.itemNews:hover .buttonNews {
+    opacity: 1;
+    transition: 500ms;
+}
+
+.itemNews .boxImg {
+    height: 300px;
+}
+
+.itemNews h6 {
+    color: rgb(198, 198, 198);
+}
+
+.buttonNews {
+    opacity: 0;
+    margin-top: 10px;
+    color: #ffff;
+    background-color: #FF6400;
+    border: 0px;
+    font-size: 13px;
+    padding: 5px 30px;
+    clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+}
+
+.tutorial {
+    color: #ffff;
+    background-color: #FF6400;
+    font-size: 13px;
+    padding: 5px 24px;
+    clip-path: polygon(0 0, 100% 0, calc(100% - 20px) 100%, 0 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bgFooter {
+    background-color: #1F1F1F;
+}
+
+.logoFooter {
+    width: 70px;
+    margin: auto;
+}
+
+.flexRowFooter {
+    padding: 30px 200px;
+    justify-content: space-around;
+}
+
+.flexRowFooter p {
+    cursor: pointer;
+    line-height: 10px;
+    color: #949494;
+}
+
+.itemSellers .name {
+    height: 60px;
+}
+
+
+/* footer  */
+
+footer {
+    margin: 0;
+    background-color: #000;
+}
+
+footer p {
+    padding-top: 30px;
+    color: #ffff;
+}
+
+
+/* end footer  */
+
+@media screen and (max-width: 1100px) {
+    .flexRowFooter {
+        padding: 30px 40px;
+    }
+
+    .newFeed .boxImg {
+        height: 200px;
+    }
+
+    .itemSellers {
+        margin-top: 20px;
+    }
+
+    .itemSellers .boxImg {
+        padding: 0px 15px;
+    }
+
+    .itemSellers .choseItem {
+        padding: 0px 15px;
+    }
+
+    .itemSellers .name {
+        padding: 0px 15px;
+    }
+
+    .itemSellers {
+        padding: 0px 15px;
+    }
+
+    .choseItem a {
+        padding: 5px 8px
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none
+    }
+
+    .liSearch,
+    .logoGiga {
+        display: none !important;
+    }
+
+    .divImg {
+        margin-left: 65px;
+    }
+
+    .containerFull {
+        padding: 0px 40px;
+    }
+
+    .bannerBOX {
+        padding-top: 80px;
+        min-height: 400px;
+    }
+
+    .bannerBOX img {
+        min-height: 400px;
+    }
+
+    .textBanner {
+        right: 50%;
+        top: 150px;
+        transform: translate(50%, 0%);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .flexRowFooter p {
+        text-align: center;
+    }
+
+    .gamingGears h1 {
+        font-size: 24px;
+    }
+
+    .gamingGears h5 {
+        font-size: 16px;
+    }
+
+    .bestSeller h1 {
+        font-size: 24px;
+    }
+
+    .newFeed h1 {
+        font-size: 24px;
+    }
+
+    .newFeed h6 {
+        font-size: 16px;
+    }
+
+    .newFeed h4 {
+        font-size: 20px;
+    }
+
+    .textBanner h3 {
+        font-size: 20px !important;
+    }
+
+    .textBanner h6 {
+        font-size: 12px !important;
+    }
+
+    .buttonBanner {
+        padding: 6px 15px;
+        width: 110px;
+        font-size: 12px;
+    }
+
+    .containerFull {
+        padding: 0px 30px;
+    }
+
+    .divImg {
+        width: 140px;
+    }
+
+    .divImg img {
+        margin-top: 22px;
+    }
+
+    .toggle i {
+        font-size: 16px;
+    }
+
+    .rightNAV ul li a i {
+        font-size: 16px;
+    }
+
+    .bannerBOX {
+        padding-top: 80px;
+        min-height: 260px;
+    }
+
+    .bannerBOX img {
+        min-height: 260px;
+    }
+
+    .bannerBOX h3 {
+        font-size: 24px;
+    }
+
+    .bannerBOX h6 {
+        font-size: 14px;
+    }
+
+    .textBanner {
+        right: 50%;
+        top: 80px;
+        transform: translate(50%, 0%);
+    }
+
+    .carouselButton {
+        width: 40px;
+    }
+
+    .choseItem a {
+        padding: 5px 5px;
+        font-size: 12px;
+    }
+}
+
+.scale:hover .itemGears img {
+    transform: scale(1.1);
+
+}
+
+.scale:hover .div h6 {
+    color: #ff6400 !important;
+    font-size: 29px;
+    line-height: 44px;
+}
+
+.scale {
+    cursor: pointer;
+}
+.itemGears{
+    padding: 20px;
+}

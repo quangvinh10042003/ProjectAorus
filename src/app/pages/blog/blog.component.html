@@ -1,0 +1,84 @@
+<div class="body">
+    <div class="container layout">
+        <div class="title">
+            <h2>
+                Official Wallpaper
+            </h2>
+        </div>
+        <div class="col-lg-12">
+            <div class="row">
+                <div class="col-lg-12 wa" *ngFor="let item of list" routerLink="/detail/{{item.id}}">
+                    <div class="img">
+                        <img src="{{item.img}}">
+                    </div>
+                    <div class="label ">
+                        <span>Tutorial</span>
+                    </div>
+                    <h3 class="page-title">{{item.name}}</h3>
+                    <p class="time">{{item.title}}</p>
+                    <p>
+                        <span class="text">{{item.content}}
+                        </span>
+                    </p>
+                </div>
+                <!-- <div class="col-lg-12 wa">
+                    <div class="img">
+                        <img src="../img/cuongimg/F_20220512165419b1S5gr.jpg">
+                    </div>
+                    <div class="label ">
+                        <span>Tutorial</span>
+                    </div>
+                    <h3 class="page-title">The Story behind the AORUS Model S</h3>
+                    <p class="time">MAY 23 2022</p>
+                    <p>
+                        <span class="text">”In a way, gaming is the art of decision making.
+                            It’s the gamers who make better judgment
+                            calls in various circumstances with the information given, who tend to win in the
+                            end.
+                        </span>
+                    </p>
+                </div>
+                <div class="col-lg-12 wa">
+                    <div class="img">
+                        <img src="../img/cuongimg/F_20220509141243XitxPE.png">
+                    </div>
+                    <div class="label ">
+                        <span>Tutorial</span>
+                    </div>
+                    <h3 class="page-title">Beginners 101 - Why Display Calibration is Critical for Accurate
+                        Colour
+                        Representation</h3>
+                    <p class="time">MAY 10 2022</p>
+                    <p>
+                        <span class="text">”So, you're looking to get a new monitor, or perhaps you are looking
+                            to get a new beast of a laptop but you need something that has a killer display.
+                            It can be hard to know what to choose out of the hundreds of options available
+                            nowadays.
+                        </span>
+                    </p>
+                </div>
+                <div class="col-lg-12 wa">
+                    <div class="img">
+                        <img src="../img/cuongimg/F_20220309140297Tpi250.jpg">
+                    </div>
+                    <div class="label ">
+                        <span>Discover</span>
+                    </div>
+                    <h3 class="page-title">AERO 16 | Capturing Your Creative Mind</h3>
+                    <p class="time">MARCH 9 2022</p>
+                    <p>
+                        <span class="text">Creativity Starts Here.
+                            Featuring 4K resolution. Stunning OLED panel. 4-side thin bezel with 16:10 golden
+                            ratio
+                            display.
+                            Supercharged by Intel Core 12th Gen CPU and NVIDIA GeForce RTX 30 Series GPUs. And
+                            the
+                            AERO hub.
+                            Learn More: https://www.aorus.com/laptops/AERO-16--Intel-12th-Gen
+                        </span>
+                    </p>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

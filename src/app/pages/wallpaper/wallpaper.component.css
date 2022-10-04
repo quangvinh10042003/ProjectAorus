@@ -1,0 +1,297 @@
+header {
+    background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
+    color: #ffff;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header:hover {
+    background-image: none;
+    background-color: #000 !important;
+}
+
+.divImg {
+    width: 188px;
+    height: 80px;
+}
+
+.divImg img {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.containerFull {
+    padding: 0px 80px;
+    height: 80px;
+}
+
+.menu {
+    margin-left: 20px;
+}
+
+.menu ul {
+    margin-bottom: 0px;
+}
+
+.menu ul .liLevel1 {
+    display: inline-block;
+    padding: 25px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.liLevel1 {
+    z-index: 999;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.menu ul li a i {
+    font-size: 16px;
+}
+
+.menu ul li:hover .aLevel1 {
+    color: #FF6400;
+}
+
+.menu ul li:hover .aLevel1 i {
+    transform: rotate(180deg);
+    transition: 300ms;
+}
+
+.menu ul li:hover .ulHover {
+    top: 80px;
+    transition: 500ms;
+}
+
+.ulHover {
+    padding-left: 10px;
+    padding-right: 10px;
+    position: absolute;
+    list-style: none;
+    left: 0;
+    top: -500px;
+    background: black;
+    width: 240px;
+    overflow: hidden;
+    z-index: 995;
+}
+
+.ulHover li {
+    display: list-item !important;
+    border-bottom: 1px solid rgb(69, 69, 69);
+    padding: 8px 15px;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.ulHover li a {
+    margin-left: -10px;
+}
+
+.ulHover li:hover a {
+    color: #FF6400 !important;
+}
+
+.rightNAV {
+    margin-top: 20px;
+}
+
+.rightNAV ul li {
+    display: inline-block;
+    padding: 8px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.rightNAV ul li a i {
+    font-size: 20px;
+    color: white;
+}
+
+.logoGiga {
+    width: 120px;
+    height: 80px;
+    padding-top: 24px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.rightNAV ul li:hover a i {
+    color: #FF6400;
+}
+
+.toggle {
+    display: none;
+}
+
+.toggle i {
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none
+    }
+
+    .liSearch,
+    .logoGiga {
+        display: none !important;
+    }
+
+    .divImg {
+        margin-left: 65px;
+    }
+
+    .containerFull {
+        padding: 0px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .layout {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .banner {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .layout {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .header h3 {
+        font-size: 32px !important;
+    }
+
+    .about-left {
+        padding-left: 60px !important;
+        padding-right: 60px !important;
+    }
+}
+
+@media (max-width:320px) {
+    .header h3 {
+
+        font-size: 30px !important;
+
+    }
+
+    .about-left {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+}
+
+@media (max-width:375px) {
+
+    .about-left {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .containerFull {
+        padding: 0px 30px;
+    }
+
+    .divImg {
+        width: 140px;
+    }
+
+    .divImg img {
+        margin-top: 22px;
+    }
+
+    .toggle i {
+        font-size: 16px;
+    }
+
+    .rightNAV ul li a i {
+        font-size: 16px;
+    }
+
+    .aaaa {}
+}
+
+.wallpaper {
+    background: black;
+}
+
+.body {
+    background: black;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.layout {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.title {
+    padding-left: 15px;
+}
+
+.title h2 {
+    color: #FF6400;
+    font-size: 30px;
+    line-height: 3.5;
+    margin-bottom: 20px;
+}
+
+.profile h3 {
+    font-size: 26px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 30px;
+    transition: .2s;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+}
+
+.wa {
+    margin-bottom: 60px;
+}
+
+@media (max-width:768px) {
+    .layout {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+    .profile{
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:425px) {
+    .layout {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
