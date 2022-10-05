@@ -10,7 +10,22 @@ import Swal from 'sweetalert2';
 })
 export class UserIComponent implements OnInit {
   user: any;
- 
-  ngOnInit(): void {
-  
+  account: any = {
+    id: 1
   }
+  accountID:any;
+  constructor(private app: ItemService,private router: Router){}
+  ngOnInit(): void {
+    localStorage.setItem("accountSignin",JSON.stringify(this.account))
+    this.accountID = localStorage.getItem("accountSignin")
+    this.accountID = JSON.parse(this.accountID)
+    this.app.getUser(this.accountID.id).subscribe((data: any) => {
+      this.user = data 
+    })
+   
+  }
+  deleteUser(id:Number){
+   this.app.deleteItem(this.accountID.id).subscribe()
+   this.router.navigate(['/'])
+  }
+}

@@ -8,7 +8,9 @@ import { DetailblogComponent } from './pages/detailblog/detailblog.component';
 import { DetailnewComponent } from './pages/detailnew/detailnew.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NewComponent } from './pages/new/new.component';
+import { PasswordComponent } from './pages/password/password.component';
 import { UserIComponent } from './pages/user-i/user-i.component';
+import { UserSettingComponent } from './pages/user-setting/user-setting.component';
 import { WallpaperComponent } from './pages/wallpaper/wallpaper.component';
 import { WarrantyComponent } from './pages/warranty/warranty.component';
 
@@ -25,8 +27,9 @@ const routes: Routes = [
   { path: "blog", component: BlogComponent },
   { path: "detailBlog/:id", component: DetailblogComponent },
   { path: "new/:id", component: DetailnewComponent },
-  { path: "user/:id", component: UserIComponent },
-
+  { path: "user", component: UserIComponent },
+  { path: "usersetting", component: UserSettingComponent },
+  { path: "password", component: PasswordComponent },
 ];
 
 @NgModule({

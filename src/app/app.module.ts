@@ -19,6 +19,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { UserIComponent } from './pages/user-i/user-i.component';
+import { UserSettingComponent } from './pages/user-setting/user-setting.component';
+import { PasswordComponent } from './pages/password/password.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,8 @@ import { UserIComponent } from './pages/user-i/user-i.component';
     DetailnewComponent,
     HomeComponent,
     UserIComponent,
+    UserSettingComponent,
+    PasswordComponent,
      
   ],
   imports: [
