@@ -16,7 +16,7 @@
                     </button>
                     <button class="btn-user" routerLink="/usersetting/">
                         <a class="text-decoration-none text-light">
-                            <span class="btn-icon" ><i class="fa-solid fa-wrench"></i></span>
+                            <span class="btn-icon"><i class="fa-solid fa-wrench"></i></span>
                             <span>User Setting</span>
                         </a>
                     </button>
@@ -32,8 +32,9 @@
                     </button>
                 </div>
                 <div class="col-md-3 hk col-sm-1">
-                    <select class="form-select rounded-0" aria-label="Default select example">
-                        <option selected>User Menu <i class="fa-solid fa-angle-down text-light"></i></option>
+                    <select #select class="selectForm rounded-0 text-light" (change)="changeRouter(select.value)">
+                        <option selected disabled hidden>User Menu <i class="fa-solid fa-angle-down opitions"></i>
+                        </option>
                         <option value="1">User InfomationOne <i class="fa-solid fa-angle-down text-light btn-user"></i>
                         </option>
                         <option value="2">User Setting <i class="fa-solid fa-angle-down text-light"></i></option>
@@ -46,30 +47,38 @@
                         <form class="row g-3 ">
                             <div class="col-md-4">
                                 <label for="validationDefault01" class="form-label">First name</label>
-                                <input type="text" class="form-control ps-0" id="validationDefault01" value="{{user.fullName}}" disabled required>
+                                <input type="text" class="form-control ps-0" id="validationDefault01"
+                                    value="{{user.fullName}}" disabled required>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault02" class="form-label">Email Address</label>
-                                <input type="email" class="form-control ps-0" id="validationDefault02" required disabled value="{{user.email}}">
+                                <input type="email" class="form-control ps-0" id="validationDefault02" required disabled
+                                    value="{{user.email}}">
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefaultUsername" class="form-label">Telephone Number</label>
-                                <input type="text" class="form-control ps-0" value="{{user.phone}}" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required disabled>
+                                <input type="text" class="form-control ps-0" value="{{user.phone}}"
+                                    id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required
+                                    disabled>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault03" class="form-label">Address</label>
-                                <input type="text" class="form-control ps-0" id="validationDefault03 " value="{{user.address}}" required disabled>
+                                <input type="text" class="form-control ps-0" id="validationDefault03 "
+                                    value="{{user.address}}" required disabled>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault04" class="form-label">Country</label>
-                                <input type="text" class="form-control ps-0" id="validationDefault03 " required disabled value="{{user.country}}">
+                                <input type="text" class="form-control ps-0" id="validationDefault03 " required disabled
+                                    value="{{user.country}}">
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault05" class="form-label">Password</label>
-                                <input type="password" class="form-control ps-0" id="validationDefault05" required disabled value="{{user.password}}">
+                                <input type="password" class="form-control ps-0" id="validationDefault05" required
+                                    disabled value="{{user.password}}">
                             </div>
                             <div class="col-12">
-                                <button class="btn rounded-0" type="submit" (click)="deleteUser(user.id)">Delete Account</button>
+                                <button class="btn rounded-0" type="submit" (click)="deleteUser(user.id)">Delete
+                                    Account</button>
                             </div>
                         </form>
                     </div>

@@ -10,22 +10,44 @@ import Swal from 'sweetalert2';
 })
 export class UserIComponent implements OnInit {
   user: any;
-  account: any = {
-    id: 1
-  }
-  accountID:any;
-  constructor(private app: ItemService,private router: Router){}
+  accountID: any;
+  constructor(private app: ItemService, private router: Router) { }
   ngOnInit(): void {
-    localStorage.setItem("accountSignin",JSON.stringify(this.account))
+    localStorage.setItem("accountSignin", JSON.stringify(1))
     this.accountID = localStorage.getItem("accountSignin")
     this.accountID = JSON.parse(this.accountID)
-    this.app.getUser(this.accountID.id).subscribe((data: any) => {
-      this.user = data 
+    this.app.getUser(this.accountID).subscribe((data: any) => {
+      this.user = data
     })
-   
+
   }
-  deleteUser(id:Number){
-   this.app.deleteItem(this.accountID.id).subscribe()
-   this.router.navigate(['/'])
+  deleteUser(id: Number) {
+    Swal.fire({
+      title: 'Do you want to delete account?',
+      showDenyButton: true,
+      showCancelButton: true,
+      confirmButtonText: 'Save',
+      denyButtonText: `Don't save`,
+    }).then((result) => {
+      /* Read more about isConfirmed, isDenied below */
+      if (result.isConfirmed) {
+        Swal.fire('Saved!', '', 'success');
+        this.app.deleteItem(this.accountID).subscribe()
+        this.router.navigate(['/'])
+      } else if (result.isDenied) {
+        Swal.fire('Changes are not saved', '', 'info')
+        this.router.navigate(['account']);
+      }
+    })
+
+  }
+  changeRouter(e: any) {
+    if (e == 1) {
+      this.router.navigate(['user'])
+    } else if (e == 2) {
+      this.router.navigate(['usersetting'])
+    } else if (e == 3) {
+      this.router.navigate(['history'])
+    }
   }
 }
