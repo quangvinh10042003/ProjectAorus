@@ -1,7 +1,17 @@
+import { PcBuildingComponent } from './pages/pc-building/pc-building.component';
+import { CompareComponent } from './pages/compare/compare.component';
+import { ShopComponent } from './pages/shop/shop.component';
+import { HomeComponent } from './pages/home/home.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:"",component:HomeComponent},
+  {path:"shop/:id",component:ShopComponent},
+  {path:"shop",component:ShopComponent},
+  {path:"compare",component:CompareComponent},
+  {path:"pcBuilding",component:PcBuildingComponent},
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

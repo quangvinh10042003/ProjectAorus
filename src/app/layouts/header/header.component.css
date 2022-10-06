@@ -156,6 +156,7 @@ header:hover {
     width: 300px;
     background-color: rgb(52, 52, 52);
     border: none;
+    color: #ffff;
 }
 
 .formSearch i {
@@ -216,6 +217,68 @@ footer p {
 
 .ulDropdown li:hover a {
     color: #FF6400;
+}
+
+.formSearchHeader {
+    width: 70%;
+    position: relative;
+}
+
+.formSearchHeader i {
+    position: absolute;
+    left: 15px;
+    top: 20px;
+}
+
+.formSearchHeader input {
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 50px;
+    font-size: 24px;
+    background-color: rgb(52, 52, 52);
+    border: none;
+    color: white;
+}
+
+.closeSearch {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.itemSearched {
+    padding: 20px 10px;
+    padding-left: 50px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    max-height: 300px;
+    overflow-y: scroll;
+    z-index: 999 !important;
+}
+
+.itemSearched div:hover {
+    color: #FF6400 !important;
+    cursor: pointer;
+}
+
+.closeSearch:hover {
+    color: #FF6400;
+    background-color: rgb(24, 24, 24);
+}
+
+.menuMobile .itemSearched {
+    max-height: 400px;
+    padding: 10px 10px;
+    padding-left: 0px;
+}
+
+.menuMobile .itemSearched div:hover p {
+    color: #FF6400 !important;
 }
 
 @media screen and (max-width: 1100px) {

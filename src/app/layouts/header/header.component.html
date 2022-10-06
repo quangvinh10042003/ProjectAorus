@@ -1,27 +1,20 @@
 <!-- header  -->
 <header>
-    <div class="container-fluid containerFull">
+    <div class="container-fluid containerFull" id="trueHeader">
         <div class="d-flex align-items-center justify-content-between">
             <div class="toggle" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="d-flex align-items-center">
-                <div class="divImg">
-                    <img class="card-img" src="../../../assets/images/vinhImg/logo.png" alt="">
+                <div class="divImg" routerLink="/">
+                    <img class="card-img" src="assets/images/vinhImg/logo.png" alt="">
                 </div>
                 <div class="menu">
                     <ul>
                         <li class="position-relative liLevel1">
-                            <a class="aLevel1">Products <i class="fa-solid fa-angle-down"></i></a>
+                            <a class="aLevel1" routerLink="/shop">Products <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="ulHover">
-                                <li><a>Motherboards</a></li>
-                                <li><a>Monitors</a></li>
-                                <li><a>Memorys</a></li>
-                                <li><a>Graphic Cards</a></li>
-                                <li><a>PC Cases</a></li>
-                                <li><a>CPU Coolers</a></li>
-                                <li><a>Power Supplys</a></li>
-                                <li><a>Laptops</a></li>
+                                <li *ngFor="let item of listProducts" (click)="navigate(item.id)"><a>{{item.name}}</a></li>
                             </ul>
                         </li>
                         <li class="position-relative liLevel1">
@@ -30,7 +23,7 @@
                                 <li><a>News</a></li>
                                 <li><a>Blogs</a></li>
                                 <li><a>Wallpapers</a></li>
-                                <li><a>Comparision</a></li>
+                                <li routerLink="/compare"><a>Comparision</a></li>
                             </ul>
                         </li>
                         <li class="position-relative liLevel1">
@@ -49,14 +42,38 @@
             <div class="d-flex">
                 <div class="rightNAV">
                     <ul>
-                        <li class="liSearch"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                        <li class="liSearch" (click)="goToSearchHeader()"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                        <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
                         <li><a><i class="fa-solid fa-user"></i></a></li>
                     </ul>
                 </div>
                 <div class="logoGiga">
-                    <img class="card-img" src="../../../assets/images/vinhImg/logo_gigabyte_white.png" alt="">
+                    <img class="card-img" src="assets/images/vinhImg/logo_gigabyte_white.png" alt="">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid containerFull d-none" id="searchHeader">
+        <div class="d-flex align-items-center justify-content-between">
+            <div class="divImg" routerLink="/">
+                <img class="card-img" src="assets/images/vinhImg/logo.png" alt="">
+            </div>
+            <div class="formSearchHeader" id="formSearchHeader1">
+                <input type="text" placeholder="Search" [(ngModel)]="keyword" (focus)="showSearchItemBox(1)">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <div class="itemSearched d-none" id="searchItemBox1">
+                    <div class="d-flex py-2" *ngFor="let item of listItemSearch | search:keyword">
+                        <img src="{{item.imgProduct}}" width="80px" alt="">
+                        <div class="divNameSearch ms-2">
+                            <p class="mb-0 fw-bold">{{item.name}}</p>
+                            <p class="mb-0">{{item.category_name}}</p>
+                            <p class="mb-0">${{item.price}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="closeSearch" (click)="closeSearchHeader()">
+                <i class="fa-solid fa-x"></i>
             </div>
         </div>
     </div>
@@ -65,9 +82,20 @@
 
 <div class="offcanvas offcanvas-start menuMobile" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
     <div class="offcanvas-header">
-        <div class="formSearch">
-            <input type="text" placeholder="Search">
+        <div class="formSearch position-relative" id="formSearchHeader2">
+            <input type="text" placeholder="Search" [(ngModel)]="keyword" (keyup)="showSearchItemBox(2)">
             <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="itemSearched d-none" id="searchItemBox2">
+                <div class="d-flex py-2" *ngFor="let item of listItemSearch | search:keyword">
+                    <img src="{{item.imgProduct}}" width="60px" alt="">
+                    <div class="divNameSearch ms-2">
+                        <p class="mb-0 fw-bold text-light">{{item.name}}</p>
+                        <p class="mb-0 text-light">{{item.category_name}}</p>
+                        <p class="mb-0 text-light">${{item.price}}</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <button class="buttonClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
     </div>
@@ -77,15 +105,8 @@
               Products
             </button>
             <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                <li><a class="dropdown-item">Motherboard</a></li>
-                <li><a class="dropdown-item">PC Case</a></li>
-                <li><a class="dropdown-item">Moninitor</a></li>
-                <li><a class="dropdown-item">Graphics Card</a></li>
-                <li><a class="dropdown-item">Memory</a></li>
-                <li><a class="dropdown-item">Solid State Drive</a></li>
-                <li><a class="dropdown-item">CPU Cooler</a></li>
-                <li><a class="dropdown-item">Power Supply</a></li>
-                <li><a class="dropdown-item">Laptop</a></li>
+                <li><a class="dropdown-item" routerLink="/shop">All Product</a></li>
+                <li *ngFor="let item of listProducts"><a class="dropdown-item">{{item.name}}</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -96,7 +117,7 @@
                 <li><a class="dropdown-item">News</a></li>
                 <li><a class="dropdown-item">Blogs</a></li>
                 <li><a class="dropdown-item">Wallpaper</a></li>
-                <li><a class="dropdown-item">Comparision</a></li>
+                <li><a class="dropdown-item" routerLink="compare">Comparision</a></li>
             </ul>
         </div>
         <div class="dropdown">

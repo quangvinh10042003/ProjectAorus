@@ -1,0 +1,130 @@
+<div class="banner">
+    <img src="assets/images/vinhImg/banner/F_20211026111445n2Cr2w.JPG" class="card-img" alt="">
+    <div class="zBanner"></div>
+    <h1>Product Comparision</h1>
+</div>
+<div class="container-fluid containerFull pb-5">
+    <div class="main">
+        <div class="select">
+            <select #select (change)="filterTypeProduct(select.value)">
+                <option value="" selected disabled hidden>Choose Product</option>
+                <option value="1">Motherboard</option>
+                <option value="2">Monitor</option>
+                <option value="3">PC Case</option>
+                <option value="4">Graphics Card</option>
+                <option value="5">Memory</option>
+                <option value="6">Power Supply</option>
+                <option value="7">CPU Cooler</option>
+                <option value="8">Solid State Drive</option>
+                <option value="9">Laptop</option>
+            </select>
+        </div>
+        <div class="boxSearchProduct" id="boxSearchProduct">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 position-relative">
+                    <input class="inputCompare mb-md-0 mb-3" type="text" id="inputCompare1" (focus)="showsearchItemCompare(1)" [(ngModel)]="keyword1">
+                    <div class="searchItemCompare d-none" id="searchItemCompare1">
+                        <div class="boxItem">
+                            <div class="productsCompare py-1" *ngFor="let item of listProducts | search: keyword1" (click)="choseItemCompare(item.id, 1)">
+                                <p class="mb-0 fw-bold text-light">{{item.name}}</p>
+                                <p class="mb-0 text-light">{{item.category_name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxImg float-end d-md-block d-none">
+                        <img class="card-img" alt="" src="{{itemCompare1.imgProduct}}">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 d-md-block d-none">
+                    <button class="compareButton" (click)="listSpecifing()">COMPARE</button>
+                    <p class="text-center vs" *ngIf="itemCompare1.id != '' && itemCompare2.id !=''">VS</p>
+                </div>
+                <div class="col-lg-5 col-md-5 position-relative">
+                    <input class="inputCompare" type="text" id="inputCompare2" [(ngModel)]="keyword2" (focus)="showsearchItemCompare(2)">
+                    <div class="searchItemCompare d-none" id="searchItemCompare2">
+                        <div class="boxItem">
+                            <div class="productsCompare py-1" *ngFor="let item of listProducts | search: keyword2" (click)="choseItemCompare(item.id, 2)">
+                                <p class="mb-0 fw-bold text-light">{{item.name}}</p>
+                                <p class="mb-0 text-light">{{item.category_name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" alt="" src="{{itemCompare2.imgProduct}}">
+                    </div>
+                    <div class="row d-md-none d-flex">
+                        <div class="col-5">
+                            <div class="boxImg">
+                                <img class="card-img" src="{{itemCompare1.imgProduct}}" alt="">
+                                <p class="text-light fw-bold">{{itemCompare1.name}}</p>
+
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <p class="text-center vs vsMobile" (click)="listSpecifing()" *ngIf="itemCompare1.id != '' && itemCompare2.id !=''">VS</p>
+                        </div>
+                        <div class="col-5">
+                            <div class="boxImg">
+                                <img class="card-img" src="{{itemCompare2.imgProduct}}" alt="">
+                                <p class="text-light fw-bold">{{itemCompare2.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="infoProductList">
+            <div *ngFor="let item of listSpecifys, let i = index">
+                <div class="row" [ngClass]="i%2==0 ? 'rowFirst' : 'rowSecond'">
+                    <div class="col-md-2 col-12">
+                        <div class="infoGroup">
+                            <p class="fw-bold text-light text-md-left text-center text-md-start">{{item.name}}</p>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light text-md-start">{{item.data1}}</p>
+                    </div>
+                    <div class="col-md-5 col-6">
+                        <p class="text-light text-md-start">{{item.data2}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bgFooter">
+    <div class="logoFooter pt-5">
+        <img src="assets/images/vinhImg/logo_svg.2fc451ee.svg" class="card-img" alt="">
+    </div>
+    <h6 class="mt-3 text-center text-light">TEAM UP FIGHT ON</h6>
+    <div class="row flexRowFooter">
+        <div class="col-lg-2 col-md-3 textFooter">
+            <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">About US</p>
+            <p>About AORUS</p>
+            <p>About Gigabyte</p>
+        </div>
+        <div class="col-lg-2 col-md-3">
+            <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">Products</p>
+            <p>Motherboards</p>
+            <p>Monitors</p>
+            <p>PC Cases</p>
+            <p>Power Supply</p>
+            <p>Graphics Cards</p>
+            <p>Memorys</p>
+            <p>SSD</p>
+            <p>Laptops</p>
+        </div>
+        <div class="col-lg-2 col-md-3">
+            <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">Explores</p>
+            <p>News</p>
+            <p>Blogs</p>
+            <p>Wallpaper</p>
+            <p>Comparision</p>
+        </div>
+        <div class="col-lg-2 col-md-3">
+            <p class="text-light font-weight-bold mb-4 mt-md-0 mt-3">Services</p>
+            <p>Warranty</p>
+            <p>Contact Us</p>
+        </div>
+    </div>
+</div>

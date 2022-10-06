@@ -1,0 +1,545 @@
+<div class="banner">
+    <img src="assets/images/vinhImg/banner/banner pcBuilding.PNG" class="card-img" alt="">
+    <div class="zBanner"></div>
+    <h1>PC Building</h1>
+</div>
+
+<div class="container-fluid containerFull">
+    <div *ngIf="listItemChosen[0].name != '';else elseMotherboard">
+        <div class="firstRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">1. Motherboard</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[0].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[0].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[0].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[0].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[0].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[0].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(1)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(1)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[0].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseMotherboard>
+        <div>
+            <div class="row firstRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">1. Motherboard</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" role="button" data-bs-toggle="modal" data-bs-target="#modalId" (click)="choseTypeProduct(1)">+ Choose Motherboard</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[1].name != '';else elseMonitor">
+        <div class="secondRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">2. Monitor</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[1].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[1].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[1].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[1].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[1].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[1].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(2)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(2)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[1].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseMonitor>
+        <div>
+            <div class="row secondRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">2. Monitor</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" role="button" data-bs-toggle="modal" data-bs-target="#modalId" (click)="choseTypeProduct(2)">+ Choose Monitor</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[2].name != '';else elsePCCase">
+        <div class="firstRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">3. PC Case</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[2].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[2].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[2].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[2].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[2].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[2].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(3)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(3)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[2].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elsePCCase>
+        <div>
+            <div class="row firstRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">3. PC Case</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(3)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose PC Case</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[3].name != '';else elseGPU">
+        <div class="secondRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">4. Graphics Card</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[3].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[3].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[3].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[3].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[3].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[3].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(4)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon" ></i></span>
+                        <span (click)="deleteItem(4)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[3].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseGPU>
+        <div>
+            <div class="row secondRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">4. GPU</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(4)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose GPU</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[4].name != '';else elseMemory">
+        <div class="firstRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">5. Memory</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[4].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[4].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[4].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[4].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[4].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[4].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(5)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(5)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[4].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseMemory>
+        <div>
+            <div class="row firstRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">5. Memory</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(5)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose Memory</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[5].name != '';else elsePowerSupply">
+        <div class="secondRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">6. Power Supply</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[5].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[5].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[5].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[5].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[5].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[5].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(6)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(6)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[5].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elsePowerSupply>
+        <div>
+            <div class="row secondRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">6. Power Supply</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(6)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose Power</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[6].name != '';else elseCPUCoolery">
+        <div class="firstRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">7. CPU Cooler</span>
+                    <a class="text-light itemName d-md-none d-block">{{listItemChosen[6].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[6].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[6].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[6].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[6].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[6].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(7)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(7)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[6].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseCPUCoolery>
+        <div>
+            <div class="row firstRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">7. CPU Cooler</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(7)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose CPU Cooler</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[7].name != '';else elseSSD">
+        <div class="secondRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">8. SSD</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[7].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[7].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[7].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[7].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[7].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[7].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(8)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(8)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[7].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseSSD>
+        <div>
+            <div class="row secondRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">8. SSD</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(8)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose SSD</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+    <div *ngIf="listItemChosen[8].name != '';else elseLaptop">
+        <div class="firstRow py-lg-0 pt-lg-5 py-2">
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-12">
+                    <span class="text-light typeItem">9. Laptop</span>
+                    <a class="text-light itemName d-md-none d-block ">{{listItemChosen[8].name}}</a>
+                    <div class="boxImg d-md-block d-none">
+                        <img class="card-img" src="{{listItemChosen[8].imgProduct}}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-6 col-12">
+                    <div class="row align-items-start">
+                        <div class="col-md-12 col-5 d-md-none d-block">
+                            <div class="boxImg ">
+                                <img class="card-img" src="{{listItemChosen[8].imgProduct}}" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-7">
+                            <a class="text-light d-md-block d-none itemName">{{listItemChosen[8].name}}</a>
+                            <p class="text-light desscriptionCard mt-lg-5 mt-3">{{listItemChosen[8].bestFeatures[0]}}</p>
+                        </div>
+                        <p class="text-light desscriptionCard">{{listItemChosen[8].bestFeatures[1]}}​</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-2 col-12 position-relative">
+                    <div class="d-flex float-end">
+                        <span (click)="choseTypeProduct(9)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span (click)="deleteItem(9)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
+                    </div>
+                    <span class="text-light price">${{listItemChosen[8].price}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseLaptop>
+        <div>
+            <div class="row firstRow py-5">
+                <div class="col-lg-2 col-md-4 col-12">
+                    <span class="text-light typeItem">9. Laptop</span>
+                </div>
+                <div class="col-lg-10 col-md-8 col-12">
+                    <a class="btn buttonChooseItem" (click)="choseTypeProduct(9)" role="button" data-bs-toggle="modal" data-bs-target="#modalId">+ Choose Laptop</a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+
+    <h4 class="estimated">Estimated Costs: <span class="cost">${{EstimatedCosts}}</span></h4>
+
+    <div class="d-flex flex-row-reverse">
+        <div class="endBox pb-5">
+            <a class="btn buttonChooseItem" (click)="addToCart()" role="button"><i class="fa-solid fa-cart-shopping"></i> Add to cart</a>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl " role="document">
+        <div class="modal-content customModal">
+            <div class="modal-header bgModalHeader">
+                <h5 class="modal-title text-light" id="modalTitleId">Components selection</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body overHidden">
+                <button class="btn btn-dark text-light mb-4 d-md-none d-block" data-bs-toggle="offcanvas" data-bs-target="#Id2" aria-controls="Id2"><i class="fa-solid fa-filter"></i> Filter</button>
+                <div class="row">
+                    <div class="col-lg-4 d-lg-block d-none">
+                        <h3 class="colorOrange ">Filter</h3>
+
+                        <div class="mt-3 mb-2 fw-bold ">
+                            Price Range
+                        </div>
+                        <ul class="list-group menuModal ">
+                            <li class="list-group-item listFilter" (click)="filterPrice(0,100)">
+                                <label class="form-check-label " for="firstcheckbox">Less than $100</label>
+                            </li>
+                            <li class="list-group-item listFilter" (click)="filterPrice(100,500)">
+                                <label class="form-check-label " for="secondcheckbox">$100-500</label>
+                            </li>
+                            <li class="list-group-item listFilter" (click)="filterPrice(500,1000)">
+                                <label class="form-check-label " for="thirdcheckbox">$500-1000</label>
+                            </li>
+                            <li class="list-group-item listFilter" (click)="filterPrice(1000,1500)">
+                                <label class="form-check-label " for="fourthcheckbox">$1000-1500</label>
+                            </li>
+                            <li class="list-group-item listFilter" (click)="filterPrice(1500,2000)">
+                                <label class="form-check-label " for="fifthcheckbox">$1500-2000</label>
+                            </li>
+                            <li class="list-group-item listFilter" (click)="filterPrice(2000,99999999999999)">
+                                <label class="form-check-label " for="sixthRadio">More than $2000</label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <h3 class="colorOrange ">Product</h3>
+                        <p class="mt-5 text-center text-secondary fst-italic fs-3" *ngIf="listProductInModal.length == 0">No products found</p>
+                        <div class="card position-relative mb-3 mt-2" style="max-width: 100%; " *ngFor="let item of listProductInModal">
+                            <div class="row g-0 px-1 py-1">
+                                <div class="col-3 ">
+                                    <img src="{{item.imgProduct}}" class="img-fluid rounded-start " alt="... ">
+                                </div>
+                                <div class="col-9 ">
+                                    <div class="card-body ">
+                                        <h5 class="card-title cardTitCustom ">{{item.name}}</h5>
+                                        <p class="card-text d-md-block d-none ">{{item.bestFeatures[0]}}</p>
+                                        <p class="card-text d-md-block d-none ">
+                                            <span class="textPriceModal colorOrange fw-bold">${{item.price}}</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 ">
+                                    <p class="card-text d-md-none d-block ">{{item.name}}</p>
+                                    <p class="card-text d-md-none d-block ">
+                                        <span class="textPriceModal colorOrange fw-bold">${{item.price}}</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <span class="buttonChoose" (click)="choseItem(item.id, item.category_id)" data-bs-dismiss="modal"><i class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Optional: Place to the bottom of scripts -->
+<script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+</script>
+
+<div class="offcanvas offcanvas-start zindex9999" data-bs-backdrop="static" tabindex="-1" id="Id2" aria-labelledby="staticBackdropLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="staticBackdropLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            <h3 class="colorOrange ">Filter</h3>
+
+            <div class="mt-3 mb-2 fw-bold ">
+                Price range
+            </div>
+            <ul class="list-group menuModal ">
+                <li class="list-group-item listFilter" (click)="filterPrice(0,100)">
+                    <label class="form-check-label ">Less than $100</label>
+                </li>
+                <li class="list-group-item listFilter" (click)="filterPrice(100,500)">
+                    <label class="form-check-label ">$100-500</label>
+                </li>
+                <li class="list-group-item listFilter" (click)="filterPrice(500,1000)">
+                    <label class="form-check-label ">$500-1000</label>
+                </li>
+                <li class="list-group-item listFilter" (click)="filterPrice(1000,1500)">
+                    <label class="form-check-label ">$1000-1500</label>
+                </li>
+                <li class="list-group-item listFilter" (click)="filterPrice(1500,2000)">
+                    <label class="form-check-label ">$1500-2000</label>
+                </li>
+                <li class="list-group-item listFilter" (click)="filterPrice(2000,99999999999999)">
+                    <label class="form-check-label ">More than $2000</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
