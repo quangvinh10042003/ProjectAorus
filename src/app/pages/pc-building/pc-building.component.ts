@@ -39,7 +39,7 @@ export class PcBuildingComponent implements OnInit {
       this.listProduct = data;
       this.listAllItem = data;
     })
-    let id: any = localStorage.getItem('accountSignIn');
+    let id: any = localStorage.getItem('accountSignin');
     console.log(id);
     id = JSON.parse(id);
     this.accountSer.getItem(id).subscribe((data: any) => {
@@ -87,7 +87,7 @@ export class PcBuildingComponent implements OnInit {
     })
   }
   addToCart() {
-    let id: any = localStorage.getItem('accountSignIn');
+    let id: any = localStorage.getItem('accountSignin');
     console.log(id);
     id = JSON.parse(id);
     let account: any;
@@ -146,6 +146,7 @@ export class PcBuildingComponent implements OnInit {
         showConfirmButton: false,
         timer: 1500
       })
+      this.router.navigate(['cart']);
     }
 
 

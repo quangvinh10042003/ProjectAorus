@@ -22,7 +22,7 @@
         <div class="boxSearchProduct" id="boxSearchProduct">
             <div class="row">
                 <div class="col-lg-5 col-md-5 position-relative">
-                    <input class="inputCompare mb-md-0 mb-3" type="text" id="inputCompare1" (focus)="showsearchItemCompare(1)" [(ngModel)]="keyword1">
+                    <input class="inputCompare mb-md-0 mb-3" type="text" id="inputCompare1" (keyup)="showsearchItemCompare(1)" [(ngModel)]="keyword1">
                     <div class="searchItemCompare d-none" id="searchItemCompare1">
                         <div class="boxItem">
                             <div class="productsCompare py-1" *ngFor="let item of listProducts | search: keyword1" (click)="choseItemCompare(item.id, 1)">
@@ -40,7 +40,7 @@
                     <p class="text-center vs" *ngIf="itemCompare1.id != '' && itemCompare2.id !=''">VS</p>
                 </div>
                 <div class="col-lg-5 col-md-5 position-relative">
-                    <input class="inputCompare" type="text" id="inputCompare2" [(ngModel)]="keyword2" (focus)="showsearchItemCompare(2)">
+                    <input class="inputCompare" type="text" id="inputCompare2" [(ngModel)]="keyword2" (keyup)="showsearchItemCompare(2)">
                     <div class="searchItemCompare d-none" id="searchItemCompare2">
                         <div class="boxItem">
                             <div class="productsCompare py-1" *ngFor="let item of listProducts | search: keyword2" (click)="choseItemCompare(item.id, 2)">
