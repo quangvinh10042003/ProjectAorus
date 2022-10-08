@@ -20,22 +20,22 @@
                         <li class="position-relative liLevel1">
                             <a class="aLevel1">Explore <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="ulHover">
-                                <li><a>News</a></li>
-                                <li><a>Blogs</a></li>
-                                <li><a>Wallpapers</a></li>
+                                <li routerLink="/new"><a>News</a></li>
+                                <li routerLink="/blog"><a>Blogs</a></li>
+                                <li routerLink="/wallpaper"><a>Wallpapers</a></li>
                                 <li routerLink="/compare"><a>Comparision</a></li>
                             </ul>
                         </li>
                         <li class="position-relative liLevel1">
                             <a class="aLevel1">Service <i class="fa-solid fa-angle-down"></i></a>
                             <ul class="ulHover">
-                                <li><a>Warranty</a></li>
-                                <li><a>About Us</a></li>
-                                <li><a>About Gigabyte</a></li>
-                                <li><a>Contact Us</a></li>
+                                <li routerLink="/warranty"><a>Warranty</a></li>
+                                <li routerLink="/about"><a>About Us</a></li>
+                                <li routerLink="/aboutg"><a>About Gigabyte</a></li>
+                                <li routerLink="/contact"><a>Contact Us</a></li>
                             </ul>
                         </li>
-                        <li class="position-relative liLevel1"><a class="aLevel1">PC Building</a></li>
+                        <li class="position-relative liLevel1" routerLink="/pcBuilding"><a class="aLevel1">PC Building</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,8 +43,11 @@
                 <div class="rightNAV">
                     <ul>
                         <li class="liSearch" (click)="goToSearchHeader()"><a><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                        <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>
-                        <li><a><i class="fa-solid fa-user"></i></a></li>
+                        <li (click)="goCart()" class="position-relative">
+                            <a><i class="fa-solid fa-cart-shopping"></i></a>
+                            <div class="totalCart" *ngIf="totalCart && totalCart > 0">{{totalCart}}</div>
+                        </li>
+                        <li (click)="goUser()"><a><i class="fa-solid fa-user"></i></a></li>
                     </ul>
                 </div>
                 <div class="logoGiga">
@@ -114,10 +117,10 @@
               Explore
             </button>
             <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                <li><a class="dropdown-item">News</a></li>
-                <li><a class="dropdown-item">Blogs</a></li>
-                <li><a class="dropdown-item">Wallpaper</a></li>
-                <li><a class="dropdown-item" routerLink="compare">Comparision</a></li>
+                <li><a class="dropdown-item" routerLink="/new">News</a></li>
+                <li><a class="dropdown-item" routerLink="/blog">Blogs</a></li>
+                <li><a class="dropdown-item" routerLink="/wallpaper">Wallpaper</a></li>
+                <li><a class="dropdown-item" routerLink="/compare">Comparision</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -125,12 +128,12 @@
               Service
             </button>
             <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                <li><a class="dropdown-item">Warranty</a></li>
-                <li><a class="dropdown-item">About AORUS</a></li>
-                <li><a class="dropdown-item">About GIGABYTE</a></li>
-                <li><a class="dropdown-item">Contact us</a></li>
+                <li><a class="dropdown-item" routerLink="/warranty">Warranty</a></li>
+                <li><a class="dropdown-item" routerLink="/about">About AORUS</a></li>
+                <li><a class="dropdown-item" routerLink="/aboutg">About GIGABYTE</a></li>
+                <li><a class="dropdown-item" routerLink="/contact">Contact us</a></li>
             </ul>
         </div>
-        <button class="buttonDropdown">PC Building</button>
+        <button class="buttonDropdown" routerLink="/compare">PC Building</button>
     </div>
 </div>

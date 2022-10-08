@@ -13,7 +13,6 @@
     color: #FF6400;
     font-size: 30px;
     line-height: 3.5;
-    margin-bottom: 80px;
 }
 
 .title1 h1 {
@@ -36,6 +35,7 @@
     box-shadow: 0 3px 6px #e5e5e5;
     padding: 20px;
 }
+
 .box-11 {
     background-color: #fff;
     border: 1px solid #C7C7C7;
@@ -44,6 +44,7 @@
     padding: 20px;
     height: 100%;
 }
+
 .topic span img {
     vertical-align: bottom;
     height: 20px;
@@ -59,30 +60,31 @@
     border-right: none;
     border-radius: 0;
 }
-.TextLink .register {
-    border-right-style: solid;
-    border-right-color: #000;
-    border-right-width: 1px;
-}
+
 .TextLink a {
     padding: 0 2%;
 }
+
 .TextLink a {
     font-size: 0.9em;
     color: #00A1E9 !important;
     padding: 0 3%;
 }
- .TextLink{
+
+.TextLink {
     margin-bottom: 20px;
 }
-.News{
+
+.News {
     margin-bottom: 92px;
 }
+
 .Quick_link {
     text-align: center;
     padding: 0;
     margin-bottom: 111px;
 }
+
 .Quick_link li {
     display: inline-block;
     width: 24%;
@@ -91,32 +93,36 @@
     padding: 3% 0;
     margin: 0 3%;
 }
+
 .Quick_link li a {
     font-size: 0.8em;
     cursor: pointer;
 }
-.Quick_link li a:hover{
+
+.Quick_link li a:hover {
     color: #00A1E9 !important;
 }
+
 .Quick_link li a img {
     width: 45%;
     height: 40%;
 }
-@media (max-width:1024px){
+
+@media (max-width:1024px) {
     .layout {
         padding-left: 40px;
         padding-right: 40px;
     }
-    .News{
+    .News {
         margin-bottom: 70px;
     }
-    .Quick_link{
+    .Quick_link {
         margin-bottom: 116px;
     }
-    
 }
-@media (max-width:768px){
-    .title-sub{
+
+@media (max-width:768px) {
+    .title-sub {
         font-size: 12px;
     }
     .title1 h1 {
@@ -125,14 +131,15 @@
         line-height: 2.5;
         text-align: center;
     }
-    .wa{
+    .wa {
         margin-bottom: 30px;
-    } .Quick_link{
+    }
+    .Quick_link {
         margin-bottom: 90px;
     }
-
 }
-@media (max-width:425px){
+
+@media (max-width:425px) {
     .layout {
         padding-left: 20px;
         padding-right: 20px;
@@ -145,13 +152,13 @@
     }
     .title-sub {
         font-size: 11px;
-        
     }
+}
 
+.form-group input:focus {
+    box-shadow: none !important;
 }
-.form-group input:focus{
-        box-shadow: none !important;
-}
-.form-group input{
+
+.form-group input {
     margin-bottom: 3px;
 }

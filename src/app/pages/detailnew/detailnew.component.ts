@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ItemService } from 'src/app/item.service';
 
 @Component({
@@ -8,8 +8,10 @@ import { ItemService } from 'src/app/item.service';
   styleUrls: ['./detailnew.component.css']
 })
 export class DetailnewComponent implements OnInit {
-  nameNew: any
-  constructor(private app: ItemService, private actRoute: ActivatedRoute) { }
+  nameNew: any = { name: '', id: '' };
+  nextNew: any = { name: '', id: '' };
+  prevNew: any;
+  constructor(private app: ItemService, private actRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
     let id: any;
@@ -17,6 +19,24 @@ export class DetailnewComponent implements OnInit {
     this.app.getDetailNew(id).subscribe((data: any) => {
       this.nameNew = data
     })
+    this.app.getDetailNew(parseInt(id) + 1).subscribe((data: any) => {
+      this.nextNew = data;
+    })
+    if (id > 1) {
+      this.app.getDetailNew(parseInt(id) - 1).subscribe((data: any) => {
+        this.prevNew = data;
+      })
+    }
+  }
+  navigate(id: number) {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      let idRouter: any;
+      idRouter = this.actRoute.snapshot.params['id'];
+      this.app.getDetailNew(idRouter).subscribe((data: any) => {
+        this.nameNew = data
+      })
+      this.router.navigate([`new/${id}`]);
+    });
   }
 
 }

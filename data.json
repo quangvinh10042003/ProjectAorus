@@ -1,4 +1,68 @@
 {
+    "banner": [{
+            "id": 1,
+            "name": "Motherboard",
+            "category_id": 1,
+            "category_name": "Motherboard",
+            "img": "../../../assets/images/vinhImg/Motherboard.7258fedd.png.webp"
+        },
+        {
+            "id": 2,
+            "name": "Monitor",
+            "category_id": 2,
+            "category_name": "Monitor",
+            "img": "../../../assets/images/vinhImg/Monitor.b4e0aada.png.webp"
+        },
+        {
+            "id": 3,
+            "name": "PC Case",
+            "category_id": 3,
+            "category_name": "PC Case",
+            "img": "../../../assets/images/vinhImg/Desktop-PC.ab83c481.png.webp"
+        },
+        {
+            "id": 4,
+            "name": "Graphics Card",
+            "category_id": 4,
+            "category_name": "Graphics Card",
+            "img": "../../../assets/images/vinhImg/Graphics.6ca7d8bf.png.webp"
+        },
+        {
+            "id": 5,
+            "name": "Memory",
+            "category_id": 5,
+            "category_name": "Memory",
+            "img": "../../../assets/images/vinhImg/30680.png"
+        },
+        {
+            "id": 6,
+            "name": "Power Supply",
+            "category_id": 6,
+            "category_name": "Power Supply",
+            "img": "../../../assets/images/vinhImg/18272.png"
+        },
+        {
+            "id": 7,
+            "name": "CPU Cooler",
+            "category_id": 7,
+            "category_name": "CPU Cooler",
+            "img": "../../../assets/images/vinhImg/Components.9dcdfdc0.png.webp"
+        },
+        {
+            "id": 8,
+            "name": "Solid State Drive",
+            "category_id": 8,
+            "category_name": "Solid State Drive",
+            "img": "../../../assets/images/vinhImg/29834.png"
+        },
+        {
+            "id": 9,
+            "name": "Laptop",
+            "category_id": 9,
+            "category_name": "Laptop",
+            "img": "../../../assets/images/vinhImg/Laptop.9b5aebc3.png.webp"
+        }
+    ],
     "category": [{
             "id": 1,
             "name": "Motherboard"
@@ -36,157 +100,245 @@
             "name": "Laptop"
         }
     ],
-    "registerForm": [{
-            "email": "admin@gmail.com",
-            "fullName": "admin",
-            "password": "1",
-            "confirmPassword": "1",
-            "id": 0,
-            "cart": [],
-            "history": []
-        },
-        {
-            "email": "adminm@gmail.com",
-            "fullName": "adminm",
-            "password": "1",
-            "confirmPassword": "1",
-            "id": 1,
-            "cart": [{
-                    "id": 32,
-                    "name": "AORUS 17 KE4 ",
-                    "img": "assets/images/truong/LAPTOP/32.1.png",
-                    "category_id": 9,
-                    "quantity": 14,
-                    "price": 2300
-                },
-                {
-                    "id": 1,
-                    "name": "B660M AORUS ELITE AX DDR4",
-                    "img": "assets/images/vinhImg/detail/mainboard/mb1.webp",
-                    "category_id": 1,
-                    "quantity": 4,
-                    "price": 1260
-                },
-                {
-                    "id": 28,
-                    "name": "AORUS Gen4 7000s SSD 2TB ",
-                    "img": "assets/images/truong/SSD/29811.png",
-                    "category_id": 8,
-                    "quantity": 2,
-                    "price": 100
-                },
-                {
-                    "id": 13,
-                    "name": "AORUS GeForce RTX® 4090 MASTER 24G",
-                    "img": "assets/images/cuongimg/card.jpg",
-                    "category_id": 4,
-                    "quantity": 1,
-                    "price": 840
-                }
-            ],
-            "history": []
-        }
+    "registerForm": [
+
     ],
-    "new": [{
+    "news": [{
             "id": 1,
             "name": "GIGABYT out! new M30 Series PCIe 3.0 x4 SSD",
             "title": "MAY 14 2021 | VIETNAM",
-            "img": "assets/images/cuongimg/n.jpg"
+            "img": "../../../assets/images/cuongimg/n.jpg",
+            "content": "May 14, 2021 - Taipei, Taiwan - GIGABYTE, the world's leading manufacturer of motherboards, graphics cards and hardware solutions, presents its latest NVMe M.2 SSD, PCIe 3.0 interface x4, with 2 capacity options of 1 TB and 512 GB. To enhance heat dissipation and stability, GIGABYTE first introduced a class-leading 2x thick copper PCB to the M30 series SSDs to boost performance in low-temperature conditions. In addition, the M30 series SSD continues to inherit Ultra DurableTM technology based on GIGABYTE's commitment to product quality to become the best choice of high-performance and stable SSD for users..",
+            "content1": "The GIGABYTE AORUS 4K tactical gaming monitor is the ultimate 2-way monitor. This series of monitors not only delivers eSports-class display performance with a refresh rate of up to 144Hz and a 0.5ms response time, but also takes full advantage of the bandwidth of the HDMI 2.1 connector that users can enjoy. fully exploit the new generation of handheld gaming devices. This makes the GIGABYTE AORUS 4K the ideal monitor for multi-platform gaming.",
+            "content2": "From a cost performance perspective, PCIe 3.0 SSDs still dominate even though PCIe 4.0 SSDs have been on the market for a while. The GIGABYTE M30 series SSDs support read speeds of up to 3500 MB s thanks to the NVMe PCIe 3.0 x4 interface with socket 2280 M.2, the NVMe architecture delivers up to 6x faster read/write speeds than traditional SATA SSDs..",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 2,
+            "status": "home",
             "name": "GIGABYTE AORUS 4K Gaming Monitor Ready for Next Generation Game Console",
             "title": "APRIL 28 2021 | VIETNAM",
-            "img": "assets/images/cuongimg/n1.jpg"
+            "img": "../../../assets/images/cuongimg/n1.jpg",
+            "content": "Worldwide sales of new generation game consoles are still booming with no signs of slowing down. However, to date, pairing these products with compatible high-resolution displays to push the limits of refresh rates to 120Hz and beyond has remained an unpredictable task.... GIGABYTE's newly launched AORUS 4K gaming monitor has brought a new ray of hope to long-awaited gamers. Full HDMI 2.1 compatibility comes with the new AORUS display allowing gamers to unlock higher frame rates and resolutions on next-generation game consoles, like PlayStation 5 and XBOX Series X.",
+            "content1": "The GIGABYTE AORUS 4K tactical gaming monitor is the ultimate 2-way monitor. This series of monitors not only delivers eSports-class display performance with a refresh rate of up to 144Hz and a 0.5ms response time, but also takes full advantage of the bandwidth of the HDMI 2.1 connector that users can enjoy. fully exploit the new generation of handheld gaming devices. This makes the GIGABYTE AORUS 4K the ideal monitor for multi-platform gaming.",
+            "content2": "Thanks to the HDMI 2.1 connection, gamers can fully enjoy the extreme gaming performance supported by high-end graphics cards, such as the RTX 30 series when playing games on PC. When paired with next-generation handheld gaming devices, gamers can play their favorite AAA titles at 120Hz for the first time for ultra-smooth gameplay in stunning 4K resolution. In addition to the superiority in display performance, GIGABYTE has also succeeded in optimizing the gaming experience with AORUS's exclusive tactical features. Gaming enhancements this time around, including Aim Stabilizer Dynamic), Black Equalizer and Active Noise Cancellation, previously available only to PC gamers, are now available for next-generation handheld gaming.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 3,
             "name": "GIGABYTE partners with SQUARE ENIX to launch Game Outriders",
             "title": "MAY 14 2021 | VIETNAM",
-            "img": "assets/images/cuongimg/n2.jpg"
+            "status": "home",
+            "img": "../../../assets/images/cuongimg/n2.jpg",
+            "content": "Since the release of the game “Outriders”, millions of gamers have purchased the game to experience the new hybrid FPS and RPG genre first-hand. Most of the rest are also very eager to try this new game. GIGABYTE has partnered with SQUARE ENIX to return the love and support of the gaming community for AORUS. From now until stocks last, customers who buy AORUS gaming monitors or motherboards will receive the Outriders game for free. Just register in the blink of an eye and you will immediately receive your favorite game, AORUS brings gamers to experience today's most popular games for free when upgrading their rigs..",
+            "content1": "For the ultimate gaming experience, GIGABYTE AORUS has been providing gamers with the highest-end hardware for years. Thanks to the superior thermal management and power design of AORUS motherboards, AORUS can unleash the full potential of next-generation processors, helping gamers achieve super-high frame rates at the highest settings possible. body. Thanks to PCIe 4.0 support, gamers can game more with high bandwidth and further improved CPU performance. And with the new AORUS 4K Pro gaming monitor, the bright and beautiful panels of 4K high-resolution displays have officially entered the vibrant gaming industry. With the fastest refresh rates and response times available, you'll see how valuable 1 millisecond is, so you can aim with confidence with no worries.",
+            "content2": "Thanks to the HDMI 2.1 connection, gamers can fully enjoy the extreme gaming performance supported by high-end graphics cards, such as the RTX 30 series when playing games on PC. When paired with next-generation handheld gaming devices, gamers can play their favorite AAA titles at 120Hz for the first time for ultra-smooth gameplay in stunning 4K resolution. In addition to the superiority in display performance, GIGABYTE has also succeeded in optimizing the gaming experience with AORUS's exclusive tactical features. Gaming enhancements this time around, including Aim Stabilizer Dynamic), Black Equalizer and Active Noise Cancellation, previously available only to PC gamers, are now available for next-generation handheld gaming.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 4,
             "name": "GIGABYTE  Z590 AORUS TACHYON breaks overclock record with 11900K",
             "title": "APRIL 28 | 2021VIETNAM",
-            "img": "assets/images/cuongimg/n3.png"
+            "status": "home",
+            "img": "../../../assets/images/cuongimg/n3.png",
+            "content": "April 1, 2021 - Taipei, Taiwan - Gigabyte Technology Co., Ltd. - the world's leading manufacturer of motherboards, graphics cards and hardware solutions, announced the Z590 AORUS TACHYON motherboard with a latest 11th generation Intel® Core™ i9 11900K processor and LN2 liquid nitrogen heatsink set the world's top overclocking record at 7314MHz, as well as the Super Pi 1M and Super Pi world records 32M. GIGABYTE Z590 AORUS TACHYON motherboards are packed with functions designed for heavy-duty overclockers, promising higher clocks with easier operation, affirming GIGABYTE's leading role in overclocking. pulse on the Z590 motherboard.",
+            "content1": "With the support of our engineering design and management teams, GIGABYTE's product research and development team is able to transform ideas,” said Jackson Hsu, Director of GIGABYTE Channel Solutions Product Development. The idea of ​​crazy into a product that every customer desires. GIGABYTE Z590 AORUS TACHYON Motherboard is the product of these innovative concepts after long consideration. The product is a testament to the great ability of the GIGABYTE product research and development team to overclock the LN2 with the world records it has created. Of course, we will also use the Z590 AORUS TACHYON for better overclocking performance and we ourselves are eagerly waiting for overclockers around the world to use this motherboard to break the many records. more world continents! ",
+            "content2": "GIGABYTE Z590 AORUS TACHYON was designed by overclockers themselves to break world records. Based on GIGABYTE's standard of durability and stability, GIGABYTE's product research & development team has devoted a lot of resources to making this motherboard more suitable for users' needs. Z590 AORUS TACHYON uses 12+1 direct phase power, each phase can hold up to 100 amps with DrMOS power stages design to provide comprehensive power control. The VRM area is stacked with tantalum capacitors, allowing for lower overall temperatures and more stable overclocking. Furthermore, the latest Reactive Armor solution uses an integrated one-piece metal heatsink to provide a larger heat dissipation range of the MOSFET, while multiple thin fins and grooved surfaces provide large heat dissipation area. 2x more than traditional designs, greatly improving convection and heat conduction by allowing more airflow through the radiator..",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 5,
             "name": "GIGABYTE  Launches AORUS  FI27Q Tactical Gaming Monitor",
             "title": "AUGUST 16 2019 | WORLD-WIDE",
-            "img": "assets/images/cuongimg/n4.png"
+            "status": "home",
+            "img": "../../../assets/images/cuongimg/n4.png",
+            "content": "Taipei, Taiwan, August 16th, 2019 –GIGABYTE TECHNOLOGY Co. Ltd, a leading manufacturer of motherboards and graphics cards, has launched the brand new tactical gaming monitor, AORUS FI27Q, to the 27-inch product lineup. AORUS FI27Q is equipped with a 27-inch flat-screen frameless monitor and an IPS level panel with QHD(2560x1440, 2K) resolution. The fast response time featuring 1ms and165Hz refresh rate monitor tearing and blurring, assuring dynamic frames while gaming. The monitor meets VESA DisplayHDR 400 with 10 bits of image processing and 95% DCI-P3 standards, allowing gamers to embrace the splendid display quality. Along with AMD Radeon FreeSync™ technology which synchronizes the panel's refresh rate and GPU framerate, the monitor offers smooth and judder-free gaming..",
+            "content1": "The AORUS FI27Q shares an identical design with the World’s First Tactical Monitor AORUS AD27QD. Digital RGB LED lighting, the full function stand, thin-bezel design, and built-in power board are the same as the first monitor. The glamorous lighting effects and thin bezel design presents a compact and sharp appearance. The stand allows a great deal of flexibility for use. It spins up to 90 degrees vertically, rotates 20 degrees sideways and -5 to 21 degrees up/down; the height is stretchable up to 130 cm. Two HDMI 2.0 inputs, one display interface and two USB 3.0 ports accommodate your PC with connectivity to spare. Gamers can update the OSD firmware via the OSD commander software for the most advanced gaming experience. With built-in power, no more heavy adaptors are needed, creating a clean gaming battlefield.",
+            "content2": "The joystick on the rear side of the screen provides direct control to OSD. Alternatively, the settings can be adjusted by keyboards and mouse, both ways can be used to control the monitor settings. AORUS FI27Q features anti-blue light and flicker-free technology, allowing gamers to deeply immerse themselves into games without eye blinking. Moreover, with the PiP/PbP display mode, the monitor provides flexibility with multiple usages on the screen. Just a simple click on the screen and gamers can play games and watch the game guide at the same time. Besides the excellence of its hardware, the software features are the key to the greatness of this monitor. Aim Stabilizer, customized crosshair, the exclusive ANC function, all bring extra benefits to gamers.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 6,
             "name": "GIGABYTE Launches AORUS  Waterforce GeForce®  RTX 2080 SUPERTM Graphics Cards",
             "title": "MAY 14 2021 | VIETNAM",
-            "img": "assets/images/cuongimg/n5.png"
+            "img": "../../../assets/images/cuongimg/n5.png",
+            "content": "Taipei, Taiwan, July 26, 2019, GIGABYTE, the world's leading manufacturer of high-end graphics cards, announced the AORUS WATERFORCE line of high-end cards powered by the NVIDIA GeForce® RTX 2080 SUPERTM GPU architecture. GIGABYTE has launched 2 AORUS WATERFORCE graphics cards - AORUS GeForce® RTX 2080 SUPERTM WATERFORCE 8G, AORUS GeForce® RTX 2080 SUPERTM WATERFORCE WB 8G. Both feature top-of-the-line overclocked GPUs certified by GIGABYTE GPU Gauntlet™ GPU grading technology. AORUS provides a comprehensive cooling solution for all the key components on the card. AORUS “protects” not only the GPU but also the VRAM and MOSFET to ensure stable overclocking and longer endurance.Plus, with amazing RGB lighting effects, 7 display outputs, metal backplates, dust and moisture resistant aviation-grade PCB coatings, ultra-durable premium materials, and an extended warranty for for AORUS members, … AORUS WATERFORCE is the optimal choice for those who need a product that both works quietly and has impressive performance.",
+            "content1": "AORUS GeForce® RTX 2080 SUPERTM WATERFORCE 8G With the AORUS GeForce® RTX 2080 SUPERTM WATERFORCE 8G, we bring you a flawless design with the finest details. The heat dissipation performance of AORUS WaterFORCE's excellent heatsink can't be overstated with its RAD heatsink upgraded from 120mm to 240mm. With 2 120mm RGB fans, providing a powerful and stable performance. The RGB lighting system not only illuminates the front, side and back of the graphics card, but also the two 120mm fans of the heatsink. Through AORUS software, bring color alignment across the entire product as well as customize colors according to preferences. The sturdy FEP tube minimizes water loss and has high thermal stability and high pressure resistance greatly increasing the life and durability of the card..",
+            "content2": "About GIGABYTE A global leader in the PC industry, GIGABYTE offers a comprehensive product lineup that aims to “Upgrade Your Life.” With expertise encompassing consumer, business, gaming, and cloud systems, GIGABYTE uses research and innovation to consistently meet user needs. GIGABYTE is renowned for award-winning products including motherboards, graphics cards, laptops, mini PCs, and other PC components and accessories, and has revolutionized the PC industry with patented DualBIOS™ and Ultra Durable™ technologies. As an expert in PC technology, GIGABYTE is poised to extend our scope in business servers and cloud systems with hardware and software solutions that integrate AI and AloT applications to develop the ideal infrastructure for future prospects in 5G.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 7,
             "name": " GIGABYTE Launches AORUS KD25F  Tactical Monitor for FPS Gamers",
             "title": "JUNE 17 2019 | VIETNAM",
-            "img": "assets/images/cuongimg/n6.png"
+            "img": "../../../assets/images/cuongimg/n6.png",
+            "content": "GIGABGYTE, the world's leading manufacturer of motherboards and graphics cards, presents the AORUS KD25F – a tactical monitor specifically for FPS gamers. AORUS KD25 Is a 24.5-inch Full HD monitor (1920 x 1080 resolution, 16: 9 aspect ratio) using TN panel with ultra-fast liquid crystal technology to increase response speed up to 70% so the panel has an amazing 0.5ms response time (MPRT). For gamers who love smoothness and responsiveness, the AORUS KD25 is the perfect choice for FPS gaming with a 240Hz refresh rate. Also, an 8-bit TN panel with 100% sRGB, which is really rare for this type because normally TN panels usually have pretty bad colors. If you want the perfect FPS gaming experience with great colors, then the KD25F is the choice that cannot be ignored.",
+            "content1": "The AORUS KD25F uses the design of the AD27QD - the world's first tactical monitor. Digital LED light, fully functional stand, frameless design and integrated power board. PiP/PbP can put 2 pictures in one screen and you can channel the audio to the source you want, increasing the flexibility of the monitor when used for different needs. KD25F completes both hardware as well as software features such as: Aim Stabilizer, custom reticle, exclusive ANC function. All the features integrated in one screen like that make you the “king” of any battle!",
+            "content2": "Gamers can use the on-screen joystick to control the OSD, but instead, they can use the OSD Sidekick software to adjust the parameters with the keyboard and mouse, allowing the user to see the change. which they can adjust without interrupting the program. AORUS KD25F supports 2 HDMI slots, 1 DP, 2 USB 3.0, microphone and audio jacks. With the live update feature that OSD Sidekick provides, you can always stay up to date with the latest features released by AORUS for your monitor.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 8,
             "name": "GIGABYTE  Showcases Newes AORUS High-End Gaming Solutions For Maximizing The User  Experience",
             "title": "May 29 2019 |",
-            "img": "assets/images/cuongimg/n7.jpg"
+            "img": "../../../assets/images/cuongimg/n7.jpg",
+            "content": "Taipei, Taiwan, May 28th, 2019 – GIGABYTE TECHNOLOGY Co. Ltd, a leading manufacturer of motherboards and graphics cards, redefines high-end gaming excellence with the newest additions to the AORUS ecosystem at today’s AORUS XTREME POWER showcase. Setting a precedent for performance, AORUS presents its newest high-end gaming products including the AMD X570 flagship motherboard which boasts both a 16-phase digital power design and an advanced thermal design, the AORUS PCIe Gen4 M.2 SSD which uses a full body, copper heatsink design, and the world’s first PCIe 4.0 NVMe SSD with 8TB capacity capable of delivering sequential read speeds over 15,000MB/s. Also making its much-anticipated debut at the AORUS XTREME POWER showcase is the tactical gaming monitor lineup consisting of the FPS genre focused KD25F monitor, MOBA focused curved CV27F monitor, and the world’s first Black Equalizer 2.0 technology enabled, curved CV27Q monitor.",
+            "content1": "“As gaming performance and efficiency continue to improve, multicore processors, high clock rates, and elite storage performance have become the standard for high-end PC configurations. Taking this into consideration we understand that going forward, stable and efficient power designs have never been more important,” said Eddie Lin, Vice President of AORUS. “AORUS delivers not only the most advanced power designs to maximize overclocking performance on multicore processors but also the flagship X570 AORUS motherboard with a 16-phase power design, the PCIe 4.0 based NVMe M.2 SSD with a full body copper heatsink, and the only consumer 8TB SSD that surpasses sequential read speeds of 10,000MB/s. With our high-response rate 27-inch tactical gaming monitors, we’ve got an incredibly diverse gaming lineup.”",
+            "content2": "To fully unlock the potential of the 3rd Gen Ryzen processors built on 7nm, GIGABYTE’s flagship X570 AORUS XTREME uses a 16-phase, all Infineon digital power design with each phase capable of managing up to 70A. The beefed-up power design reduces impedance and improves balance boosting the board’s overall power efficiency, durability, and service lifespan. These aspects are not only essential in maximizing the overclocking potential on the 3rd Gen AMD Ryzen™ processors but also ease the user’s concerns of an unstable power supply or high temperatures causing overclocking failures or diminished performance. The excellent power design also needs to be paired with an advanced thermal design to maximize performance so the X570 AORUS XTREME adds a Fins-Array Stacked Fin Heatsink, Direct Touch Heatpipes, and Nanocarbon Baseplate to optimize cooling to the VRM and chipset while making the PCB extra sturdy. This extra attention to durability makes the motherboard much more suited to taking on the task of unleashing the monstrous performance capabilities of the 3rd Gen AMD Ryzen™ processors and a superior option for an AMD platform build.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 9,
             "name": "COMPUTEX 2019 - AORUS Showcase Future Computing Performance",
             "title": "MAY 28 2019 | VIETNAM",
-            "img": "assets/images/cuongimg/n8.jpg"
+            "img": "../../../assets/images/cuongimg/n8.jpg",
+            "content": "AORUS - GIGABYTE's premium gaming brand unveils gaming and computing firepower with the latest PC hardware and future innovations at COMPUTEX 2019. This year's theme revolves around AORUS XTREME POWER by redefining. user experience through AORUS's innovative and gaming-oriented designs. We welcome you to join the press event and visit the AORUS VIP booth to see “Xtreme Power” - future performance.",
+            "content1": "At the press conference, AORUS will showcase its latest products and technologies, including next-generation AMD motherboards and the first PCIe 4.0 interface M.2 SSD on the latest AMD platform integrated. combines exclusive features and exceptional performance. After unveiling the world's first tactical gaming monitor earlier this year, AORUS is also launching three new additions to the lineup. Thereby users can choose the perfect tactical gaming monitor for the game genre or playing style that best suits them.",
+            "content2": "Besides the press event, visitors can visit the AORUS VIP Suite at CTBC Financial Park - a showcase where all gaming laptops, hardware components, liquid cooling solutions, products memory products, tactical monitors and gaming peripherals for a better overview of the AORUS ecosystem. Join us and see Xtreme Power at COMPUTEX this year.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 10,
             "name": "GIGABYTE Moves To PCIe 4.0 With X570 AORUS Motherboards",
             "title": "MAY 27 2019 | VIETNAM",
-            "img": "assets/images/cuongimg/n9.jpg"
+            "img": "../../../assets/images/cuongimg/n9.jpg",
+            "content": "AORUS, a premium gaming brand powered by GIGABYTE, is set to showcase its gaming and computing firepower with its newest PC hardware and next-gen innovation at COMPUTEX 2019. The theme this year revolves around AORUS XTREME POWER by redefining enthusiast experiences through AORUS innovative engineering and gaming-oriented designs. Attendees to this year’s COMPUTEX are welcomed to join AORUS for the press event on May 28 and visit the VIP suite showcase during the show to witness the Xtreme Power for the next-generation performance.",
+            "content1": "At the press event, AORUS is going to announce its newest products and technologies, including the next-gen AMD motherboard and the world’s first PCIe 4.0 interface M.2 SSD on the latest AMD platform packed with exclusive features and unmatched performance for next-level computing. Following the introduction of the world’s first tactical gaming monitor earlier this year, AORUS will also be debuting 3 new additions to the lineup on the same occasion, from which users can choose the perfect tactical gaming monitor for the game genre or playstyle that suits them the most.",
+            "content2": "Besides the press event on May 28, attendees could visit the AORUS VIP Suite at CTBC Financial Park for a complete overview of the expanding AORUS ecosystem, where all the latest gaming laptops, hardware components, liquid cooling solutions, memory products, tactical monitors, and gaming peripherals will be showcased. Join AORUS and witness the Xtreme Power that AORUS has in store for COMPUTEX this year.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 11,
             "name": "AORUS to Showcase Next-gen Performance at COMPUTEX 2019",
             "title": "MAY 27 2019 | WORLD-WIDE",
-            "img": "assets/images/cuongimg/n10.jpg"
+            "img": "../../../assets/images/cuongimg/n10.jpg",
+            "content": "Taipei, Taiwan, May 27, 2019 - GIGABYTE Technology Co., Ltd., the world's leading manufacturer of motherboards and graphics cards, today announced its latest line of X570 AORUS motherboards to get the most out of your power supply. The power of 3rd Gen AMD Ryzen™ processors is expected. The X570 AORUS is fully compatible with these new processors and ushers in the PCIe® 4.0 era with an extensive range of features. The flagship X570 AORUS XTREME motherboard series is equipped with a 16-phase digital power design; Fish fin heatsink with stacked fins design and Direct Touch Heatpipe technology for the most efficient VRM cooling. Both of these features are aimed at optimizing performance on 3rd Gen AMD Ryzen processors. The X570 AORUS also offers ultrafast connectivity at 2.4GHz with WiFi 6 802.11ax and further improve user experience with the latest version of Q-Flash Plus technology for easy and convenient BIOS updates for users. The motherboards of the X570 AORUS series lead the new era of gaming performance.",
+            "content1": "3rd Gen AMD Ryzen™ processors go beyond previous generation processors with the leap in performance that users expect when upgrading from one processor generation to the next. Leveraging this potential, GIGABYTE integrates at least 14 power phases in the digital power designs of each ATX board in the X570 AORUS series. Different tasks require different power consumption so to calculate this different power consumption GIGABYTE uses PowIRstage or DrMOS and different MOSFETs to ensure more stable current and thermal management as well as better power when the CPU is running at full capacity. The flagship X570 AORUS XTREME motherboard boasts a 16-phase digital power design with each phase capable of managing up to 70A for lower impedance and improved balance. With 16 active phases, the motherboard reduces the load on each phase to generate less heat, improving the overall power efficiency, durability, and lifespan of the motherboard. This provides better overclocking and performance levels and allows users to maximize overclocking on the new 3rd Gen AMD Ryzen processors without having to worry about unstable power or High temperatures cause overclocking errors or performance drops. Fins-Array heatsink with stacked fins, Direct Touch Heatpipes Technology and Nanocarbon Panel provide incredible cooling for VRM and chipset. This perfect combination becomes the most comprehensive cooling solution for 3rd Gen AMD Ryzen™ processors, ideal for building AMD-based machines.",
+            "content2": "The PCIe 4.0 standard has arrived and with it comes higher bandwidth. With 32GB/s bandwidth and expandable bandwidth for graphics cards, PCIe NVMe AIC SSDs and M.2 NVMe SSDs, the new interface far exceeds the bandwidth limitations of previous generations. GIGABYTE has emphasized the potential of the PCIe 4.0 standard and has refined the motherboard design to enhance the performance of peripheral components. Design features such as low-inductance server-grade PCBs and PCIe 4.0 B-CLK ICs maximize PCIe bandwidth for increased data transfer on PCIe storage devices and increased CPU overclocking performance. and memory. Motherboards unlock the hidden performance potential of peripherals, allowing for bright transfer speeds on these devices. As the PCIe 4.0 era arrives, GIGABYTE has also introduced the latest PCIe 4.0 PCIe NVMe M.2 PCIe SSDs and AORUS M.2 PCIe 4.0 expansion cards that enable 4800 MB/s transfer speeds on PCIe SSDs. NVMe M.2. Users can install four NVMe M.2 SSDs at once with the AORUS M.2 PCIe 4.0 expansion card to increase storage capacity, or even build a RAID array via the operating system for storage performance. impression and data integrity, taking full advantage of the new PCIe 4.0 interface.",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         },
         {
             "id": 12,
             "name": "GIGABYTE Announces BIOS Updates for Next Gen Ryzen AMD CPUs",
             "title": "MAY 17 2019 |",
-            "img": "assets/images/cuongimg/n11.jpg"
+            "img": "../../../assets/images/cuongimg/n11.jpg",
+            "content": "Taipei, Taiwan, May 17, 2019, GIGABYTE - the world's leading motherboard and video card manufacturer, has released a BIOS update for AMD X470 and B450 motherboards. Users will get full support from the new generation AMD processors with just a few simple BIOS updates. BIOS updates for AMD X470 and B450 motherboards will be available later this month.",
+            "content1": "Cameron Hsu, Director of GIGABYTE Channel Solutions Product Development, said, “Semiconductor technology keeps advancing, so processors also become more powerful and provide better performance. For users looking to upgrade their system, compatibility between the new generation CPUs and the original platforms is of great concern. Before releasing this new generation of AMD Ryzen™ processors, GIGABYTE wanted to make sure that the motherboards were ready from the start to address this concern. We've done a lot of research and put a lot of time and effort into making sure that our users get the best computing experience.",
+            "content2": "GIGABYTE has posted a BIOS update for GIGABYTE AM4 motherboards on the official website. Users can update the BIOS on GIGABYTE AM4 motherboards to BIOS F40 or higher for full support from AMD Ryzen™ processors. For more detailed information on BIOS updates, please visit the official GIGABYTE website or visit the following links:",
+            "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
         }
     ],
-    "blog": [{
+    "blogs": [{
             "id": 1,
             "name": "[Member Submission] GIGABYTE Z590I Vision D – Choice for Mini-ITX Content Creation System",
             "title": "JUNE 24 2021",
-            "img": "assets/images/cuongimg/b.jpg",
-            "content": "Member Submission Gigabyte Z590I Vision D –Choice for Mini-ITX Content Creation System Thanks to Pyr for writing this article and share to AORUS!"
+            "img": "../../../assets/images/cuongimg/b.jpg",
+            "content": "Member Submission Gigabyte Z590I Vision D –Choice for Mini-ITX Content Creation System Thanks to Pyr for writing this article and share to AORUS!",
+            "content1": "Member Submission",
+            "content2": "Gigabyte Z590I Vision D – Choice for Mini-ITX Content Creation System",
+            "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+            "content4": "Possessing a white tone like other Vision series products, the Gigabyte Z590I Vision D has the size of the Mini-ITX series, but the rigidity and components of the motherboard will overshadow some of its brothers in the line. ATX. Specifically, the motherboard has a large and hard aluminum alloy heatsink that covers the VRM, SSD and chipset areas.",
+            "content5": "Test system",
+            "content6": "Processor: Intel Core i5-11600K",
+            "content7": "Motherboard: Gigabyte Z590I Vision EASY",
+            "content8": "Heatsink: Gigabyte Aorus Liquid Cooler",
+            "content9": "RAM: Gigabyte DESIGNARE DDR4 3200MHz 64GB (2x32GB)",
+            "content10": "VGA: Gigabyte GeForce RTX 3080 VISION OC 10G",
+            "content11": "Case: Antec Striker",
+            "content12": "Source: Gigabyte P750GM",
+            "content13": "In small systems, the temperature of the system and components is always the top concern. Due to size and space factors, users may not be able to dissipate heat as well as ventilate as well as large systems.",
+            "content14": "During this test, the CPU was pushed to maximum capacity, and the measured temperature fell to about 70 degrees. With Intel's latest 6-core, 12-thread Core i5-11600K processor, this is a pretty cool temperature. For SSDs, the temperature of this important part also only falls between 54 and 64 degrees Celsius, depending on the task. When in sleep mode, the CPU has a stable temperature of 40 degrees Celsius.",
+            "content15": "For content producers, PCIe RAM and bandwidth are important factors, as they often have to compress, export, and store huge volumes of video. Intel Core i5-11600K is enough to serve the needs of personal content production, including professional Vloggers and streamers.",
+            "content16": "As for PCIe, Intel's 11th generation processors themselves have improved quite a bit, thanks to the upgrade to PCIe Gen4. This test section shows that the system has a high PCIe 4.0 bandwidth, about 5445 GFLOPS.",
+            "content17": "Gigabyte DESIGNARE memory is manufactured in a white color that matches its content creator range. The product does not have RGB lights like other RAM pairs for games, but it is still luxurious and minimalist. Testing on AIDA64 shows that Gigabyte Z590I Vision D can bring low latency, about 50nm for its DESIGNARE RAM pair.",
+            "content18": "For content producers, PCIe RAM and bandwidth are important factors, as they often have to compress, export, and store huge volumes of video. Intel Core i5-11600K is enough to serve the needs of personal content production, including professional Vloggers and streamers.The Gigabyte Z590I Vision D is a quality addition to the Vision product range for content creators. The motherboard has a wide variety of connection options which is one of the great advantages of the product, combined with a beautiful, neat design. The performance of PCIe makes it easy for users to comfortably equip high-speed VGA and NVMe SSDs, combined with Thunderbolt 4 and USB 3.2 Gen 2x2 ports for all-around storage.",
+            "img1": "assets/images/cuongimg/de1.jpg",
+            "img2": "assets/images/cuongimg/d2.jpg",
+            "img3": "assets/images/cuongimg/d3.jpg"
         },
         {
             "id": 2,
             "name": "[Member Submission] GIGABYTE RTX 3070 Eagle OC 8G Review",
             "title": "MAY 21 2021",
-            "img": "assets/images/cuongimg/b1.jpg",
-            "content": "Member Submission GIGABYTE RTX 3070 Eagle OC 8G Review Thanks to Pyr for writing this article and share to AORUS!"
+            "img": "../../../assets/images/cuongimg/b1.jpg",
+            "content": "Member Submission GIGABYTE RTX 3070 Eagle OC 8G Review Thanks to Pyr for writing this article and share to AORUS!",
+            "content1": "Member Submission",
+            "content2": "GIGABYTE RTX 3070 Eagle OC 8G Review",
+            "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+            "content4": "The Gigabyte GeForce RTX 3070 Eagle OC 8G has a large 3-fan heatsink, similar to the RTX 3090 Eagle OC 24G, but a bit more compact. Of all the Gigabyte VGAs in the Eagle series, the RTX 3070 is the most minimalist and beautiful. Of course, due to the nature of the price segment, VGA has RGB lighting to a minimum.",
+            "content5": "Test system",
+            "content6": "Gigabyte GeForce RTX 3070 Eagle OC 8G",
+            "content7": "CUDA core: 5888",
+            "content8": "Tensor core: 184",
+            "content9": "Multiplier RT: 46",
+            "content10": "Texture pouring unit: 184",
+            "content11": "ROPs: 96",
+            "content12": "GPU Acceleration: 1815 MHz",
+            "content13": "One of the reasons that makes the Gigabyte GeForce RTX 3070 Eagle OC 8G the most worthwhile choice among the 3070 VGAs is the operating temperature. When working at 100% capacity, the highest temperature that VGA reaches is 72 degrees Celsius (open case and no external fan). This is achieved thanks to the new Ampere architecture that delivers impressive GPU performance, on par with the RTX 2080 Ti but consumes only 272W at peak performance (compared to 340W on the elder).",
+            "content14": "This is the ultimate test that every VGA wants to challenge. Of course, the hardware specifications do not allow both RTX 3070 and RTX 2080 Ti to achieve fps above 60 in all titles with the highest graphics settings, but the achieved numbers still guarantee the game. playable (over 30 FPS). If necessary, you can lower the graphics settings slightly to achieve high frame rates, thereby ensuring the best possible game experience. The test part in the article still has the highest level of graphics set up for readers to easily visualize..",
+            "content15": "At 2K resolution, the RTX 3070 can generally handle most games well at frame rates above 60. Although only slightly better than the RTX 2080 Ti, but at a much lower price, It is not difficult for gamers to make a choice. Besides Metro Exodus, the Gigabyte RTX 3070 Eagle OC 8G can handle games well at 2K resolution when ray tracing is enabled. All tests are set to the highest graphics level.",
+            "content16": "Experience the game on 1080p resolution is really too easy with the RTX 3070. In most tests, the Gigabyte GeForce RTX 3070 Eagle OC showed comparable performance to the RTX 2080 Ti. For gamers who own the RTX 3070 Eagle OC 8G, upgrading to a monitor with a higher scan rate is necessary. At the highest setting, most games hit approximately 100 FPS (DLSS 2.0 enabled or disabled)..",
+            "content17": "Nvidia GeForce RTX 3070 is generally one of the most sought after products in recent times. The power of VGA is almost equivalent to the RTX 2080 Ti of the previous generation, adding many new features, and especially DLSS 2.0. Belonging to the popular product group, the Gigabyte Nvidia RTX 3070 Eagle OC does not have a too aggressive design, many RGB lights, but in return the performance and temperature of VGA is not inferior to any product, if not more. is in the best group.",
+            "content18": "Gigabyte GeForce RTX 3070 Eagle OC 8G currently has a retail price of approximately 17 million VND. This is almost the most attractive VGA RTX 3070 today. With game performance equivalent to, or even slightly better than, the RTX 2080 Ti in some games, and especially well combined with DLSS 2.0, gamers looking for a VGA to fight 2K games will find it hard to resist the attraction of the game. Gigabyte RTX 3070 Eagle OC 8G. Cool operation and not too noisy are also other criteria for gamers to pay attention to.",
+            "img1": "assets/images/cuongimg/de4.jpg",
+            "img2": "assets/images/cuongimg/d5.jpg",
+            "img3": "assets/images/cuongimg/d6.jpg"
         },
         {
             "id": 3,
             "name": "[Member Submission] Gigabyte enters the PSU market with the P750GM and P550B",
             "title": "MAY 14 2021",
             "img": "assets/images/cuongimg/b2.jpg",
-            "content": "Member Submission GIGABYTE RTX 3070 Eagle OC 8G Review Thanks to Pyr for writing this article and share to AORUS!"
+            "content": "Member Submission GIGABYTE RTX 3070 Eagle OC 8G Review Thanks to Pyr for writing this article and share to AORUS!",
+            "content1": "Member Submission",
+            "content2": "Gigabyte enters the PSU market with the P750GM and P550B",
+            "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+            "content4": "Gigabyte is a major player in the field of computer components, especially in motherboards and graphics cards. In recent years, the company has joined many other groups of accessories such as monitors, hard drives, RAM and PSU - power.",
+            "content5": "Test system",
+            "content6": "Gigabyte GeForce RTX 3070 Eagle OC 8G",
+            "content7": "CUDA core: 5888",
+            "content8": "Tensor core: 184",
+            "content9": "Multiplier RT: 46",
+            "content10": "Texture pouring unit: 184",
+            "content11": "ROPs: 96",
+            "content12": "GPU Acceleration: 1815 MHz",
+            "content13": "Basically, the Gigabyte P750GM is equipped with a smart fan, a Japanese capacitor, a powerful +12V single wire, and OVP/OPP/SCP/UVP/OCP/OTP protection features. The fan will automatically adjust its speed depending on the system load. You will get high stability thanks to high quality Japanese capacitors and +12V single wire. With these basic features, you can make sure your system always runs smoothly.",
+            "content14": "The capacitors inside the power source are manufactured in Japan, to provide high performance and long-term durability. The power fan automatically adjusts to power usage, and stops when the system is idle or under 20% load. The use time of the Hydraulic Bearing fans is long, and also quite durable.",
+            "content15": "In addition to having less power than the P750GM, Gigabyte uses the same high-quality components as Japanese capacitors, OVP/OPP/SCP/UVP/OCP/OTP protection modes, and a single 12V load-bearing wire. well, to ensure stable operation of the system. P550B is also not designed as modular (removing cables) like its elder. Quick test on a system using Intel Core i5-10600K with basic methods, the overall performance of the source is also quite impressive, stable operation at 100% load, reaching about 88% of rated capacity. Single 12V wire always reaches above 12V, providing safety for the system.",
+            "content16": "Nvidia's new VGAs are going to use a lot of power, and you'll need a stable, well-loaded PSU to pull that system. Specifically, the RTX 3090 will consume 350W and the RTX 3080 will use 320W. For a system using the RTX 3090 requires at least 750W power, 3 8-pin PCIe headers. However, in my opinion, the Gigabyte P750GM source is most suitable for machines with RTX 3080 and below. The product has a total of 5 8 pins, so make sure it can be fully connected. If you are looking for a power supply to upgrade, then the Gigabyte P750GM will be the right product, committed to carrying out the current terrible rigs.",
+            "content17": "To test the quality of the source, Thanh Nien Game uses a method to compare power efficiency and energy usage in idle and 100% load mode. This helps users get a basic idea of the stability and load capacity of the Gigabyte P750GM source.",
+            "content18": "At the heart of this article is the Gigabyte P750GM, which is equipped with high-quality 80 PLUS Gold certified components. This will be the ideal companion with high-end computer systems, even when using 10th generation Intel Core i9 processors and Nvidia VGAs from RTX 3080 and below.",
+            "img1": "assets/images/cuongimg/b2.jpg",
+            "img2": "assets/images/cuongimg/d8.jpg",
+            "img3": "assets/images/cuongimg/d9.jpg"
         },
         {
             "id": 4,
             "name": "Gigabyte enters the PSU market with the P750GM and P550B",
             "title": "OCTOBER 7 2020",
-            "img": "assets/images/cuongimg/b3.jpg",
-            "content": "Member Submission Gigabyte Z490 Aorus Master – Ideal Companion of Intel Core i9-10900K Thanks to Pyr for making this article and share to AORUS!"
+            "img": "../../../assets/images/cuongimg/b3.jpg",
+            "content": "Member Submission Gigabyte Z490 Aorus Master – Ideal Companion of Intel Core i9-10900K Thanks to Pyr for making this article and share to AORUS!",
+            "content1": "Member Submission",
+            "content2": "Gigabyte enters the PSU market with the P750GM and P550B",
+            "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+            "content4": "Gigabyte is a major player in the field of computer components, especially in motherboards and graphics cards. In recent years, the company has joined many other groups of accessories such as monitors, hard drives, RAM and PSU - power.",
+            "content5": "Test system",
+            "content6": "Gigabyte GeForce RTX 3070 Eagle OC 8G",
+            "content7": "CUDA core: 5888",
+            "content8": "Tensor core: 184",
+            "content9": "Multiplier RT: 46",
+            "content10": "Texture pouring unit: 184",
+            "content11": "ROPs: 96",
+            "content12": "GPU Acceleration: 1815 MHz",
+            "content13": "Basically, the Gigabyte P750GM is equipped with a smart fan, a Japanese capacitor, a powerful +12V single wire, and OVP/OPP/SCP/UVP/OCP/OTP protection features. The fan will automatically adjust its speed depending on the system load. You will get high stability thanks to high quality Japanese capacitors and +12V single wire. With these basic features, you can make sure your system always runs smoothly.",
+            "content14": "The capacitors inside the power source are manufactured in Japan, to provide high performance and long-term durability. The power fan automatically adjusts to power usage, and stops when the system is idle or under 20% load. The use time of the Hydraulic Bearing fans is long, and also quite durable.",
+            "content15": "In addition to having less power than the P750GM, Gigabyte uses the same high-quality components as Japanese capacitors, OVP/OPP/SCP/UVP/OCP/OTP protection modes, and a single 12V load-bearing wire. well, to ensure stable operation of the system. P550B is also not designed as modular (removing cables) like its elder. Quick test on a system using Intel Core i5-10600K with basic methods, the overall performance of the source is also quite impressive, stable operation at 100% load, reaching about 88% of rated capacity. Single 12V wire always reaches above 12V, providing safety for the system.",
+            "content16": "Nvidia's new VGAs are going to use a lot of power, and you'll need a stable, well-loaded PSU to pull that system. Specifically, the RTX 3090 will consume 350W and the RTX 3080 will use 320W. For a system using the RTX 3090 requires at least 750W power, 3 8-pin PCIe headers. However, in my opinion, the Gigabyte P750GM source is most suitable for machines with RTX 3080 and below. The product has a total of 5 8 pins, so make sure it can be fully connected. If you are looking for a power supply to upgrade, then the Gigabyte P750GM will be the right product, committed to carrying out the current terrible rigs.",
+            "content17": "To test the quality of the source, Thanh Nien Game uses a method to compare power efficiency and energy usage in idle and 100% load mode. This helps users get a basic idea of the stability and load capacity of the Gigabyte P750GM source.",
+            "content18": "At the heart of this article is the Gigabyte P750GM, which is equipped with high-quality 80 PLUS Gold certified components. This will be the ideal companion with high-end computer systems, even when using 10th generation Intel Core i9 processors and Nvidia VGAs from RTX 3080 and below.",
+            "img1": "assets/images/cuongimg/b2.jpg",
+            "img2": "assets/images/cuongimg/d8.jpg",
+            "img3": "assets/images/cuongimg/d9.jpg"
         }
     ],
     "product": [{
@@ -353,6 +505,7 @@
             "id": 3,
             "category_id": 1,
             "category_name": "Motherboard",
+            "status": "home",
             "gen": "11th",
             "name": "Z590 AORUS MASTER(1.0)",
             "imgProduct": "assets/images/vinhImg/detail/mainboard/mb3.webp",
@@ -683,6 +836,7 @@
             "category_id": 2,
             "category_name": "Monitor",
             "refresh_rate": 144,
+            "status": "home",
             "name": "AORUS FI32U Gaming Monitor",
             "imgProduct": "assets/images/vinhImg/detail/monitor/GIGABYTE AORUS FI32U Gaming Monitor.webp",
             "price": 590,
@@ -2286,6 +2440,7 @@
         {
             "id": 26,
             "category_id": 7,
+            "status": "home",
             "category_name": "CPU Cooler",
             "gen": "11th",
             "name": "ATC800",

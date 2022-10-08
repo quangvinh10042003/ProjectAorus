@@ -1,3 +1,4 @@
+import  Swal from 'sweetalert2';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +11,13 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
   submit(e: any) {
-    alert('ok')
+    Swal.fire({
+      position: 'top',
+      icon: 'success',
+      title: 'Thank you for responding. We will contact you soon',
+      showConfirmButton: false,
+      timer: 1500
+    })
     e.preventDefault()
 
   }

@@ -3,19 +3,19 @@
         <div class="col-lg-12">
             <div class="row">
                 <div class="col-lg-12 wa">
-                    <div class="label ">
-                        <span>NEWS</span>
+                    <div class="label text-secondary">
+                        <span class="">NEWS</span>
                     </div>
                     <h3 class="page-title">{{nameNew.name}}</h3>
                     <p class="time">{{nameNew.title}}</p>
                     <ul class="list">
-                        <li><a>News</a></li>
+                        <li routerLink="/new"><a><i class="fa-solid fa-angles-left"></i> Back to News</a></li>
                     </ul>
-                    <div class="img">
+                    <div class="img mb-5">
                         <img src="{{nameNew.img}}">
                     </div>
                     <p>
-                        <span class="text">{{nameNew.content}}
+                        <span class="text pt-5">{{nameNew.content}}
                         </span>
                     </p>
                     <p>
@@ -29,18 +29,15 @@
                     <p>{{nameNew.content3}}
                     </p>
                     <ul class="article">
-                        <li>
-                            <div class="labels">PREV</div> <a>GIGABYTE out!
-                                new M30 Series PCIe 3.0 x4 SSD eyes</a>
+                        <li *ngIf="prevNew" (click)="navigate(prevNew.id)">
+                            <div class="labels">PREV</div> <a>{{prevNew.title}}</a>
                         </li>
-                        <li>
-                            <div class="labels">NEXT</div> <a>GIGABYTE's
-                                AX370-Gaming K7 motherboards featured with the Radeon™ RX Vega<sup>64</sup>
-                                Bundle</a>
+                        <li (click)="navigate(nextNew.id)">
+                            <div class="labels">NEXT</div> <a>{{nextNew.title}} {{nextNew.name}}</a>
                         </li>
                     </ul>
-                    <div class="bn">
-                        <a href="">Back</a>
+                    <div class="bn ">
+                        <a class="px-5" href="">Back</a>
                     </div>
                 </div>
             </div>

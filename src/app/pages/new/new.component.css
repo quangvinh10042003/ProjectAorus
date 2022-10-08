@@ -8,30 +8,35 @@
     padding-left: 80px;
     padding-right: 80px;
 }
+
 .title h2 {
     color: #FF6400;
     font-size: 30px;
     line-height: 3.5;
     margin-bottom: 20px;
 }
-.img img{
+
+.img img {
     width: 100%;
 }
-.wa{
+
+.wa {
     background: black;
     height: 100%;
 }
-.box{
+
+.box {
     padding: 20px;
 }
-.xg{
-    
+
+.xg {
     color: #fff;
     font-size: 25px;
     line-height: 1;
     margin: 20px 0;
     transition: .2s;
 }
+
 .label {
     background: #ff6400;
     padding-right: 16px;
@@ -50,17 +55,20 @@
     vertical-align: baseline;
     border-radius: 0.25em;
 }
+
 .label span {
     background: #ff6400;
     display: block;
 }
-.time{
+
+.time {
     color: #999;
     text-transform: uppercase;
     font-size: 13px;
     margin: 10px 0;
     display: block;
 }
+
 .list {
     border-top: 1px solid rgba(255, 255, 255, .2);
     width: 100%;
@@ -70,8 +78,8 @@
     display: inline-block;
     padding: 0;
 }
+
 .list li {
-    
     margin: 5px 10px 5px 0;
     padding: 0;
     border-bottom: 0;
@@ -80,6 +88,7 @@
     background: rgba(0, 0, 0, .3);
     position: relative;
 }
+
 .list li a {
     margin-top: 20px;
     display: block;
@@ -89,36 +98,42 @@
     border-radius: 5px;
     transition: .2s;
 }
-.lk{
+
+.lk {
     margin-bottom: 50px;
 }
-.hg{
+
+.hg {
     margin-bottom: 30px;
 }
-.hg{
+
+.hg {
     cursor: pointer;
 }
-.hg:hover .xg{
+
+.hg:hover .xg {
     color: #FF6400;
 }
-.hg:hover .wa{
+
+.hg:hover .wa {
     background: rgba(0, 0, 0, .5);
     border: 1px solid #FF6400;
     box-shadow: 0 0 8px #ff6400;
 }
-@media (max-width:768px){
+
+@media (max-width:768px) {
     .layout {
         padding-left: 40px;
         padding-right: 40px;
     }
-    .hg{
+    .hg {
         margin-bottom: 30px;
     }
 }
-@media (max-width:425px){
+
+@media (max-width:425px) {
     .layout {
         padding-left: 20px;
         padding-right: 20px;
     }
-    
 }

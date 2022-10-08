@@ -6,6 +6,19 @@ header {
     z-index: 999;
 }
 
+.totalCart {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    background-color: #FF6400;
+    border-radius: 100%;
+}
+
 header:hover {
     background-image: none;
     background-color: #000 !important;

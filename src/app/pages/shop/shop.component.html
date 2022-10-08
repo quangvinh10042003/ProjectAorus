@@ -179,7 +179,7 @@
                             </div>
                             <h6 class="text-center text-light name">{{item.name}}</h6>
                             <div class="d-flex justify-content-between choseItem">
-                                <a>Learn More</a>
+                                <a routerLink="/detail/{{item.id}}">Learn More</a>
                                 <a id="compareButton{{item.id}}" (click)="compareChoose1(item.id, item.category_id)">Compare</a>
                                 <a (click)="addToCart(item.id)">
                                     <i class="fa-solid fa-cart-shopping"></i>

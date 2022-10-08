@@ -30,7 +30,6 @@ export class ShopComponent implements OnInit {
   constructor(private accountSer: AccountService,private router: Router, private productSer: ProductsService, private actRoute: ActivatedRoute, private categorySer: CategoryService) { }
 
   ngOnInit(): void {
-    localStorage.setItem('accountSignin','1');
     this.idCompare1 = sessionStorage.getItem('itemCompare1');
     this.idCompare2 = sessionStorage.getItem('itemCompare2');
 
@@ -61,21 +60,37 @@ export class ShopComponent implements OnInit {
     id = JSON.parse(id);
     let account:any;
     let checkData:any;
-    this.productSer.getItem(idProduct).subscribe((data:any)=>{
-      this.accountSer.getItem(id).subscribe((acc)=>{
-        account = acc;
-        checkData = acc.cart.find((item:any)=>{
-          return item.id == idProduct
+    if(id){
+      this.productSer.getItem(idProduct).subscribe((data:any)=>{
+        this.accountSer.getItem(id).subscribe((acc)=>{
+          account = acc;
+          checkData = acc.cart.find((item:any)=>{
+            return item.id == idProduct
+          })
+          if(checkData){
+            checkData.quantity += 1;
+            this.accountSer.editItem(acc,id).subscribe();
+          }else{
+            acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
+            this.accountSer.editItem(acc,id).subscribe();
+          }
         })
-        if(checkData){
-          checkData.quantity += 1;
-          this.accountSer.editItem(acc,id).subscribe();
-        }else{
-          acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
-          this.accountSer.editItem(acc,id).subscribe();
+      })
+    }else{
+      Swal.fire({
+        title: 'You are not logged in',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Login'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.router.navigate(['login']);
         }
       })
-    })
+    }
+    
   }
   compareChoose1(id: number, category_id: number) {
     if (!this.idCompare1 && !this.idCompare2 && id != this.idCompare1 && id != this.idCompare2) {

@@ -13,7 +13,6 @@ export class UserIComponent implements OnInit {
   accountID: any;
   constructor(private app: ItemService, private router: Router) { }
   ngOnInit(): void {
-    localStorage.setItem("accountSignin", JSON.stringify(1))
     this.accountID = localStorage.getItem("accountSignin")
     this.accountID = JSON.parse(this.accountID)
     this.app.getUser(this.accountID).subscribe((data: any) => {

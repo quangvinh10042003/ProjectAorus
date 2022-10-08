@@ -1,13 +1,13 @@
+<div class="banner">
+    <img src="assets/images/vinhImg/banner/bannerBlog.PNG" class="card-img" alt="">
+    <div class="zBanner"></div>
+    <h1>Offical Blogs</h1>
+</div>
 <div class="body">
-    <div class="container layout">
-        <div class="title">
-            <h2>
-                Official Wallpaper
-            </h2>
-        </div>
+    <div class="container-fluid layout">
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-lg-12 wa" *ngFor="let item of list" routerLink="/detail/{{item.id}}">
+                <div class="col-lg-6 wa" routerLink="/detailBlog/{{item.id}}" *ngFor="let item of list">
                     <div class="img">
                         <img src="{{item.img}}">
                     </div>

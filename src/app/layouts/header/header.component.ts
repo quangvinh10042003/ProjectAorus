@@ -1,3 +1,4 @@
+import  Swal  from 'sweetalert2';
 import { ProductsService } from './../../services/products.service';
 import { Component, OnInit } from '@angular/core';
 import { CategoryService } from 'src/app/services/category.service';
@@ -13,6 +14,7 @@ export class HeaderComponent implements OnInit {
   anh: any;
   listItemSearch:any;
   keyword:string = '';
+  totalCart:any;
   constructor(private categorySer: CategoryService, private productSer: ProductsService, private router: Router) { }
 
   ngOnInit(): void {
@@ -60,5 +62,45 @@ export class HeaderComponent implements OnInit {
     let header2 = document.getElementById('searchHeader') as HTMLDivElement | null;
     header1?.classList.remove('d-none');
     header2?.classList.add('d-none');
+  }
+  goCart(){
+    let id:any = localStorage.getItem('accountSignin');
+    id = JSON.parse(id);
+    if(id){
+      this.router.navigate(['cart']);
+    }else{
+      Swal.fire({
+        title: 'You are not logged in',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Login'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.router.navigate(['login']);
+        }
+      })
+    }
+  }
+  goUser(){
+    let id:any = localStorage.getItem('accountSignin');
+    id = JSON.parse(id);
+    if(id){
+      this.router.navigate(['user']);
+    }else{
+      Swal.fire({
+        title: 'You are not logged in',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Login'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.router.navigate(['login']);
+        }
+      })
+    }
   }
 }
