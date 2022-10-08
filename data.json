@@ -1,0 +1,3351 @@
+{
+  "banner": [{
+          "id": 1,
+          "name": "Motherboard",
+          "category_id": 1,
+          "category_name": "Motherboard",
+          "img": "../../../assets/images/vinhImg/Motherboard.7258fedd.png.webp"
+      },
+      {
+          "id": 2,
+          "name": "Monitor",
+          "category_id": 2,
+          "category_name": "Monitor",
+          "img": "../../../assets/images/vinhImg/Monitor.b4e0aada.png.webp"
+      },
+      {
+          "id": 3,
+          "name": "PC Case",
+          "category_id": 3,
+          "category_name": "PC Case",
+          "img": "../../../assets/images/vinhImg/Desktop-PC.ab83c481.png.webp"
+      },
+      {
+          "id": 4,
+          "name": "Graphics Card",
+          "category_id": 4,
+          "category_name": "Graphics Card",
+          "img": "../../../assets/images/vinhImg/Graphics.6ca7d8bf.png.webp"
+      },
+      {
+          "id": 5,
+          "name": "Memory",
+          "category_id": 5,
+          "category_name": "Memory",
+          "img": "../../../assets/images/vinhImg/30680.png"
+      },
+      {
+          "id": 6,
+          "name": "Power Supply",
+          "category_id": 6,
+          "category_name": "Power Supply",
+          "img": "../../../assets/images/vinhImg/18272.png"
+      },
+      {
+          "id": 7,
+          "name": "CPU Cooler",
+          "category_id": 7,
+          "category_name": "CPU Cooler",
+          "img": "../../../assets/images/vinhImg/Components.9dcdfdc0.png.webp"
+      },
+      {
+          "id": 8,
+          "name": "Solid State Drive",
+          "category_id": 8,
+          "category_name": "Solid State Drive",
+          "img": "../../../assets/images/vinhImg/29834.png"
+      },
+      {
+          "id": 9,
+          "name": "Laptop",
+          "category_id": 9,
+          "category_name": "Laptop",
+          "img": "../../../assets/images/vinhImg/Laptop.9b5aebc3.png.webp"
+      }
+  ],
+  "category": [{
+          "id": 1,
+          "name": "Motherboard"
+      },
+      {
+          "id": 2,
+          "name": "Monitor"
+      },
+      {
+          "id": 3,
+          "name": "PC Case"
+      },
+      {
+          "id": 4,
+          "name": "Graphics Card"
+      },
+      {
+          "id": 5,
+          "name": "Memory"
+      },
+      {
+          "id": 6,
+          "name": "Power Supply"
+      },
+      {
+          "id": 7,
+          "name": "CPU Cooler"
+      },
+      {
+          "id": 8,
+          "name": "Solid State Drive"
+      },
+      {
+          "id": 9,
+          "name": "Laptop"
+      }
+  ],
+  "registerForm": [
+
+  ],
+  "news": [{
+          "id": 1,
+          "name": "GIGABYT out! new M30 Series PCIe 3.0 x4 SSD",
+          "title": "MAY 14 2021 | VIETNAM",
+          "img": "../../../assets/images/cuongimg/n.jpg",
+          "content": "May 14, 2021 - Taipei, Taiwan - GIGABYTE, the world's leading manufacturer of motherboards, graphics cards and hardware solutions, presents its latest NVMe M.2 SSD, PCIe 3.0 interface x4, with 2 capacity options of 1 TB and 512 GB. To enhance heat dissipation and stability, GIGABYTE first introduced a class-leading 2x thick copper PCB to the M30 series SSDs to boost performance in low-temperature conditions. In addition, the M30 series SSD continues to inherit Ultra DurableTM technology based on GIGABYTE's commitment to product quality to become the best choice of high-performance and stable SSD for users..",
+          "content1": "The GIGABYTE AORUS 4K tactical gaming monitor is the ultimate 2-way monitor. This series of monitors not only delivers eSports-class display performance with a refresh rate of up to 144Hz and a 0.5ms response time, but also takes full advantage of the bandwidth of the HDMI 2.1 connector that users can enjoy. fully exploit the new generation of handheld gaming devices. This makes the GIGABYTE AORUS 4K the ideal monitor for multi-platform gaming.",
+          "content2": "From a cost performance perspective, PCIe 3.0 SSDs still dominate even though PCIe 4.0 SSDs have been on the market for a while. The GIGABYTE M30 series SSDs support read speeds of up to 3500 MB s thanks to the NVMe PCIe 3.0 x4 interface with socket 2280 M.2, the NVMe architecture delivers up to 6x faster read/write speeds than traditional SATA SSDs..",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 2,
+          "status": "home",
+          "name": "GIGABYTE AORUS 4K Gaming Monitor Ready for Next Generation Game Console",
+          "title": "APRIL 28 2021 | VIETNAM",
+          "img": "../../../assets/images/cuongimg/n1.jpg",
+          "content": "Worldwide sales of new generation game consoles are still booming with no signs of slowing down. However, to date, pairing these products with compatible high-resolution displays to push the limits of refresh rates to 120Hz and beyond has remained an unpredictable task.... GIGABYTE's newly launched AORUS 4K gaming monitor has brought a new ray of hope to long-awaited gamers. Full HDMI 2.1 compatibility comes with the new AORUS display allowing gamers to unlock higher frame rates and resolutions on next-generation game consoles, like PlayStation 5 and XBOX Series X.",
+          "content1": "The GIGABYTE AORUS 4K tactical gaming monitor is the ultimate 2-way monitor. This series of monitors not only delivers eSports-class display performance with a refresh rate of up to 144Hz and a 0.5ms response time, but also takes full advantage of the bandwidth of the HDMI 2.1 connector that users can enjoy. fully exploit the new generation of handheld gaming devices. This makes the GIGABYTE AORUS 4K the ideal monitor for multi-platform gaming.",
+          "content2": "Thanks to the HDMI 2.1 connection, gamers can fully enjoy the extreme gaming performance supported by high-end graphics cards, such as the RTX 30 series when playing games on PC. When paired with next-generation handheld gaming devices, gamers can play their favorite AAA titles at 120Hz for the first time for ultra-smooth gameplay in stunning 4K resolution. In addition to the superiority in display performance, GIGABYTE has also succeeded in optimizing the gaming experience with AORUS's exclusive tactical features. Gaming enhancements this time around, including Aim Stabilizer Dynamic), Black Equalizer and Active Noise Cancellation, previously available only to PC gamers, are now available for next-generation handheld gaming.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 3,
+          "name": "GIGABYTE partners with SQUARE ENIX to launch Game Outriders",
+          "title": "MAY 14 2021 | VIETNAM",
+          "status": "home",
+          "img": "../../../assets/images/cuongimg/n2.jpg",
+          "content": "Since the release of the game “Outriders”, millions of gamers have purchased the game to experience the new hybrid FPS and RPG genre first-hand. Most of the rest are also very eager to try this new game. GIGABYTE has partnered with SQUARE ENIX to return the love and support of the gaming community for AORUS. From now until stocks last, customers who buy AORUS gaming monitors or motherboards will receive the Outriders game for free. Just register in the blink of an eye and you will immediately receive your favorite game, AORUS brings gamers to experience today's most popular games for free when upgrading their rigs..",
+          "content1": "For the ultimate gaming experience, GIGABYTE AORUS has been providing gamers with the highest-end hardware for years. Thanks to the superior thermal management and power design of AORUS motherboards, AORUS can unleash the full potential of next-generation processors, helping gamers achieve super-high frame rates at the highest settings possible. body. Thanks to PCIe 4.0 support, gamers can game more with high bandwidth and further improved CPU performance. And with the new AORUS 4K Pro gaming monitor, the bright and beautiful panels of 4K high-resolution displays have officially entered the vibrant gaming industry. With the fastest refresh rates and response times available, you'll see how valuable 1 millisecond is, so you can aim with confidence with no worries.",
+          "content2": "Thanks to the HDMI 2.1 connection, gamers can fully enjoy the extreme gaming performance supported by high-end graphics cards, such as the RTX 30 series when playing games on PC. When paired with next-generation handheld gaming devices, gamers can play their favorite AAA titles at 120Hz for the first time for ultra-smooth gameplay in stunning 4K resolution. In addition to the superiority in display performance, GIGABYTE has also succeeded in optimizing the gaming experience with AORUS's exclusive tactical features. Gaming enhancements this time around, including Aim Stabilizer Dynamic), Black Equalizer and Active Noise Cancellation, previously available only to PC gamers, are now available for next-generation handheld gaming.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 4,
+          "name": "GIGABYTE  Z590 AORUS TACHYON breaks overclock record with 11900K",
+          "title": "APRIL 28 | 2021VIETNAM",
+          "status": "home",
+          "img": "../../../assets/images/cuongimg/n3.png",
+          "content": "April 1, 2021 - Taipei, Taiwan - Gigabyte Technology Co., Ltd. - the world's leading manufacturer of motherboards, graphics cards and hardware solutions, announced the Z590 AORUS TACHYON motherboard with a latest 11th generation Intel® Core™ i9 11900K processor and LN2 liquid nitrogen heatsink set the world's top overclocking record at 7314MHz, as well as the Super Pi 1M and Super Pi world records 32M. GIGABYTE Z590 AORUS TACHYON motherboards are packed with functions designed for heavy-duty overclockers, promising higher clocks with easier operation, affirming GIGABYTE's leading role in overclocking. pulse on the Z590 motherboard.",
+          "content1": "With the support of our engineering design and management teams, GIGABYTE's product research and development team is able to transform ideas,” said Jackson Hsu, Director of GIGABYTE Channel Solutions Product Development. The idea of ​​crazy into a product that every customer desires. GIGABYTE Z590 AORUS TACHYON Motherboard is the product of these innovative concepts after long consideration. The product is a testament to the great ability of the GIGABYTE product research and development team to overclock the LN2 with the world records it has created. Of course, we will also use the Z590 AORUS TACHYON for better overclocking performance and we ourselves are eagerly waiting for overclockers around the world to use this motherboard to break the many records. more world continents! ",
+          "content2": "GIGABYTE Z590 AORUS TACHYON was designed by overclockers themselves to break world records. Based on GIGABYTE's standard of durability and stability, GIGABYTE's product research & development team has devoted a lot of resources to making this motherboard more suitable for users' needs. Z590 AORUS TACHYON uses 12+1 direct phase power, each phase can hold up to 100 amps with DrMOS power stages design to provide comprehensive power control. The VRM area is stacked with tantalum capacitors, allowing for lower overall temperatures and more stable overclocking. Furthermore, the latest Reactive Armor solution uses an integrated one-piece metal heatsink to provide a larger heat dissipation range of the MOSFET, while multiple thin fins and grooved surfaces provide large heat dissipation area. 2x more than traditional designs, greatly improving convection and heat conduction by allowing more airflow through the radiator..",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 5,
+          "name": "GIGABYTE  Launches AORUS  FI27Q Tactical Gaming Monitor",
+          "title": "AUGUST 16 2019 | WORLD-WIDE",
+          "status": "home",
+          "img": "../../../assets/images/cuongimg/n4.png",
+          "content": "Taipei, Taiwan, August 16th, 2019 –GIGABYTE TECHNOLOGY Co. Ltd, a leading manufacturer of motherboards and graphics cards, has launched the brand new tactical gaming monitor, AORUS FI27Q, to the 27-inch product lineup. AORUS FI27Q is equipped with a 27-inch flat-screen frameless monitor and an IPS level panel with QHD(2560x1440, 2K) resolution. The fast response time featuring 1ms and165Hz refresh rate monitor tearing and blurring, assuring dynamic frames while gaming. The monitor meets VESA DisplayHDR 400 with 10 bits of image processing and 95% DCI-P3 standards, allowing gamers to embrace the splendid display quality. Along with AMD Radeon FreeSync™ technology which synchronizes the panel's refresh rate and GPU framerate, the monitor offers smooth and judder-free gaming..",
+          "content1": "The AORUS FI27Q shares an identical design with the World’s First Tactical Monitor AORUS AD27QD. Digital RGB LED lighting, the full function stand, thin-bezel design, and built-in power board are the same as the first monitor. The glamorous lighting effects and thin bezel design presents a compact and sharp appearance. The stand allows a great deal of flexibility for use. It spins up to 90 degrees vertically, rotates 20 degrees sideways and -5 to 21 degrees up/down; the height is stretchable up to 130 cm. Two HDMI 2.0 inputs, one display interface and two USB 3.0 ports accommodate your PC with connectivity to spare. Gamers can update the OSD firmware via the OSD commander software for the most advanced gaming experience. With built-in power, no more heavy adaptors are needed, creating a clean gaming battlefield.",
+          "content2": "The joystick on the rear side of the screen provides direct control to OSD. Alternatively, the settings can be adjusted by keyboards and mouse, both ways can be used to control the monitor settings. AORUS FI27Q features anti-blue light and flicker-free technology, allowing gamers to deeply immerse themselves into games without eye blinking. Moreover, with the PiP/PbP display mode, the monitor provides flexibility with multiple usages on the screen. Just a simple click on the screen and gamers can play games and watch the game guide at the same time. Besides the excellence of its hardware, the software features are the key to the greatness of this monitor. Aim Stabilizer, customized crosshair, the exclusive ANC function, all bring extra benefits to gamers.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 6,
+          "name": "GIGABYTE Launches AORUS  Waterforce GeForce®  RTX 2080 SUPERTM Graphics Cards",
+          "title": "MAY 14 2021 | VIETNAM",
+          "img": "../../../assets/images/cuongimg/n5.png",
+          "content": "Taipei, Taiwan, July 26, 2019, GIGABYTE, the world's leading manufacturer of high-end graphics cards, announced the AORUS WATERFORCE line of high-end cards powered by the NVIDIA GeForce® RTX 2080 SUPERTM GPU architecture. GIGABYTE has launched 2 AORUS WATERFORCE graphics cards - AORUS GeForce® RTX 2080 SUPERTM WATERFORCE 8G, AORUS GeForce® RTX 2080 SUPERTM WATERFORCE WB 8G. Both feature top-of-the-line overclocked GPUs certified by GIGABYTE GPU Gauntlet™ GPU grading technology. AORUS provides a comprehensive cooling solution for all the key components on the card. AORUS “protects” not only the GPU but also the VRAM and MOSFET to ensure stable overclocking and longer endurance.Plus, with amazing RGB lighting effects, 7 display outputs, metal backplates, dust and moisture resistant aviation-grade PCB coatings, ultra-durable premium materials, and an extended warranty for for AORUS members, … AORUS WATERFORCE is the optimal choice for those who need a product that both works quietly and has impressive performance.",
+          "content1": "AORUS GeForce® RTX 2080 SUPERTM WATERFORCE 8G With the AORUS GeForce® RTX 2080 SUPERTM WATERFORCE 8G, we bring you a flawless design with the finest details. The heat dissipation performance of AORUS WaterFORCE's excellent heatsink can't be overstated with its RAD heatsink upgraded from 120mm to 240mm. With 2 120mm RGB fans, providing a powerful and stable performance. The RGB lighting system not only illuminates the front, side and back of the graphics card, but also the two 120mm fans of the heatsink. Through AORUS software, bring color alignment across the entire product as well as customize colors according to preferences. The sturdy FEP tube minimizes water loss and has high thermal stability and high pressure resistance greatly increasing the life and durability of the card..",
+          "content2": "About GIGABYTE A global leader in the PC industry, GIGABYTE offers a comprehensive product lineup that aims to “Upgrade Your Life.” With expertise encompassing consumer, business, gaming, and cloud systems, GIGABYTE uses research and innovation to consistently meet user needs. GIGABYTE is renowned for award-winning products including motherboards, graphics cards, laptops, mini PCs, and other PC components and accessories, and has revolutionized the PC industry with patented DualBIOS™ and Ultra Durable™ technologies. As an expert in PC technology, GIGABYTE is poised to extend our scope in business servers and cloud systems with hardware and software solutions that integrate AI and AloT applications to develop the ideal infrastructure for future prospects in 5G.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 7,
+          "name": " GIGABYTE Launches AORUS KD25F  Tactical Monitor for FPS Gamers",
+          "title": "JUNE 17 2019 | VIETNAM",
+          "img": "../../../assets/images/cuongimg/n6.png",
+          "content": "GIGABGYTE, the world's leading manufacturer of motherboards and graphics cards, presents the AORUS KD25F – a tactical monitor specifically for FPS gamers. AORUS KD25 Is a 24.5-inch Full HD monitor (1920 x 1080 resolution, 16: 9 aspect ratio) using TN panel with ultra-fast liquid crystal technology to increase response speed up to 70% so the panel has an amazing 0.5ms response time (MPRT). For gamers who love smoothness and responsiveness, the AORUS KD25 is the perfect choice for FPS gaming with a 240Hz refresh rate. Also, an 8-bit TN panel with 100% sRGB, which is really rare for this type because normally TN panels usually have pretty bad colors. If you want the perfect FPS gaming experience with great colors, then the KD25F is the choice that cannot be ignored.",
+          "content1": "The AORUS KD25F uses the design of the AD27QD - the world's first tactical monitor. Digital LED light, fully functional stand, frameless design and integrated power board. PiP/PbP can put 2 pictures in one screen and you can channel the audio to the source you want, increasing the flexibility of the monitor when used for different needs. KD25F completes both hardware as well as software features such as: Aim Stabilizer, custom reticle, exclusive ANC function. All the features integrated in one screen like that make you the “king” of any battle!",
+          "content2": "Gamers can use the on-screen joystick to control the OSD, but instead, they can use the OSD Sidekick software to adjust the parameters with the keyboard and mouse, allowing the user to see the change. which they can adjust without interrupting the program. AORUS KD25F supports 2 HDMI slots, 1 DP, 2 USB 3.0, microphone and audio jacks. With the live update feature that OSD Sidekick provides, you can always stay up to date with the latest features released by AORUS for your monitor.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 8,
+          "name": "GIGABYTE  Showcases Newes AORUS High-End Gaming Solutions For Maximizing The User  Experience",
+          "title": "May 29 2019 |",
+          "img": "../../../assets/images/cuongimg/n7.jpg",
+          "content": "Taipei, Taiwan, May 28th, 2019 – GIGABYTE TECHNOLOGY Co. Ltd, a leading manufacturer of motherboards and graphics cards, redefines high-end gaming excellence with the newest additions to the AORUS ecosystem at today’s AORUS XTREME POWER showcase. Setting a precedent for performance, AORUS presents its newest high-end gaming products including the AMD X570 flagship motherboard which boasts both a 16-phase digital power design and an advanced thermal design, the AORUS PCIe Gen4 M.2 SSD which uses a full body, copper heatsink design, and the world’s first PCIe 4.0 NVMe SSD with 8TB capacity capable of delivering sequential read speeds over 15,000MB/s. Also making its much-anticipated debut at the AORUS XTREME POWER showcase is the tactical gaming monitor lineup consisting of the FPS genre focused KD25F monitor, MOBA focused curved CV27F monitor, and the world’s first Black Equalizer 2.0 technology enabled, curved CV27Q monitor.",
+          "content1": "“As gaming performance and efficiency continue to improve, multicore processors, high clock rates, and elite storage performance have become the standard for high-end PC configurations. Taking this into consideration we understand that going forward, stable and efficient power designs have never been more important,” said Eddie Lin, Vice President of AORUS. “AORUS delivers not only the most advanced power designs to maximize overclocking performance on multicore processors but also the flagship X570 AORUS motherboard with a 16-phase power design, the PCIe 4.0 based NVMe M.2 SSD with a full body copper heatsink, and the only consumer 8TB SSD that surpasses sequential read speeds of 10,000MB/s. With our high-response rate 27-inch tactical gaming monitors, we’ve got an incredibly diverse gaming lineup.”",
+          "content2": "To fully unlock the potential of the 3rd Gen Ryzen processors built on 7nm, GIGABYTE’s flagship X570 AORUS XTREME uses a 16-phase, all Infineon digital power design with each phase capable of managing up to 70A. The beefed-up power design reduces impedance and improves balance boosting the board’s overall power efficiency, durability, and service lifespan. These aspects are not only essential in maximizing the overclocking potential on the 3rd Gen AMD Ryzen™ processors but also ease the user’s concerns of an unstable power supply or high temperatures causing overclocking failures or diminished performance. The excellent power design also needs to be paired with an advanced thermal design to maximize performance so the X570 AORUS XTREME adds a Fins-Array Stacked Fin Heatsink, Direct Touch Heatpipes, and Nanocarbon Baseplate to optimize cooling to the VRM and chipset while making the PCB extra sturdy. This extra attention to durability makes the motherboard much more suited to taking on the task of unleashing the monstrous performance capabilities of the 3rd Gen AMD Ryzen™ processors and a superior option for an AMD platform build.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 9,
+          "name": "COMPUTEX 2019 - AORUS Showcase Future Computing Performance",
+          "title": "MAY 28 2019 | VIETNAM",
+          "img": "../../../assets/images/cuongimg/n8.jpg",
+          "content": "AORUS - GIGABYTE's premium gaming brand unveils gaming and computing firepower with the latest PC hardware and future innovations at COMPUTEX 2019. This year's theme revolves around AORUS XTREME POWER by redefining. user experience through AORUS's innovative and gaming-oriented designs. We welcome you to join the press event and visit the AORUS VIP booth to see “Xtreme Power” - future performance.",
+          "content1": "At the press conference, AORUS will showcase its latest products and technologies, including next-generation AMD motherboards and the first PCIe 4.0 interface M.2 SSD on the latest AMD platform integrated. combines exclusive features and exceptional performance. After unveiling the world's first tactical gaming monitor earlier this year, AORUS is also launching three new additions to the lineup. Thereby users can choose the perfect tactical gaming monitor for the game genre or playing style that best suits them.",
+          "content2": "Besides the press event, visitors can visit the AORUS VIP Suite at CTBC Financial Park - a showcase where all gaming laptops, hardware components, liquid cooling solutions, products memory products, tactical monitors and gaming peripherals for a better overview of the AORUS ecosystem. Join us and see Xtreme Power at COMPUTEX this year.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 10,
+          "name": "GIGABYTE Moves To PCIe 4.0 With X570 AORUS Motherboards",
+          "title": "MAY 27 2019 | VIETNAM",
+          "img": "../../../assets/images/cuongimg/n9.jpg",
+          "content": "AORUS, a premium gaming brand powered by GIGABYTE, is set to showcase its gaming and computing firepower with its newest PC hardware and next-gen innovation at COMPUTEX 2019. The theme this year revolves around AORUS XTREME POWER by redefining enthusiast experiences through AORUS innovative engineering and gaming-oriented designs. Attendees to this year’s COMPUTEX are welcomed to join AORUS for the press event on May 28 and visit the VIP suite showcase during the show to witness the Xtreme Power for the next-generation performance.",
+          "content1": "At the press event, AORUS is going to announce its newest products and technologies, including the next-gen AMD motherboard and the world’s first PCIe 4.0 interface M.2 SSD on the latest AMD platform packed with exclusive features and unmatched performance for next-level computing. Following the introduction of the world’s first tactical gaming monitor earlier this year, AORUS will also be debuting 3 new additions to the lineup on the same occasion, from which users can choose the perfect tactical gaming monitor for the game genre or playstyle that suits them the most.",
+          "content2": "Besides the press event on May 28, attendees could visit the AORUS VIP Suite at CTBC Financial Park for a complete overview of the expanding AORUS ecosystem, where all the latest gaming laptops, hardware components, liquid cooling solutions, memory products, tactical monitors, and gaming peripherals will be showcased. Join AORUS and witness the Xtreme Power that AORUS has in store for COMPUTEX this year.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 11,
+          "name": "AORUS to Showcase Next-gen Performance at COMPUTEX 2019",
+          "title": "MAY 27 2019 | WORLD-WIDE",
+          "img": "../../../assets/images/cuongimg/n10.jpg",
+          "content": "Taipei, Taiwan, May 27, 2019 - GIGABYTE Technology Co., Ltd., the world's leading manufacturer of motherboards and graphics cards, today announced its latest line of X570 AORUS motherboards to get the most out of your power supply. The power of 3rd Gen AMD Ryzen™ processors is expected. The X570 AORUS is fully compatible with these new processors and ushers in the PCIe® 4.0 era with an extensive range of features. The flagship X570 AORUS XTREME motherboard series is equipped with a 16-phase digital power design; Fish fin heatsink with stacked fins design and Direct Touch Heatpipe technology for the most efficient VRM cooling. Both of these features are aimed at optimizing performance on 3rd Gen AMD Ryzen processors. The X570 AORUS also offers ultrafast connectivity at 2.4GHz with WiFi 6 802.11ax and further improve user experience with the latest version of Q-Flash Plus technology for easy and convenient BIOS updates for users. The motherboards of the X570 AORUS series lead the new era of gaming performance.",
+          "content1": "3rd Gen AMD Ryzen™ processors go beyond previous generation processors with the leap in performance that users expect when upgrading from one processor generation to the next. Leveraging this potential, GIGABYTE integrates at least 14 power phases in the digital power designs of each ATX board in the X570 AORUS series. Different tasks require different power consumption so to calculate this different power consumption GIGABYTE uses PowIRstage or DrMOS and different MOSFETs to ensure more stable current and thermal management as well as better power when the CPU is running at full capacity. The flagship X570 AORUS XTREME motherboard boasts a 16-phase digital power design with each phase capable of managing up to 70A for lower impedance and improved balance. With 16 active phases, the motherboard reduces the load on each phase to generate less heat, improving the overall power efficiency, durability, and lifespan of the motherboard. This provides better overclocking and performance levels and allows users to maximize overclocking on the new 3rd Gen AMD Ryzen processors without having to worry about unstable power or High temperatures cause overclocking errors or performance drops. Fins-Array heatsink with stacked fins, Direct Touch Heatpipes Technology and Nanocarbon Panel provide incredible cooling for VRM and chipset. This perfect combination becomes the most comprehensive cooling solution for 3rd Gen AMD Ryzen™ processors, ideal for building AMD-based machines.",
+          "content2": "The PCIe 4.0 standard has arrived and with it comes higher bandwidth. With 32GB/s bandwidth and expandable bandwidth for graphics cards, PCIe NVMe AIC SSDs and M.2 NVMe SSDs, the new interface far exceeds the bandwidth limitations of previous generations. GIGABYTE has emphasized the potential of the PCIe 4.0 standard and has refined the motherboard design to enhance the performance of peripheral components. Design features such as low-inductance server-grade PCBs and PCIe 4.0 B-CLK ICs maximize PCIe bandwidth for increased data transfer on PCIe storage devices and increased CPU overclocking performance. and memory. Motherboards unlock the hidden performance potential of peripherals, allowing for bright transfer speeds on these devices. As the PCIe 4.0 era arrives, GIGABYTE has also introduced the latest PCIe 4.0 PCIe NVMe M.2 PCIe SSDs and AORUS M.2 PCIe 4.0 expansion cards that enable 4800 MB/s transfer speeds on PCIe SSDs. NVMe M.2. Users can install four NVMe M.2 SSDs at once with the AORUS M.2 PCIe 4.0 expansion card to increase storage capacity, or even build a RAID array via the operating system for storage performance. impression and data integrity, taking full advantage of the new PCIe 4.0 interface.",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      },
+      {
+          "id": 12,
+          "name": "GIGABYTE Announces BIOS Updates for Next Gen Ryzen AMD CPUs",
+          "title": "MAY 17 2019 |",
+          "img": "../../../assets/images/cuongimg/n11.jpg",
+          "content": "Taipei, Taiwan, May 17, 2019, GIGABYTE - the world's leading motherboard and video card manufacturer, has released a BIOS update for AMD X470 and B450 motherboards. Users will get full support from the new generation AMD processors with just a few simple BIOS updates. BIOS updates for AMD X470 and B450 motherboards will be available later this month.",
+          "content1": "Cameron Hsu, Director of GIGABYTE Channel Solutions Product Development, said, “Semiconductor technology keeps advancing, so processors also become more powerful and provide better performance. For users looking to upgrade their system, compatibility between the new generation CPUs and the original platforms is of great concern. Before releasing this new generation of AMD Ryzen™ processors, GIGABYTE wanted to make sure that the motherboards were ready from the start to address this concern. We've done a lot of research and put a lot of time and effort into making sure that our users get the best computing experience.",
+          "content2": "GIGABYTE has posted a BIOS update for GIGABYTE AM4 motherboards on the official website. Users can update the BIOS on GIGABYTE AM4 motherboards to BIOS F40 or higher for full support from AMD Ryzen™ processors. For more detailed information on BIOS updates, please visit the official GIGABYTE website or visit the following links:",
+          "content3": "The GIGABYTE AORUS 4K tactical gaming monitor is available in various sizes from 32 inches, 43 inches to 48 inches for gamers to choose from. For more details on the AORUS 4K monitor series and powerful gaming feature set please visit: https://www.aorus.com/monitors/4k"
+      }
+  ],
+  "blogs": [{
+          "id": 1,
+          "name": "[Member Submission] GIGABYTE Z590I Vision D – Choice for Mini-ITX Content Creation System",
+          "title": "JUNE 24 2021",
+          "img": "../../../assets/images/cuongimg/b.jpg",
+          "content": "Member Submission Gigabyte Z590I Vision D –Choice for Mini-ITX Content Creation System Thanks to Pyr for writing this article and share to AORUS!",
+          "content1": "Member Submission",
+          "content2": "Gigabyte Z590I Vision D – Choice for Mini-ITX Content Creation System",
+          "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+          "content4": "Possessing a white tone like other Vision series products, the Gigabyte Z590I Vision D has the size of the Mini-ITX series, but the rigidity and components of the motherboard will overshadow some of its brothers in the line. ATX. Specifically, the motherboard has a large and hard aluminum alloy heatsink that covers the VRM, SSD and chipset areas.",
+          "content5": "Test system",
+          "content6": "Processor: Intel Core i5-11600K",
+          "content7": "Motherboard: Gigabyte Z590I Vision EASY",
+          "content8": "Heatsink: Gigabyte Aorus Liquid Cooler",
+          "content9": "RAM: Gigabyte DESIGNARE DDR4 3200MHz 64GB (2x32GB)",
+          "content10": "VGA: Gigabyte GeForce RTX 3080 VISION OC 10G",
+          "content11": "Case: Antec Striker",
+          "content12": "Source: Gigabyte P750GM",
+          "content13": "In small systems, the temperature of the system and components is always the top concern. Due to size and space factors, users may not be able to dissipate heat as well as ventilate as well as large systems.",
+          "content14": "During this test, the CPU was pushed to maximum capacity, and the measured temperature fell to about 70 degrees. With Intel's latest 6-core, 12-thread Core i5-11600K processor, this is a pretty cool temperature. For SSDs, the temperature of this important part also only falls between 54 and 64 degrees Celsius, depending on the task. When in sleep mode, the CPU has a stable temperature of 40 degrees Celsius.",
+          "content15": "For content producers, PCIe RAM and bandwidth are important factors, as they often have to compress, export, and store huge volumes of video. Intel Core i5-11600K is enough to serve the needs of personal content production, including professional Vloggers and streamers.",
+          "content16": "As for PCIe, Intel's 11th generation processors themselves have improved quite a bit, thanks to the upgrade to PCIe Gen4. This test section shows that the system has a high PCIe 4.0 bandwidth, about 5445 GFLOPS.",
+          "content17": "Gigabyte DESIGNARE memory is manufactured in a white color that matches its content creator range. The product does not have RGB lights like other RAM pairs for games, but it is still luxurious and minimalist. Testing on AIDA64 shows that Gigabyte Z590I Vision D can bring low latency, about 50nm for its DESIGNARE RAM pair.",
+          "content18": "For content producers, PCIe RAM and bandwidth are important factors, as they often have to compress, export, and store huge volumes of video. Intel Core i5-11600K is enough to serve the needs of personal content production, including professional Vloggers and streamers.The Gigabyte Z590I Vision D is a quality addition to the Vision product range for content creators. The motherboard has a wide variety of connection options which is one of the great advantages of the product, combined with a beautiful, neat design. The performance of PCIe makes it easy for users to comfortably equip high-speed VGA and NVMe SSDs, combined with Thunderbolt 4 and USB 3.2 Gen 2x2 ports for all-around storage.",
+          "img1": "assets/images/cuongimg/de1.jpg",
+          "img2": "assets/images/cuongimg/d2.jpg",
+          "img3": "assets/images/cuongimg/d3.jpg"
+      },
+      {
+          "id": 2,
+          "name": "[Member Submission] GIGABYTE RTX 3070 Eagle OC 8G Review",
+          "title": "MAY 21 2021",
+          "img": "../../../assets/images/cuongimg/b1.jpg",
+          "content": "Member Submission GIGABYTE RTX 3070 Eagle OC 8G Review Thanks to Pyr for writing this article and share to AORUS!",
+          "content1": "Member Submission",
+          "content2": "GIGABYTE RTX 3070 Eagle OC 8G Review",
+          "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+          "content4": "The Gigabyte GeForce RTX 3070 Eagle OC 8G has a large 3-fan heatsink, similar to the RTX 3090 Eagle OC 24G, but a bit more compact. Of all the Gigabyte VGAs in the Eagle series, the RTX 3070 is the most minimalist and beautiful. Of course, due to the nature of the price segment, VGA has RGB lighting to a minimum.",
+          "content5": "Test system",
+          "content6": "Gigabyte GeForce RTX 3070 Eagle OC 8G",
+          "content7": "CUDA core: 5888",
+          "content8": "Tensor core: 184",
+          "content9": "Multiplier RT: 46",
+          "content10": "Texture pouring unit: 184",
+          "content11": "ROPs: 96",
+          "content12": "GPU Acceleration: 1815 MHz",
+          "content13": "One of the reasons that makes the Gigabyte GeForce RTX 3070 Eagle OC 8G the most worthwhile choice among the 3070 VGAs is the operating temperature. When working at 100% capacity, the highest temperature that VGA reaches is 72 degrees Celsius (open case and no external fan). This is achieved thanks to the new Ampere architecture that delivers impressive GPU performance, on par with the RTX 2080 Ti but consumes only 272W at peak performance (compared to 340W on the elder).",
+          "content14": "This is the ultimate test that every VGA wants to challenge. Of course, the hardware specifications do not allow both RTX 3070 and RTX 2080 Ti to achieve fps above 60 in all titles with the highest graphics settings, but the achieved numbers still guarantee the game. playable (over 30 FPS). If necessary, you can lower the graphics settings slightly to achieve high frame rates, thereby ensuring the best possible game experience. The test part in the article still has the highest level of graphics set up for readers to easily visualize..",
+          "content15": "At 2K resolution, the RTX 3070 can generally handle most games well at frame rates above 60. Although only slightly better than the RTX 2080 Ti, but at a much lower price, It is not difficult for gamers to make a choice. Besides Metro Exodus, the Gigabyte RTX 3070 Eagle OC 8G can handle games well at 2K resolution when ray tracing is enabled. All tests are set to the highest graphics level.",
+          "content16": "Experience the game on 1080p resolution is really too easy with the RTX 3070. In most tests, the Gigabyte GeForce RTX 3070 Eagle OC showed comparable performance to the RTX 2080 Ti. For gamers who own the RTX 3070 Eagle OC 8G, upgrading to a monitor with a higher scan rate is necessary. At the highest setting, most games hit approximately 100 FPS (DLSS 2.0 enabled or disabled)..",
+          "content17": "Nvidia GeForce RTX 3070 is generally one of the most sought after products in recent times. The power of VGA is almost equivalent to the RTX 2080 Ti of the previous generation, adding many new features, and especially DLSS 2.0. Belonging to the popular product group, the Gigabyte Nvidia RTX 3070 Eagle OC does not have a too aggressive design, many RGB lights, but in return the performance and temperature of VGA is not inferior to any product, if not more. is in the best group.",
+          "content18": "Gigabyte GeForce RTX 3070 Eagle OC 8G currently has a retail price of approximately 17 million VND. This is almost the most attractive VGA RTX 3070 today. With game performance equivalent to, or even slightly better than, the RTX 2080 Ti in some games, and especially well combined with DLSS 2.0, gamers looking for a VGA to fight 2K games will find it hard to resist the attraction of the game. Gigabyte RTX 3070 Eagle OC 8G. Cool operation and not too noisy are also other criteria for gamers to pay attention to.",
+          "img1": "assets/images/cuongimg/de4.jpg",
+          "img2": "assets/images/cuongimg/d5.jpg",
+          "img3": "assets/images/cuongimg/d6.jpg"
+      },
+      {
+          "id": 3,
+          "name": "[Member Submission] Gigabyte enters the PSU market with the P750GM and P550B",
+          "title": "MAY 14 2021",
+          "img": "assets/images/cuongimg/b2.jpg",
+          "content": "Member Submission GIGABYTE RTX 3070 Eagle OC 8G Review Thanks to Pyr for writing this article and share to AORUS!",
+          "content1": "Member Submission",
+          "content2": "Gigabyte enters the PSU market with the P750GM and P550B",
+          "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+          "content4": "Gigabyte is a major player in the field of computer components, especially in motherboards and graphics cards. In recent years, the company has joined many other groups of accessories such as monitors, hard drives, RAM and PSU - power.",
+          "content5": "Test system",
+          "content6": "Gigabyte GeForce RTX 3070 Eagle OC 8G",
+          "content7": "CUDA core: 5888",
+          "content8": "Tensor core: 184",
+          "content9": "Multiplier RT: 46",
+          "content10": "Texture pouring unit: 184",
+          "content11": "ROPs: 96",
+          "content12": "GPU Acceleration: 1815 MHz",
+          "content13": "Basically, the Gigabyte P750GM is equipped with a smart fan, a Japanese capacitor, a powerful +12V single wire, and OVP/OPP/SCP/UVP/OCP/OTP protection features. The fan will automatically adjust its speed depending on the system load. You will get high stability thanks to high quality Japanese capacitors and +12V single wire. With these basic features, you can make sure your system always runs smoothly.",
+          "content14": "The capacitors inside the power source are manufactured in Japan, to provide high performance and long-term durability. The power fan automatically adjusts to power usage, and stops when the system is idle or under 20% load. The use time of the Hydraulic Bearing fans is long, and also quite durable.",
+          "content15": "In addition to having less power than the P750GM, Gigabyte uses the same high-quality components as Japanese capacitors, OVP/OPP/SCP/UVP/OCP/OTP protection modes, and a single 12V load-bearing wire. well, to ensure stable operation of the system. P550B is also not designed as modular (removing cables) like its elder. Quick test on a system using Intel Core i5-10600K with basic methods, the overall performance of the source is also quite impressive, stable operation at 100% load, reaching about 88% of rated capacity. Single 12V wire always reaches above 12V, providing safety for the system.",
+          "content16": "Nvidia's new VGAs are going to use a lot of power, and you'll need a stable, well-loaded PSU to pull that system. Specifically, the RTX 3090 will consume 350W and the RTX 3080 will use 320W. For a system using the RTX 3090 requires at least 750W power, 3 8-pin PCIe headers. However, in my opinion, the Gigabyte P750GM source is most suitable for machines with RTX 3080 and below. The product has a total of 5 8 pins, so make sure it can be fully connected. If you are looking for a power supply to upgrade, then the Gigabyte P750GM will be the right product, committed to carrying out the current terrible rigs.",
+          "content17": "To test the quality of the source, Thanh Nien Game uses a method to compare power efficiency and energy usage in idle and 100% load mode. This helps users get a basic idea of the stability and load capacity of the Gigabyte P750GM source.",
+          "content18": "At the heart of this article is the Gigabyte P750GM, which is equipped with high-quality 80 PLUS Gold certified components. This will be the ideal companion with high-end computer systems, even when using 10th generation Intel Core i9 processors and Nvidia VGAs from RTX 3080 and below.",
+          "img1": "assets/images/cuongimg/b2.jpg",
+          "img2": "assets/images/cuongimg/d8.jpg",
+          "img3": "assets/images/cuongimg/d9.jpg"
+      },
+      {
+          "id": 4,
+          "name": "Gigabyte enters the PSU market with the P750GM and P550B",
+          "title": "OCTOBER 7 2020",
+          "img": "../../../assets/images/cuongimg/b3.jpg",
+          "content": "Member Submission Gigabyte Z490 Aorus Master – Ideal Companion of Intel Core i9-10900K Thanks to Pyr for making this article and share to AORUS!",
+          "content1": "Member Submission",
+          "content2": "Gigabyte enters the PSU market with the P750GM and P550B",
+          "content3": "Thanks to Pyr for writing this article and share to AORUS!",
+          "content4": "Gigabyte is a major player in the field of computer components, especially in motherboards and graphics cards. In recent years, the company has joined many other groups of accessories such as monitors, hard drives, RAM and PSU - power.",
+          "content5": "Test system",
+          "content6": "Gigabyte GeForce RTX 3070 Eagle OC 8G",
+          "content7": "CUDA core: 5888",
+          "content8": "Tensor core: 184",
+          "content9": "Multiplier RT: 46",
+          "content10": "Texture pouring unit: 184",
+          "content11": "ROPs: 96",
+          "content12": "GPU Acceleration: 1815 MHz",
+          "content13": "Basically, the Gigabyte P750GM is equipped with a smart fan, a Japanese capacitor, a powerful +12V single wire, and OVP/OPP/SCP/UVP/OCP/OTP protection features. The fan will automatically adjust its speed depending on the system load. You will get high stability thanks to high quality Japanese capacitors and +12V single wire. With these basic features, you can make sure your system always runs smoothly.",
+          "content14": "The capacitors inside the power source are manufactured in Japan, to provide high performance and long-term durability. The power fan automatically adjusts to power usage, and stops when the system is idle or under 20% load. The use time of the Hydraulic Bearing fans is long, and also quite durable.",
+          "content15": "In addition to having less power than the P750GM, Gigabyte uses the same high-quality components as Japanese capacitors, OVP/OPP/SCP/UVP/OCP/OTP protection modes, and a single 12V load-bearing wire. well, to ensure stable operation of the system. P550B is also not designed as modular (removing cables) like its elder. Quick test on a system using Intel Core i5-10600K with basic methods, the overall performance of the source is also quite impressive, stable operation at 100% load, reaching about 88% of rated capacity. Single 12V wire always reaches above 12V, providing safety for the system.",
+          "content16": "Nvidia's new VGAs are going to use a lot of power, and you'll need a stable, well-loaded PSU to pull that system. Specifically, the RTX 3090 will consume 350W and the RTX 3080 will use 320W. For a system using the RTX 3090 requires at least 750W power, 3 8-pin PCIe headers. However, in my opinion, the Gigabyte P750GM source is most suitable for machines with RTX 3080 and below. The product has a total of 5 8 pins, so make sure it can be fully connected. If you are looking for a power supply to upgrade, then the Gigabyte P750GM will be the right product, committed to carrying out the current terrible rigs.",
+          "content17": "To test the quality of the source, Thanh Nien Game uses a method to compare power efficiency and energy usage in idle and 100% load mode. This helps users get a basic idea of the stability and load capacity of the Gigabyte P750GM source.",
+          "content18": "At the heart of this article is the Gigabyte P750GM, which is equipped with high-quality 80 PLUS Gold certified components. This will be the ideal companion with high-end computer systems, even when using 10th generation Intel Core i9 processors and Nvidia VGAs from RTX 3080 and below.",
+          "img1": "assets/images/cuongimg/b2.jpg",
+          "img2": "assets/images/cuongimg/d8.jpg",
+          "img3": "assets/images/cuongimg/d9.jpg"
+      }
+  ],
+  "product": [{
+          "id": 1,
+          "category_id": 1,
+          "category_name": "Motherboard",
+          "gen": "12th",
+          "name": "B660M AORUS ELITE AX DDR4",
+          "imgProduct": "assets/images/vinhImg/detail/mainboard/mb1.webp",
+          "price": 1260,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide1/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide1/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide1/slide3.png"
+              },
+              {
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide1/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "LGA1700 socket: Support for 12th Generation Intel, Core, Pentium, Gold and Celeron  Processors*",
+              "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+          ],
+          "features": [
+              "LGA1700 socket: Support for 12th Generation Intel, Core, Pentium, Gold and Celeron  Processors*",
+              "Support for Windows 11 64-bit",
+              "Norton  Internet Security (OEM version)",
+              "Intel B660 Express Chipset",
+              "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies",
+              "Realtek 2.5GbE LAN chip (2.5 Gbps/1 Gbps/100 Mbps)",
+              "1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz"
+          ],
+          "specifying": [{
+                  "name": "CPU",
+                  "data": "LGA1700 socket: Support for 12th Generation Intel, Core, Pentium, Gold and Celeron  Processors*"
+              },
+              {
+                  "name": "Operating System",
+                  "data": "Support for Windows 11 64-bit"
+              },
+              {
+                  "name": "Bundled Software",
+                  "data": "Norton Internet Security (OEM version)"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "Intel B660 Express Chipset"
+              },
+              {
+                  "name": "Multi-Graphics Technology",
+                  "data": "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+              },
+              {
+                  "name": "LAN",
+                  "data": "Realtek 2.5GbE LAN chip (2.5 Gbps/1 Gbps/100 Mbps)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "Realtek Audio CODEC"
+              },
+              {
+                  "name": "Onboard Graphics",
+                  "data": "1 x HDMI port, supporting a maximum resolution of 4096x2160@60 Hz"
+              },
+              {
+                  "name": "Memory",
+                  "data": "4 x DDR4 DIMM sockets supporting up to 128 GB (32 GB single DIMM capacity) of system memory"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "Micro ATX Form Factor; 24.4cm x 24.4cm"
+              }
+          ]
+      },
+      {
+          "id": 2,
+          "category_id": 1,
+          "category_name": "Motherboard",
+          "gen": "12th",
+          "name": "Z690 AORUS XTREME WATERFORCE(1.0)",
+          "imgProduct": "assets/images/vinhImg/detail/mainboard/mb2.webp",
+          "price": 960,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide2/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide2/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide2/slide3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide2/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Intel® WIFI 6E 802.11ax 2T2R & BT 5 with 2X AORUS Antenna",
+              "Support 12th Gen. Intel® Core™ Processors"
+          ],
+          "features": [
+              "Intel® WIFI 6E 802.11ax 2T2R & BT 5 with 2X AORUS Antenna",
+              "Q-FLASH Plus Onboard Button",
+              "ESSential HEX Audio Card",
+              "AQUANTIA® 10 GbE BASE-T LAN",
+              "Support 12th Gen. Intel® Core™ Processors",
+              "4*PCIe 4.0 M.2 Connectors",
+              "Front USB 3.2 Gen 2X2 Type-C®"
+          ],
+          "specifying": [{
+                  "name": "CPU",
+                  "data": "LGA1700 socket: Support for 12th Gen Intel Core™, Pentium® Gold and Celeron®"
+              },
+              {
+                  "name": "Operating System",
+                  "data": "Support for Windows 11 64-bit"
+              },
+              {
+                  "name": "Bundled Software",
+                  "data": "Norton Internet Security (OEM version)"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "Intel Z690 Express Chipset"
+              },
+              {
+                  "name": "Multi-Graphics Technology",
+                  "data": "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+              },
+              {
+                  "name": "LAN",
+                  "data": "Marvell® AQtion AQC113C 10GbE LAN chip"
+              },
+              {
+                  "name": "Audio",
+                  "data": "1 ESS ES9280AC DAC chip + 2 ESS ES9080 chips"
+              },
+              {
+                  "name": "Onboard Graphics",
+                  "data": "2 x Intel® Thunderbolt™ 4 connectors (USB Type-C® ports), supporting DisplayPort and Thunderbolt™ video outputs and a maximum resolution of 5120x2880@60 Hz with 24 bpp (via single display output)"
+              },
+              {
+                  "name": "Memory",
+                  "data": "4 x DDR5 DIMM sockets supporting up to 128 GB (32 GB single DIMM capacity) of system memory"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "E-ATX Form Factor; 30.5cm x 28.5cm"
+              }
+          ]
+      },
+      {
+          "id": 3,
+          "category_id": 1,
+          "category_name": "Motherboard",
+          "status": "home",
+          "gen": "11th",
+          "name": "Z590 AORUS MASTER(1.0)",
+          "imgProduct": "assets/images/vinhImg/detail/mainboard/mb3.webp",
+          "price": 960,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide3/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide3/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide3/slide3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide3/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Intel® WiFi 6E 802.11ax 2T2R & BT 5 with AORUS Antenna",
+              "Dual Channel DDR4, 4 DIMMs with Ultra Durable Memory Armor"
+          ],
+          "features": [
+              "Intel® WiFi 6E 802.11ax 2T2R & BT 5 with AORUS Antenna",
+              "Rear USB 3.2 Gen2x2 Type-C®",
+              "AQUANTIA 10GbE",
+              "Advanced Thermal Design",
+              "True 18+1 Phases Digital Power Design",
+              "Supports 11th Gen. Intel® Core™ Processors",
+              "Dual Channel DDR4, 4 DIMMs with Ultra Durable Memory Armor",
+              "Front USB3.2 Gen2 Type-C® for Connecting Devices"
+          ],
+          "specifying": [{
+                  "name": "CPU",
+                  "data": "11th Generation Intel® Core™ i9 processors / Intel® Core™ i7 processors / Intel® Core™ i5 processors"
+              },
+              {
+                  "name": "Operating System",
+                  "data": "Support for Windows 10 64-bit"
+              },
+              {
+                  "name": "Bundled Software",
+                  "data": "Norton® Internet Security (OEM version)"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "Intel Z590 Express Chipset"
+              },
+              {
+                  "name": "Multi-Graphics Technology",
+                  "data": "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+              },
+              {
+                  "name": "LAN",
+                  "data": "Aquantia 10GbE LAN chip (10 Gbit/5 Gbit/2.5 Gbit/1 Gbit/100 Mbit)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "Realtek® ALC1220-VB codec"
+              },
+              {
+                  "name": "Onboard Graphics",
+                  "data": "Integrated Graphics Processor-Intel® HD Graphics"
+              },
+              {
+                  "name": "Memory",
+                  "data": "11th Generation Intel® Core™ i9/i7/i5 processors:"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "ATX Form Factor; 30.5cm x 24.4cm"
+              }
+          ]
+      },
+      {
+          "id": 4,
+          "category_id": 1,
+          "category_name": "Motherboard",
+          "gen": "12th",
+          "name": "B660 AORUS MASTER DDR4(1.0)",
+          "imgProduct": "assets/images/vinhImg/detail/mainboard/mb4.webp",
+          "price": 1020,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide4/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide4/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide4/slide3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/mainboard/slide4/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Support 12th Gen Intel Core™ Processor",
+              "Dual Channel DDR4, 4 DIMMs"
+          ],
+          "features": [
+              "Rear USB 3.2 Gen 2x2 Type-C®",
+              "Fully Covered MOSFET Heatsinks​",
+              "3* M.2 Ultra Storage Performance Connectors",
+              "Front USB3.2 Gen 2 Type-C® for Connecting devices",
+              "Support 12th Gen Intel Core™ Processors",
+              "Dual Channel DDR4, 4 DIMMs",
+              "Ultra Durable PCIe Armor​"
+          ],
+          "specifying": [{
+                  "name": "CPU",
+                  "data": "LGA1700 socket: Support for 12th Gen Intel Core™, Pentium® Gold and Celeron®"
+              },
+              {
+                  "name": "Operating System",
+                  "data": "Support for Windows 11 64-bit"
+              },
+              {
+                  "name": "Bundled Software",
+                  "data": "Norton Internet Security (OEM version)"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "Intel B660 Express Chipset"
+              },
+              {
+                  "name": "Multi-Graphics Technology",
+                  "data": "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+              },
+              {
+                  "name": "LAN",
+                  "data": "Intel® 2.5GbE LAN chip (2.5 Gbps/1 Gbps/100 Mbps)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "Realtek® ALC1220-VB CODEC"
+              },
+              {
+                  "name": "Onboard Graphics",
+                  "data": "1 x DisplayPort, supporting a maximum resolution of 4096x2304@60 Hz"
+              },
+              {
+                  "name": "Memory",
+                  "data": "4 x DDR4 DIMM sockets supporting up to 128 GB (32 GB single DIMM capacity) of system memory"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "ATX Form Factor; 30.5cm x 24.4cm"
+              }
+          ]
+      },
+      {
+          "id": 5,
+          "category_id": 2,
+          "category_name": "Monitor",
+          "refresh_rate": 144,
+          "name": "AORUS FV43U Gaming Monitor",
+          "imgProduct": "assets/images/vinhImg/detail/monitor/AORUS FV43U Gaming Monitor.webp",
+          "price": 730,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/monitor/slide1/slide1.jpg"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/monitor/slide1/slide2.jpg"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/monitor/slide1/slide3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/monitor/slide1/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Quantum Dot technology, AORUS FV43U is able to offer a more vibrant display with a wider color gamut and greater brightness and HDR effects.",
+              "43” VA panel (3840 x 2160 resolution) in a 16:9 aspect ratio with a 144Hz refresh rate for fluid gameplays."
+          ],
+          "features": [
+              "QD DISPLAy Vibrant and amazing display of colors",
+              "UHD 4K3,840 x 2,160 pixels",
+              "HDMI2.1 VRR and ALLM",
+              "97% DCI-P3",
+              "1000 nits Brightness",
+              "SPACE AUDIO True-to-life sound experience",
+              "Quantum Dot technology, AORUS FV43U is able to offer a more vibrant display with a wider color gamut and greater brightness and HDR effects."
+          ],
+          "specifying": [{
+                  "name": "Panel Size (diagonal)",
+                  "data": "43inch VA, QD Display"
+              },
+              {
+                  "name": "HDR",
+                  "data": "VESA Display HDR1000"
+              },
+              {
+                  "name": "Refresh Rate",
+                  "data": "144Hz and 120Hz for Console Game*"
+              },
+              {
+                  "name": "Response Time",
+                  "data": "1ms (MPRT)"
+              },
+              {
+                  "name": "Display Colors",
+                  "data": "10bits (8bits+FRC)"
+              },
+              {
+                  "name": "Display Viewing Area",
+                  "data": "941.18 x 529.42 (mm)"
+              },
+              {
+                  "name": "Speaker",
+                  "data": "12W x2"
+              },
+              {
+                  "name": "Color Saturation",
+                  "data": "97% DCI-P3/ 150% sRGB/ 99% AdobeRGB"
+              },
+              {
+                  "name": "True Resolution",
+                  "data": "3840 x 2160 (UHD)"
+              },
+              {
+                  "name": "Pixel Pitch",
+                  "data": "0.2451*0.2451"
+              },
+              {
+                  "name": "AC Input Max",
+                  "data": "280W"
+              }
+          ]
+      },
+      {
+          "id": 6,
+          "category_id": 2,
+          "category_name": "Monitor",
+          "refresh_rate": 165,
+          "name": "AORUS CV27Q Gaming Monitor",
+          "imgProduct": "assets/images/vinhImg/detail/monitor/GIGABYTE AORUS CV27Q Gaming Monitor.webp",
+          "price": 260,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/monitor/slide2/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/monitor/slide2/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/monitor/slide2/slide3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/monitor/slide2/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "QHD WITH 165HZ SUPPORTS ADAPTIVE-SYNC (FREESYNC PREMIUM PRO) TECHNOLOGY",
+              "90% DCI-P3 FEEL THE TRUE COLORS"
+          ],
+          "features": [
+              "QHD WITH 165HZ SUPPORTS ADAPTIVE-SYNC (FREESYNC PREMIUM PRO) TECHNOLOGY",
+              "90% DCI-P3 FEEL THE TRUE COLORS",
+              "1MS RESPONSE TIME WITHOUT ANY GHOSTING EFFECTS",
+              "NATIVE 1500R GET THE IMMERSIVE FEEL",
+              "HDR EXPAND THE COLOR RANGE",
+              "BUILT-IN DIGITAL LED CREATE YOUR OWN GAMING AMBIENCE WITH RGB FUSION 2.0",
+              "ERGONOMIC DESIGN EASY TO GET THE PERFECT VIEWING ANGLE"
+          ],
+          "specifying": [{
+                  "name": "Panel Size (diagonal)",
+                  "data": "27inch"
+              },
+              {
+                  "name": "HDR",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Refresh Rate",
+                  "data": "165Hz"
+              },
+              {
+                  "name": "Response Time",
+                  "data": "1ms (MPRT)"
+              },
+              {
+                  "name": "Display Colors",
+                  "data": "16.7M colors"
+              },
+              {
+                  "name": "Display Viewing Area",
+                  "data": "596.736 x 335.664 (mm)"
+              },
+              {
+                  "name": "Speaker",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Color Saturation",
+                  "data": "90% DCI-P3"
+              },
+              {
+                  "name": "True Resolution",
+                  "data": "2560 x 1440 (QHD)"
+              },
+              {
+                  "name": "Pixel Pitch",
+                  "data": "0.2331 (H) x 0.2331 (V) (mm)"
+              },
+              {
+                  "name": "AC Input Max",
+                  "data": "80W"
+              }
+          ]
+      },
+      {
+          "id": 7,
+          "category_id": 2,
+          "category_name": "Monitor",
+          "refresh_rate": 144,
+          "status": "home",
+          "name": "AORUS FI32U Gaming Monitor",
+          "imgProduct": "assets/images/vinhImg/detail/monitor/GIGABYTE AORUS FI32U Gaming Monitor.webp",
+          "price": 590,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/monitor/slide3/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/monitor/slide3/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/monitor/slide3/slide3.jpg"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/monitor/slide3/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "The 4K Experience With more higher resolution game content have been created in order to have the best visual experience, it is time for you to invest a 4K display",
+              "UHD 4K 3,840 x 2,160 pixels"
+          ],
+          "features": [
+              "SS IPS with 1ms GTG",
+              "31.5” UHD panel (3840 x 2160 resolution) in a 16:9 aspect ratio with a 144Hz refresh rate",
+              "The newest HDMI 2.1 can improve your gaming experience by providing a higher bandwidth of 4K@144Hz",
+              "10-bit with 90% DCI P3",
+              "High Dynamic Range (HDR) expands the range of light of a display",
+              "The embedded ESS SABRE chip provides a pure yet powerful sound, resonating classical orchestral sounds or blasts in your virtual warzone",
+              "FreeSync™ Premium Pro"
+          ],
+          "specifying": [{
+                  "name": "Panel Size (diagonal)",
+                  "data": "31.5 inch SS IPS"
+              },
+              {
+                  "name": "HDR",
+                  "data": "VESA Display HDR400"
+              },
+              {
+                  "name": "Refresh Rate",
+                  "data": "144Hz and 120Hz for Console Game*"
+              },
+              {
+                  "name": "Response Time",
+                  "data": "1ms GTG / 1ms MPRT"
+              },
+              {
+                  "name": "Display Colors",
+                  "data": "10 bits (8 bits + FRC)"
+              },
+              {
+                  "name": "Display Viewing Area",
+                  "data": "697.3056 x 392.2344 (mm)"
+              },
+              {
+                  "name": "Speaker",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Color Saturation",
+                  "data": "90% DCI-P3/ 123% sRGB"
+              },
+              {
+                  "name": "True Resolution",
+                  "data": "3840 x 2160 (UHD)"
+              },
+              {
+                  "name": "Pixel Pitch",
+                  "data": "0.181 (H) x 0.181 (V) (mm)"
+              },
+              {
+                  "name": "AC Input Max",
+                  "data": "120W"
+              }
+          ]
+      },
+      {
+          "id": 8,
+          "category_id": 2,
+          "refresh_rate": 120,
+          "category_name": "Monitor",
+          "name": "AORUS FO48U Gaming Monitor",
+          "imgProduct": "assets/images/vinhImg/detail/monitor/GIGABYTE AORUS FO48U Gaming Monitor.webp",
+          "price": 1040,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/monitor/slide4/slide3.jpg"
+              },
+              {
+                  "id": 5,
+                  "img": "assets/images/vinhImg/detail/monitor/slide4/slide5.jpg"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/monitor/slide4/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/monitor/slide4/slide1.jpg"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/monitor/slide4/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "The 4K Experience With more higher resolution game content have been created in order to have the best visual experience, it is time for you to invest a 4K display",
+              "47.5” UHD panel (3840 x 2160 resolution)"
+          ],
+          "features": [
+              "Fast refresh rate and VRR support.",
+              "47.5” UHD panel (3840 x 2160 resolution) in a 16:9 aspect ratio with a 144Hz refresh rate",
+              "HDMI 2.1 support.",
+              "High Dynamic Range (HDR) expands the range of light of a display",
+              "Very good HDR color gamut",
+              "Inky blacks and perfect black uniformity"
+          ],
+          "specifying": [{
+                  "name": "Panel Size (diagonal)",
+                  "data": "347.5 inch OLED"
+              },
+              {
+                  "name": "HDR",
+                  "data": " Yes ( HDR10 / HLG )"
+              },
+              {
+                  "name": "Refresh Rate",
+                  "data": "120Hz"
+              },
+              {
+                  "name": "Response Time",
+                  "data": "1ms GTG"
+              },
+              {
+                  "name": "Display Colors",
+                  "data": "10 bits"
+              },
+              {
+                  "name": "Display Viewing Area",
+                  "data": "1052.16 x 591.84 (mm)"
+              },
+              {
+                  "name": "Speaker",
+                  "data": "15W x2 + 20W x1"
+              },
+              {
+                  "name": "Color Saturation",
+                  "data": "98% DCI-P3 / 130% sRGB"
+              },
+              {
+                  "name": "True Resolution",
+                  "data": "3840 x 2160 (UHD)"
+              },
+              {
+                  "name": "Pixel Pitch",
+                  "data": "0.274(H) x 0.274(V) (mm)"
+              },
+              {
+                  "name": "AC Input Max",
+                  "data": "325W"
+              }
+          ]
+      },
+      {
+          "id": 9,
+          "category_id": 3,
+          "category_name": "PC Case",
+          "gpu": "intel",
+          "ram": 32,
+          "name": "AORUS MODEL X 12th",
+          "imgProduct": "assets/images/vinhImg/detail/pcCase/anh1.webp",
+          "price": 1580,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide1/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide1/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide1/slide3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide1/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Intel® Core™ i9-12900K 8+8 Cores",
+              "GeForce® RTX™ 3080 Ampere GDDR6X 10GB"
+          ],
+          "features": [
+              "Intel® Core™ i9-12900K 8+8 Cores",
+              "GeForce® RTX™ 3080 Ampere GDDR6X 10GB",
+              "MEMORY 32GB DDR5 XMP 5200MHz",
+              "Hi-Res Audio certified, meaning that the product is capable of reproducing frequencies up to 40kHz",
+              "Recreates an authentic, spatially accurate 3D audio experience for gaming over any headphones or speakers.",
+              "The AORUS MODEL X provides full lighting effect and customization settings with outstanding aesthetics, enabling the enthusiasts to build a gaming PC differently."
+          ],
+          "specifying": [{
+                  "name": "Operating System",
+                  "data": "No OS"
+              },
+              {
+                  "name": "Processor",
+                  "data": "Intel® Core™ i9-12900K Processor"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "Intel® Z690 Express Chipset"
+              },
+              {
+                  "name": "Graphics",
+                  "data": "NVIDIA® GeForce RTX 3080 10GB : DisplayPort 1.4a *3, HDMI 2.1 *2"
+              },
+              {
+                  "name": "Memory",
+                  "data": "32GB DDR5-5200(XMP)"
+              },
+              {
+                  "name": "SATA",
+                  "data": "6 x SATA 6.0Gb/s ports"
+              },
+              {
+                  "name": "Storage",
+                  "data": "2TB M.2 PCIe"
+              },
+              {
+                  "name": "LAN",
+                  "data": "1 x 10GbE (Compliant with 10/100/1000/2500Mbps)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "Support 2/4/5/7.1 Channel, DTS:X"
+              },
+              {
+                  "name": "Cooling Solution",
+                  "data": "360mm Liquid Cooler"
+              },
+              {
+                  "name": "Network and communication",
+                  "data": "Intel Wi-Fi6E (802.11ax) with 2T2R Antenna, BLUETOOTH 5.2"
+              },
+              {
+                  "name": "Power Supply",
+                  "data": "850W 80 PLUS (GOLD)"
+              }
+          ]
+      },
+      {
+          "id": 10,
+          "category_id": 3,
+          "category_name": "PC Case",
+          "gpu": "intel",
+          "ram": 64,
+          "name": "AORUS MODEL S 12th",
+          "imgProduct": "assets/images/vinhImg/detail/pcCase/anh2s12th.webp",
+          "price": 940,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide2/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide2/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide2/slide3.png"
+              }
+          ],
+          "bestFeatures": [
+              "With the hyper-efficient cooling system, the AORUS MODEL S delivers extremely smooth frame rates while playing AAA titles, and keeps the noise at a rather low level.",
+              "The i7-12700K processor offer an unique combination of Performance and Efficient-cores"
+          ],
+          "features": [
+              "The proprietary hardware built exclusively for the limited volume inside the Model S creates the maximum cooling space",
+              "Hyper-Efficient Vertical Airflow",
+              "With the hyper-efficient cooling system, the AORUS MODEL S delivers extremely smooth frame rates while playing AAA titles, and keeps the noise at a rather low level.",
+              "The i7-12700K processor offer an unique combination of Performance and Efficient-cores",
+              "Intel® Wi-Fi 6E 802.11ax + BT 5 Module",
+              "The all-new NVIDIA Ampere architecture delivers the ultimate play, featuring advanced 2nd generation Ray Tracing Cores",
+              "The elements of AORUS are featured in a new fashion of integration, reconstruction, compression and splicing."
+          ],
+          "specifying": [{
+                  "name": "Operating System",
+                  "data": "No OS"
+              },
+              {
+                  "name": "Processor",
+                  "data": "Intel® Core™ i7-12700K Processor"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "Intel® Z690 Express Chipset"
+              },
+              {
+                  "name": "Graphics",
+                  "data": "NVIDIA® GeForce  RTX 3070 8GB : DisplayPort 1.4a *2, HDMI 2.1 *2"
+              },
+              {
+                  "name": "Memory",
+                  "data": "64GB DDR5 4800MHz"
+              },
+              {
+                  "name": "SATA",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Storage",
+                  "data": "2TB M.2 PCIe 4.0 SSD *2"
+              },
+              {
+                  "name": "LAN",
+                  "data": "1 x 2.5GbE (Compliant with 10/100/1000Mbps)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "Support 2 Channel, DTS:X"
+              },
+              {
+                  "name": "Cooling Solution",
+                  "data": "Air Cooling"
+              },
+              {
+                  "name": "Network and communication",
+                  "data": "Intel Wi-Fi6E (802.11ax) with 2T2R Antenna, BLUETOOTH 5.2"
+              },
+              {
+                  "name": "Power Supply",
+                  "data": "750W 80 PLUS (GOLD)"
+              }
+          ]
+      },
+      {
+          "id": 11,
+          "category_id": 3,
+          "category_name": "PC Case",
+          "name": "AORUS MODEL X",
+          "gpu": "ryzen",
+          "ram": 32,
+          "imgProduct": "assets/images/vinhImg/detail/pcCase/anh3ModelX.webp",
+          "price": 1090,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide3/slide1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide3/slide2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide3/slide3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/vinhImg/detail/pcCase/slide3/slide4.png"
+              }
+          ],
+          "bestFeatures": [
+              "The Latest Technologies AMD Ryzen™ processors have all the best features to keep you in the game.",
+              "AMD® Ryzen™ 9 5900X12Cores, Up to 4.8GHz"
+          ],
+          "features": [
+              "The Latest Technologies AMD Ryzen™ processors have all the best features to keep you in the game.",
+              "AMD® Ryzen™ 9 5900X12Cores, Up to 4.8GHz",
+              "NVIDIA® GeForce® RTX™ 3080 Ampere GDDR6 10GB",
+              "RAM DDR4 32GB XMP 3600MHz",
+              "The MODEL X system is sports an efficiently designed 360 AIO liquid cooling and a chassis that enhances the air flow.",
+              "The all-new NVIDIA Ampere architecture delivers the ultimate play, featuring advanced 2nd generation Ray Tracing Cores",
+              "In the AORUS dimension, everything is constructed digitally. The core concept is to split the space by the digital textures shuttling between virtual reality and heterogeneous materials, and the light, as a beacon to shine upon the deepest and darkest of the future digital world."
+          ],
+          "specifying": [{
+                  "name": "Operating System",
+                  "data": "No OS"
+              },
+              {
+                  "name": "Processor",
+                  "data": "AMD Ryzen™ 9-5900X Processor"
+              },
+              {
+                  "name": "Chipset",
+                  "data": "AMD Ryzen™ 9-5900X Processor"
+              },
+              {
+                  "name": "Graphics",
+                  "data": "NVIDIA® GeForce RTX 3080 10GB : DisplayPort 1.4a *3, HDMI 2.1 *2"
+              },
+              {
+                  "name": "Memory",
+                  "data": "32GB DDR4-3600(XMP)"
+              },
+              {
+                  "name": "SATA",
+                  "data": "5 x SATA 6.0Gb/s ports"
+              },
+              {
+                  "name": "Storage",
+                  "data": "1TB M.2 PCIe 4.0 SSD and 2TB M.2 NVMe™ PCIe® 3.0 SSD"
+              },
+              {
+                  "name": "LAN",
+                  "data": "2 x Realtek 2.5GbE RJ-45 (Support 2.5G/1G/100M)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "Support 2/4/5/7.1 Channel, ESS Sabre HiFi"
+              },
+              {
+                  "name": "Cooling Solution",
+                  "data": "360mm Liquid Cooler"
+              },
+              {
+                  "name": "Network and communication",
+                  "data": "Wi-Fi 6 (802.11ax) with 2T2R Antenna, BLUETOOTH 5.0"
+              },
+              {
+                  "name": "Power Supply",
+                  "data": "850W 80 PLUS (GOLD)"
+              }
+          ]
+      },
+      {
+          "id": 13,
+          "category_id": 4,
+          "category_name": "Graphics Card",
+          "gen": "4th",
+          "name": "AORUS GeForce RTX® 4090 MASTER 24G",
+          "imgProduct": "assets/images/cuongimg/card.jpg",
+          "price": 840,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/card1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/card2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/card3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/card4.png"
+              }
+          ],
+          "bestFeatures": [
+              "NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency",
+              "Integrated with 24GB GDDR6X 384-bit memory interface"
+          ],
+          "features": [
+              "NVIDIA Ada Lovelace Streaming Multiprocessors: Up to 2x performance and power efficiency",
+              "Powered by GeForce RTX® 4090",
+              "Integrated with 24GB GDDR6X 384-bit memory interface",
+              "WINDFORCE cooling system",
+              "Protection metal back plate",
+              "Anti-sag bracket",
+              "4 Years Warranty (Online registration required)"
+          ],
+          "specifying": [{
+                  "name": "Graphics Processing",
+                  "data": "GeForce RTX® 4090"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "TDB"
+              },
+              {
+                  "name": "CUDA® Cores",
+                  "data": "16384"
+              },
+              {
+                  "name": "Memory Clock",
+                  "data": "21 Gbps"
+              },
+              {
+                  "name": "Memory Size",
+                  "data": "24 GB"
+              },
+              {
+                  "name": "Memory Type",
+                  "data": "GDDR6X"
+              },
+              {
+                  "name": "Memory Bus",
+                  "data": "384 bit"
+              },
+              {
+                  "name": "Card Bus",
+                  "data": "PCI-E 4.0"
+              },
+              {
+                  "name": "Card size",
+                  "data": "L=358.5 W=162.8 H=75.1 mm"
+              },
+              {
+                  "name": "Digital max resolution",
+                  "data": "7680x4320"
+              },
+              {
+                  "name": "Power Connectors",
+                  "data": "16 pin * 1"
+              },
+              {
+                  "name": " Recommended PSU ",
+                  "data": "1000W"
+              }
+          ]
+      },
+      {
+          "id": 14,
+          "category_id": 4,
+          "category_name": "Graphics Card",
+          "name": "AORUS GeForce RTX™ 3090 Ti XTREME WATERFORCE 24G",
+          "gen": "3th",
+          "imgProduct": "assets/images/cuongimg/card5.jpg",
+          "price": 1140,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/card6.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/card7.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/card8.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/card9.png"
+              }
+          ],
+          "bestFeatures": [
+              "NVIDIA Ampere Streaming Multiprocessors",
+              "Integrated with 24GB GDDR6X 384-bit memory interface"
+          ],
+          "features": [
+              "NVIDIA Ampere Streaming Multiprocessors",
+              "Integrated with 24GB GDDR6X 384-bit memory interface",
+              "360mm radiator with 3x 120mm fans",
+              "Protection metal back plate",
+              "Powered by GeForce RTX™ 3090 Ti",
+              "2nd Generation RT Core",
+              "4 Years Warranty (Online registration required)"
+          ],
+          "specifying": [{
+                  "name": "Graphics Processing",
+                  "data": "GeForce RTX™ 3090 Ti"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "1935 MHz (Reference Card: 1860 MHz)"
+              },
+              {
+                  "name": "CUDA® Cores",
+                  "data": "10752"
+              },
+              {
+                  "name": "Memory Clock",
+                  "data": "21000 MHz"
+              },
+              {
+                  "name": "Memory Size",
+                  "data": "24 GB"
+              },
+              {
+                  "name": "Memory Type",
+                  "data": "GDDR6X"
+              },
+              {
+                  "name": "Memory Bus",
+                  "data": "384 bit"
+              },
+              {
+                  "name": "Memory Bandwidth (GB/sec)",
+                  "data": "1008 GB/s"
+              },
+              {
+                  "name": "Card Bus",
+                  "data": "PCI-E 4.0 x 1.6"
+              },
+              {
+                  "name": "Digital max resolution",
+                  "data": "7680x4320"
+              },
+              {
+                  "name": "Card size",
+                  "data": "L=238 W=141 H=40 mm"
+              },
+              {
+                  "name": "Power Connectors",
+                  "data": "16 pin * 1"
+              },
+              {
+                  "name": " Recommended PSU ",
+                  "data": "850W"
+              }
+          ]
+      },
+      {
+          "id": 15,
+          "category_id": 4,
+          "category_name": "Graphics Card",
+          "name": "AORUS GeForce RTX™ 3080 Ti XTREME WATERFORCE 12G",
+          "gen": "3th",
+          "imgProduct": "assets/images/cuongimg/card14.jpg",
+          "price": 1240,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/card10.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/card11.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/card12.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/card13.png"
+              }
+          ],
+          "bestFeatures": [
+              "NVIDIA Ampere Streaming Multiprocessors",
+              "Integrated with 12GB GDDR6X 384-bit memory interface"
+          ],
+          "features": [
+              "NVIDIA Ampere Streaming Multiprocessors",
+              "Integrated with 12GB GDDR6X 384-bit memory interface",
+              "240mm radiator with 2x 120mm ARGB fans",
+              "Protection metal back plate",
+              "Powered by GeForce RTX™ 3080 Ti",
+              " 3rd Generation Tensor Cores",
+              "4 Years Warranty (Online registration required)"
+          ],
+          "specifying": [{
+                  "name": "Graphics Processing",
+                  "data": "GeForce RTX™ 3080 Ti"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "1770 MHz (Reference Card: 1665 MHz)"
+              },
+              {
+                  "name": "CUDA® Cores",
+                  "data": "10240"
+              },
+              {
+                  "name": "Memory Clock",
+                  "data": "19000 MHz"
+              },
+              {
+                  "name": "Memory Size",
+                  "data": "12 GB"
+              },
+              {
+                  "name": "Memory Type",
+                  "data": "GDDR6X"
+              },
+              {
+                  "name": "Memory Bus",
+                  "data": "384 bit"
+              },
+              {
+                  "name": "Memory Bandwidth (GB/sec)",
+                  "data": "912 GB/s"
+              },
+              {
+                  "name": "Card Bus",
+                  "data": "PCI-E 4.0 x 1.6"
+              },
+              {
+                  "name": "Digital max resolution",
+                  "data": "7680x4320"
+              },
+              {
+                  "name": "Card size",
+                  "data": "L=252 W=135 H=40 mm (2 slot)"
+              },
+              {
+                  "name": "Power Connectors",
+                  "data": "8 pin * 2"
+              },
+              {
+                  "name": "Recommended PSU",
+                  "data": "750W"
+              }
+          ]
+      },
+      {
+          "id": 16,
+          "category_id": 4,
+          "category_name": "Graphics Card",
+          "name": "AORUS GeForce RTX™ 3090 XTREME WATERFORCE WB 24G",
+          "gen": "3th",
+          "imgProduct": "assets/images/cuongimg/card15.jpg",
+          "price": 880,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/card16.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/card17.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/card18.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/card19.png"
+              }
+          ],
+          "bestFeatures": [
+              "NVIDIA Ampere Streaming Multiprocessors",
+              "Integrated with 24GB GDDR6X 384-bit memory interface"
+          ],
+          "features": [
+              "NVIDIA Ampere Streaming Multiprocessors",
+              "Integrated with 24GB GDDR6X 384-bit memory interface",
+              "240mm radiator with 2x 120mm ARGB fans",
+              "Protection metal back plate",
+              "Powered by GeForce RTX™ 3090",
+              " 3rd Generation Tensor Cores",
+              "4 Years Warranty (Online registration required)"
+          ],
+          "specifying": [{
+                  "name": "Graphics Processing",
+                  "data": "GeForce RTX™ 3090"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "1785 MHz (Reference Card: 1695 MHz)"
+              },
+              {
+                  "name": "CUDA® Cores",
+                  "data": "10496"
+              },
+              {
+                  "name": "Memory Clock",
+                  "data": "19500 MHz"
+              },
+              {
+                  "name": "Memory Size",
+                  "data": "24 GB"
+              },
+              {
+                  "name": "Memory Type",
+                  "data": "GDDR6X"
+              },
+              {
+                  "name": "Memory Bus",
+                  "data": "384 bit"
+              },
+              {
+                  "name": "Memory Bandwidth (GB/sec)",
+                  "data": "936 GB/s"
+              },
+              {
+                  "name": "Card Bus",
+                  "data": "PCI-E 4.0 x 1.6"
+              },
+              {
+                  "name": "Digital max resolution",
+                  "data": "7680x4320"
+              },
+              {
+                  "name": "Card size",
+                  "data": "L=252 W=163 H=29  mm"
+              },
+              {
+                  "name": "Power Connectors",
+                  "data": "8 pin * 2"
+              },
+              {
+                  "name": "Recommended PSU",
+                  "data": "750W"
+              }
+          ]
+      },
+      {
+          "id": 17,
+          "category_id": 5,
+          "category_name": "Memory",
+          "name": "AORUS RGB Memory DDR5 32GB (2x16GB) 6000MHz",
+          "amount": 32,
+          "imgProduct": "assets/images/cuongimg/m.png",
+          "price": 210,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/m1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/m2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/m3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/m4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Power Management integrated circuit (PMIC)",
+              "High quality PMIC IC for stable power"
+          ],
+          "features": [
+              "Power Management integrated circuit (PMIC)",
+              "High quality PMIC IC for stable power",
+              "On-die ECC",
+              "10-Layer PCB",
+              "Exclusive light diffuser with AORUS pattern",
+              " Copper-aluminum composite with NanoCarbon heat spreader",
+              "The heatsink is 2mm thick, improving the efficiency of heat dissipation."
+          ],
+          "specifying": [{
+                  "name": "Memory Type",
+                  "data": "DDR5 UDIMM"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "1785 MHz (Reference Card: 1695 MHz)"
+              },
+              {
+                  "name": "Capacity",
+                  "data": "32GB kit (2x16GB)"
+              },
+              {
+                  "name": "Multi-Channel Kit",
+                  "data": "Dual Channel Kit"
+              },
+              {
+                  "name": "SPD Latency",
+                  "data": "40-40-40-77 "
+              },
+              {
+                  "name": "SPD Speed",
+                  "data": "4800MHz"
+              },
+              {
+                  "name": "SPD Voltage",
+                  "data": "1.1V"
+              },
+              {
+                  "name": "Heatspreader Color",
+                  "data": "AORUS Gray"
+              },
+              {
+                  "name": "Package Memory Pin",
+                  "data": "288"
+              },
+              {
+                  "name": "Performance Profile",
+                  "data": "XMP 3.0"
+              }
+          ]
+      },
+      {
+          "id": 18,
+          "category_id": 5,
+          "category_name": "Memory",
+          "name": "AORUS Memory DDR5 32GB (2x16GB) 5200MHz",
+          "amount": 32,
+          "imgProduct": "assets/images/cuongimg/m5.png",
+          "price": 95,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/m16.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/m7.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/m8.png"
+              }
+          ],
+          "bestFeatures": [
+              "Thrilling Performance and Quality Guaranteed",
+              "Optimized Working Voltage, Better Energy Saving"
+          ],
+          "features": [
+              "Power Management integrated circuit (PMIC)",
+              "Thrilling Performance and Quality Guaranteed",
+              "Optimized Working Voltage, Better Energy Saving",
+              "10-Layer PCB",
+              "Exclusive light diffuser with AORUS pattern",
+              " Copper-aluminum composite with NanoCarbon heat spreader",
+              "The heatsink is 2mm thick, improving the efficiency of heat dissipation."
+          ],
+          "specifying": [{
+                  "name": "Memory Type",
+                  "data": "DDR5 UDIMM "
+              },
+              {
+                  "name": "Capacity",
+                  "data": "32GB kit (2x16GB)"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Multi-Channel Kit",
+                  "data": "Dual Channel Kit"
+              },
+              {
+                  "name": "SPD Latency",
+                  "data": "40-40-40-77 "
+              },
+              {
+                  "name": "SPD Speed",
+                  "data": "4800MHz    "
+              },
+              {
+                  "name": "SPD Voltage",
+                  "data": "1.1V"
+              },
+              {
+                  "name": "Heatspreader Color",
+                  "data": "AORUS Gray"
+              },
+              {
+                  "name": "Package Memory Pin",
+                  "data": "288"
+              },
+              {
+                  "name": "Performance Profile",
+                  "data": "XMP 3.0"
+              }
+          ]
+      },
+      {
+          "id": 19,
+          "category_id": 5,
+          "category_name": "Memory",
+          "name": "DESIGNARE Memory 64GB (2x32GB) 3200MHz",
+          "amount": 64,
+          "imgProduct": "assets/images/cuongimg/m9.png",
+          "price": 320,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/m10.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/m11.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/m12.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/m13.png"
+              }
+          ],
+          "bestFeatures": [
+              "Classic Sliver DDR Module",
+              "Pure Aluminum Heatsinks"
+          ],
+          "features": [
+              "Classic Sliver DDR Module",
+              "Pure Aluminum Heatsinks",
+              "Single 32GB Memory",
+              "Compatibility",
+              "XMP 2.0 Supported",
+              " Quality Guaranteed",
+              "Lifetime Warranty"
+          ],
+          "specifying": [{
+                  "name": "Memory Type",
+                  "data": "DDR4 "
+              },
+              {
+                  "name": "Capacity",
+                  "data": "64GB kit (2 x 32GB)"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Multi-Channel Kit",
+                  "data": "Dual Channel Kit"
+              },
+              {
+                  "name": "SPD Latency",
+                  "data": [
+                      "19-19-19-43 for Intel 300s",
+                      "20-19-19-43 for AMD Ryzen"
+                  ]
+              },
+              {
+                  "name": "Heatspreader Color",
+                  "data": "N/A"
+              },
+              {
+                  "name": "SPD Speed",
+                  "data": "2666MHz"
+              },
+              {
+                  "name": "SPD Voltage",
+                  "data": "1.2V"
+              },
+              {
+                  "name": "Speed Rating",
+                  "data": "PC4-25600 (3200MHz)"
+              },
+              {
+                  "name": "Package Memory Pin",
+                  "data": "288"
+              },
+              {
+                  "name": "Performance Profile",
+                  "data": "XMP 2.0"
+              }
+          ]
+      },
+      {
+          "id": 20,
+          "category_id": 5,
+          "category_name": "Memory",
+          "name": "AORUS RGB Memory 16GB (2x8GB) 3200MHz (With Demo Kit)",
+          "amount": 64,
+          "imgProduct": "assets/images/cuongimg/m14.png",
+          "price": 75,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/m15.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/m16.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/m17.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/m18.png"
+              }
+          ],
+          "bestFeatures": [
+              "Classic Sliver DDR Module",
+              "Pure Aluminum Heatsinks"
+          ],
+          "features": [
+              "Classic Sliver DDR Module",
+              "Pure Aluminum Heatsinks",
+              "Single 32GB Memory",
+              "Compatibility",
+              "XMP 2.0 Supported",
+              " Quality Guaranteed",
+              "Lifetime Warranty"
+          ],
+          "specifying": [{
+                  "name": "Memory Type",
+                  "data": "DDR4 "
+              },
+              {
+                  "name": "Capacity",
+                  "data": "16GB kit (2x8GB)"
+              },
+              {
+                  "name": "Core Clock",
+                  "data": "N/A"
+              },
+              {
+                  "name": "Heatspreader Color",
+                  "data": "AORUS Gray"
+              },
+              {
+                  "name": "AORUS Memory Boost",
+                  "data": "3333MHz"
+              },
+              {
+                  "name": "Multi-Channel Kit",
+                  "data": "Dual Channel Kit"
+              },
+              {
+                  "name": "SPD Latency",
+                  "data": [
+                      "19-19-19-43 for Intel Platform",
+                      "20-19-19-43 for AMD Ryzen"
+                  ]
+              },
+              {
+                  "name": "SPD Speed",
+                  "data": "2666MHz"
+              },
+              {
+                  "name": "SPD Voltage",
+                  "data": "1.2V"
+              },
+              {
+                  "name": "Speed Rating",
+                  "data": "PC4-25600 (3200MHz)"
+              },
+              {
+                  "name": "Package Memory Pin",
+                  "data": "288"
+              },
+              {
+                  "name": "Performance Profile",
+                  "data": "XMP 2.0"
+              }
+          ]
+      },
+      {
+          "id": 21,
+          "category_id": 6,
+          "category_name": "Power Supply",
+          "name": "UD1000GM PG5",
+          "wattage": "1000W",
+          "imgProduct": "assets/images/cuongimg/p.png",
+          "price": 120,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/p1.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/p2.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/p3.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/p4.png"
+              }
+          ],
+          "bestFeatures": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output"
+          ],
+          "features": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output",
+              "80 PLUS Gold certified",
+              "Fully modular design",
+              "10 years warranty (Adjusted according to different regions)",
+              " 120mm smart hydraulic bearing (HYB) fan",
+              " Enhanced thermal solution"
+          ],
+          "specifying": [{
+                  "name": "Model",
+                  "data": "GP-UD1000GM PG5"
+              },
+              {
+                  "name": "80 PLUS",
+                  "data": "Gold"
+              },
+
+              {
+                  "name": "Cable Type",
+                  "data": "Flat, All black"
+              },
+              {
+                  "name": "Hold Up Time",
+                  "data": ">16ms"
+              },
+              {
+                  "name": "Power Good Signal",
+                  "data": "100-150ms"
+              },
+              {
+                  "name": "MTBF",
+                  "data": ">100,000 hours"
+              },
+              {
+                  "name": "Efficiency",
+                  "data": "90% at typical load"
+              },
+              {
+                  "name": "Fan Type",
+                  "data": "120mm Hydraulic Bearing(HYB)fan"
+              },
+              {
+                  "name": "Type",
+                  "data": "Intel Form Factor ATX 12V v2.31"
+              },
+              {
+                  "name": "Dimension",
+                  "data": "150 x 140 x 86 mm"
+              },
+              {
+                  "name": "Output Capacity",
+                  "data": "1000W"
+              },
+              {
+                  "name": "Input Frequency",
+                  "data": "60-50 Hz"
+              },
+              {
+                  "name": "Input Current",
+                  "data": "15-6.5A"
+              },
+              {
+                  "name": "Input Voltage",
+                  "data": "100-240 Vac (full range)"
+              }
+          ]
+      },
+      {
+          "id": 22,
+          "category_id": 6,
+          "category_name": "Power Supply",
+          "name": "UD1000GM",
+          "wattage": "1000W",
+          "imgProduct": "assets/images/cuongimg/p5.png",
+          "price": 300,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/p6.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/p7.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/p8.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/p9.png"
+              }
+          ],
+          "bestFeatures": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output"
+          ],
+          "features": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output",
+              "80 PLUS Gold certified",
+              "Fully modular design",
+              "10 years warranty (Adjusted according to different regions)",
+              " 120mm smart hydraulic bearing (HYB) fan",
+              " Enhanced thermal solution"
+          ],
+          "specifying": [{
+                  "name": "Model",
+                  "data": "GP-UD1000GM "
+              },
+              {
+                  "name": "80 PLUS",
+                  "data": "Gold"
+              },
+              {
+                  "name": "Cable Type",
+                  "data": "Flat, All black"
+              },
+              {
+                  "name": "Hold Up Time",
+                  "data": ">16ms"
+              },
+              {
+                  "name": "Power Good Signal",
+                  "data": "100-150ms"
+              },
+              {
+                  "name": "MTBF",
+                  "data": ">100,000 hours"
+              },
+              {
+                  "name": "Efficiency",
+                  "data": "90% at typical load"
+              },
+              {
+                  "name": "Fan Type",
+                  "data": "120mm Hydraulic Bearing(HYB)fan"
+              },
+              {
+                  "name": "Type",
+                  "data": "Intel Form Factor ATX 12V v2.31"
+              },
+              {
+                  "name": "Dimension",
+                  "data": "150 x 140 x 86 mm"
+              },
+              {
+                  "name": "Output Capacity",
+                  "data": "1000W"
+              },
+              {
+                  "name": "Input Frequency",
+                  "data": "60-50 Hz"
+              },
+              {
+                  "name": "Input Current",
+                  "data": "15-6.5A"
+              },
+              {
+                  "name": "Input Voltage",
+                  "data": "100-240 Vac (full range)"
+              }
+          ]
+      },
+      {
+          "id": 23,
+          "category_id": 6,
+          "category_name": "Power Supply",
+          "name": "UD850GM PG5",
+          "wattage": "850W",
+          "imgProduct": "assets/images/cuongimg/p5.png",
+          "price": 200,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/p10.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/p7.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/p8.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/p9.png"
+              }
+          ],
+          "bestFeatures": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output"
+          ],
+          "features": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output",
+              "80 PLUS Gold certified",
+              "Fully modular design",
+              "10 years warranty (Adjusted according to different regions)",
+              " 120mm smart hydraulic bearing (HYB) fan",
+              " Enhanced thermal solution"
+          ],
+          "specifying": [{
+                  "name": "Model",
+                  "data": "GP-UD850GM PG5"
+              },
+              {
+                  "name": "80 PLUS",
+                  "data": "Gold"
+              },
+              {
+                  "name": "Cable Type",
+                  "data": "Flat, All black"
+              },
+              {
+                  "name": "Hold Up Time",
+                  "data": ">16ms"
+              },
+              {
+                  "name": "Power Good Signal",
+                  "data": "100-150ms"
+              },
+              {
+                  "name": "MTBF",
+                  "data": ">100,000 hours"
+              },
+              {
+                  "name": "Efficiency",
+                  "data": "90% at typical load"
+              },
+              {
+                  "name": "Fan Type",
+                  "data": "120mm Hydraulic Bearing(HYB)fan"
+              },
+              {
+                  "name": "Type",
+                  "data": "Intel Form Factor ATX 12V "
+              },
+              {
+                  "name": "Dimension",
+                  "data": "150 x 140 x 86 mm"
+              },
+              {
+                  "name": "Output Capacity",
+                  "data": "850W"
+              },
+              {
+                  "name": "Input Frequency",
+                  "data": "60-50 Hz"
+              },
+              {
+                  "name": "Input Current",
+                  "data": "12-6A"
+              },
+              {
+                  "name": "Input Voltage",
+                  "data": "100-240 Vac (full range)"
+              }
+          ]
+      },
+      {
+          "id": 24,
+          "category_id": 6,
+          "category_name": "Power Supply",
+          "name": "UD850GM",
+          "wattage": "850W",
+          "imgProduct": "assets/images/cuongimg/p5.png",
+          "price": 180,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/cuongimg/p10.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/cuongimg/p7.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/cuongimg/p8.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/cuongimg/p9.png"
+              }
+          ],
+          "bestFeatures": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output"
+          ],
+          "features": [
+              "Support PCIe Gen 5.0 graphics card",
+              "High-quality native 16-pin cable supports 600W output",
+              "80 PLUS Gold certified",
+              "Fully modular design",
+              "10 years warranty (Adjusted according to different regions)",
+              " 120mm smart hydraulic bearing (HYB) fan",
+              " Enhanced thermal solution"
+          ],
+          "specifying": [{
+                  "name": "Model",
+                  "data": "GP-UD850GM"
+              },
+              {
+                  "name": "80 PLUS",
+                  "data": "Gold"
+              },
+              {
+                  "name": "Cable Type",
+                  "data": "Flat, All black"
+              },
+              {
+                  "name": "Hold Up Time",
+                  "data": ">16ms"
+              },
+              {
+                  "name": "Power Good Signal",
+                  "data": "100-150ms"
+              },
+              {
+                  "name": "MTBF",
+                  "data": ">100,000 hours"
+              },
+              {
+                  "name": "Efficiency",
+                  "data": "90% at typical load"
+              },
+              {
+                  "name": "Fan Type",
+                  "data": "120mm Hydraulic Bearing(HYB)fan"
+              },
+              {
+                  "name": "Type",
+                  "data": "Intel Form Factor ATX 12V "
+              },
+              {
+                  "name": "Dimension",
+                  "data": "150 x 140 x 86 mm"
+              },
+              {
+                  "name": "Output Capacity",
+                  "data": "850W"
+              },
+              {
+                  "name": "Input Frequency",
+                  "data": "60-50 Hz"
+              },
+              {
+                  "name": "Input Current",
+                  "data": "12-6A"
+              },
+              {
+                  "name": "Input Voltage",
+                  "data": "100-240 Vac (full range)"
+              }
+          ]
+      },
+      {
+          "id": 25,
+          "category_id": 7,
+          "category_name": "CPU Cooler",
+          "name": "ATC700",
+          "gen": "12th",
+          "imgProduct": "assets/images/truong/CPU/25.1.png",
+          "price": 60,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/CPU/25.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/CPU/25.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/CPU/25.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/CPU/25.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "LGA1700 socket: Support for 12th Generation Intel, Core, Pentium, Gold and Celeron  Processors*",
+              "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+          ],
+          "features": [
+              "RGB Fusion 2.0 – synchronize with other AORUS devices",
+              "Dual 120mm 2 ball bearing (PWM) fans",
+              "3*10mm high performance copper heat-pipes",
+              "Heat-Pipe direct touch technology"
+          ],
+          "specifying": [{
+                  "name": "Rated Voltage",
+                  "data": "Fan :12V DC , LED : 12V"
+              },
+              {
+                  "name": "Rated Current",
+                  "data": "0.21A"
+              },
+              {
+                  "name": "Power Consumption",
+                  "data": "2.52W"
+              },
+              {
+                  "name": "Connector",
+                  "data": "4 Pin"
+              },
+              {
+                  "name": "Fan Life Expectancy",
+                  "data": "70000 Hrs"
+              },
+              {
+                  "name": "Fan Air Pressure",
+                  "data": "0.2-1.93 mmH2O ±10%"
+              },
+              {
+                  "name": "Fan Air Flow",
+                  "data": "14-53 CFM ±10%"
+              },
+              {
+                  "name": "Heat Sink Weight",
+                  "data": "670 g"
+              },
+              {
+                  "name": "Heat Sink Dimensions (LxWxH)",
+                  "data": "133 x 59 x 158 mm"
+              },
+              {
+                  "name": "CPU socket",
+                  "data": "Intel Socket 2066 / 2011 / 1366 / 1156 / 1155 / 1151 / 1150 / 775.png"
+              },
+              {
+                  "name": "TDP",
+                  "data": ">200W"
+              },
+              {
+                  "name": "Weight",
+                  "data": "955 g"
+              },
+              {
+                  "name": "Fan Speed",
+                  "data": "142 g"
+              }
+          ]
+      },
+      {
+          "id": 26,
+          "category_id": 7,
+          "status": "home",
+          "category_name": "CPU Cooler",
+          "gen": "11th",
+          "name": "ATC800",
+          "imgProduct": "assets/images/truong/CPU/26.1.png",
+          "price": 160,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/CPU/26.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/CPU/26.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/CPU/26.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/CPU/26.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "LGA1700 socket: Support for 11th Generation Intel, Core, Pentium, Gold and Celeron  Processors*",
+              "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+          ],
+          "features": [
+              "2 x 12cm 2 ball bearing RGB fan.",
+              "Supports RGB FUSION 2.0 synchronization with other AORUS devices.",
+              "CPU Temp and RPM indicator, easy to monitor CPU status.",
+              "Memory compatibility design.",
+              "Warranty: Limited 3 years.",
+              "With LGA 1700 mounting kit"
+          ],
+          "specifying": [{
+                  "name": "Rated Voltage",
+                  "data": "12V"
+              },
+              {
+                  "name": "Rated Current",
+                  "data": "0.12A"
+              },
+              {
+                  "name": "Power Consumption",
+                  "data": "144W"
+              },
+              {
+                  "name": "Connector",
+                  "data": "Fan 4-Pin , USB 2.0"
+              },
+              {
+                  "name": "Fan Life Expectancy",
+                  "data": "70000 Hrs"
+              },
+              {
+                  "name": "Fan Air Pressure",
+                  "data": "0.12-2 mmH2O ±10%"
+              },
+              {
+                  "name": "Fan Air Flow",
+                  "data": "14.05 - 51.7 CFM"
+              },
+              {
+                  "name": "Heat Sink Weight",
+                  "data": "670 g"
+              },
+              {
+                  "name": "Heat Sink Dimensions (LxWxH)",
+                  "data": "133 x 59 x 158 mm"
+              },
+              {
+                  "name": "CPU socket",
+                  "data": "Intel Socket 2066 , 2011, 1366, 1156, 1155, 1151, 1150, 1200, 1700"
+              },
+              {
+                  "name": "TDP",
+                  "data": ">250W"
+              },
+              {
+                  "name": "Weight",
+                  "data": "1010 g"
+              },
+              {
+                  "name": "Fan Speed",
+                  "data": "142 g"
+              }
+          ]
+      },
+      {
+          "id": 27,
+          "category_id": 7,
+          "category_name": "CPU Cooler",
+          "name": "XTC700",
+          "gen": "12th",
+          "imgProduct": "assets/images/truong/CPU/27.1.png",
+          "price": 75,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/CPU/27.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/CPU/27.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/CPU/27.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/CPU/27.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "LGA1700 socket: Support for 12th Generation Intel, Core, Pentium, Gold and Celeron  Processors*",
+              "Support for AMD Quad-GPU CrossFire™ and 2-Way AMD CrossFire™ technologies"
+          ],
+          "features": [
+              "16.7M Customizable RGB Lighting",
+              "Dual 120mm 2 ball bearing (PWM) fans",
+              "3*10mm high performance copper heat-pipes",
+              "Heat-Pipe direct touch technology"
+          ],
+          "specifying": [{
+                  "name": "Rated Voltage",
+                  "data": "Fan :12V DC , LED : 12V"
+              },
+              {
+                  "name": "Rated Current",
+                  "data": "0.5A"
+              },
+              {
+                  "name": "Power Consumption",
+                  "data": "6W"
+              },
+              {
+                  "name": "Connector",
+                  "data": "4 Pin , LED: 9-Pin USB header from motherboard (downloads the software to control)"
+              },
+              {
+                  "name": "Fan Life Expectancy",
+                  "data": "70000 Hrs"
+              },
+              {
+                  "name": "Fan Air Pressure",
+                  "data": "0.2-1.93 mmH2O ±10%"
+              },
+              {
+                  "name": "Fan Air Flow",
+                  "data": "14-53 CFM ±10%"
+              },
+              {
+                  "name": "Heat Sink Weight",
+                  "data": "740 g"
+              },
+              {
+                  "name": "Heat Sink Dimensions (LxWxH)",
+                  "data": "133 x 59 x 158 mm"
+              },
+              {
+                  "name": "CPU socket",
+                  "data": "Intel: 2011 / 1366 / 1156 / 1155 / 1151 / 1150 / 775 / Kaby Lake "
+              },
+              {
+                  "name": "TDP",
+                  "data": ">200W"
+              },
+              {
+                  "name": "Weight",
+                  "data": "1015 g"
+              },
+              {
+                  "name": "Fan Speed",
+                  "data": "162 g"
+              }
+          ]
+      },
+      {
+          "id": 28,
+          "category_id": 8,
+          "category_name": "Solid State Drive",
+          "amount": "2TB",
+          "name": "AORUS Gen4 7000s SSD 2TB ",
+          "imgProduct": "assets/images/truong/SSD/29811.png",
+          "price": 100,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/SSD/28.2.jpg"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/SSD/28.3.jpg"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/SSD/28.4.jpg"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/SSD/28.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "Test system configuration: configuration may vary by models, we will choose the latest platform for verification.",
+              "Performance may vary based on SSD's firmware version and system hardware & configuration. Sequential performance measurements based on CrystalDiskMark and IOmeter 1.1.0."
+          ],
+          "features": [
+              "PCIe 4.0x4, NVMe 1.4 Interface",
+              " DDR4 DRAM cache",
+              "8 CH with 32 CEs",
+              " Phison 4th Gen LDPC & RAID ECC",
+              " Support AES-256 Encryption",
+              "Thermal Throttle Protection"
+          ],
+          "specifying": [{
+                  "name": "Random Read IOPS",
+                  "data": "up to 650k"
+              },
+              {
+                  "name": "Sequential Read speed",
+                  "data": "Up to 7000 MB/s"
+              },
+              {
+                  "name": "External DDR Cache",
+                  "data": "DDR4 2GB"
+              },
+              {
+                  "name": "NAND",
+                  "data": "3D TLC NAND Flash"
+              },
+              {
+                  "name": "Total Capacity",
+                  "data": "2000GB"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "M.2 2280"
+              },
+              {
+                  "name": "Interface",
+                  "data": "PCI-Express 4.0 x4, NVMe 1.4"
+              },
+              {
+                  "name": "Random Write IOPS",
+                  "data": "up to 700k"
+              },
+              {
+                  "name": "Dimension",
+                  "data": "80.5 x 11.25 x 23.5 mm"
+              },
+              {
+                  "name": "Mean time between failure (MTBF)",
+                  "data": "1.6 million hours"
+              },
+              {
+                  "name": "Power Consumption (Active)",
+                  "data": "Average: R : 7.6W, W : 8.4W"
+              },
+              {
+                  "name": "Power Consumption (Idle)",
+                  "data": "<30mW"
+              },
+              {
+                  "name": "Sequential Write speed",
+                  "data": "Up to 6850 MB/s"
+              }
+          ]
+      },
+      {
+          "id": 29,
+          "category_id": 8,
+          "category_name": "Solid State Drive",
+          "amount": "1TB",
+          "name": "AORUS Gen4 7000s SSD 1TB",
+          "imgProduct": "assets/images/truong/SSD/29810.png",
+          "price": 90,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/SSD/29.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/SSD/29.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/SSD/29.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/SSD/29.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "* Test system configuration: configuration may vary by models, we will choose the latest platform for verification.",
+              "* Performance may vary based on SSD's firmware version and system hardware & configuration. Sequential performance measurements based on CrystalDiskMark v.5.1.2 and I0meter 1.1.0. "
+          ],
+          "features": [
+              " PCIe 4.0x4, NVMe 1.4 Interface",
+              "DDR4 DRAM cache",
+              " 8 CH with 32 CEs",
+              "Phison 4th Gen LDPC & RAID ECC",
+              " Support AES-256 Encryption",
+              "Thermal Throttle Protection"
+          ],
+          "specifying": [{
+                  "name": "Random Read IOPS",
+                  "data": "up to 350k"
+              },
+              {
+                  "name": "Sequential Read speed",
+                  "data": "Up to 7000 MB/s"
+              },
+              {
+                  "name": "External DDR Cache",
+                  "data": "DDR4 1GB"
+              },
+              {
+                  "name": "NAND",
+                  "data": "3D TLC NAND Flash"
+              },
+              {
+                  "name": "Total Capacity",
+                  "data": "1000GB"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "M.2 2280"
+              },
+              {
+                  "name": "Interface",
+                  "data": "PCI-Express 4.0 x4, NVMe 1.4"
+              },
+              {
+                  "name": "Random Write IOPS",
+                  "data": "up to 700k"
+              },
+              {
+                  "name": "Dimension",
+                  "data": "80.5 x 11.25 x 23.5 mm"
+              },
+              {
+                  "name": "Mean time between failure (MTBF)",
+                  "data": "1.6 million hours"
+              },
+              {
+                  "name": "Power Consumption (Active)",
+                  "data": "Average: R : 6.6W, W : 6.5W"
+              },
+              {
+                  "name": "Power Consumption (Idle)",
+                  "data": "<30mW"
+              },
+              {
+                  "name": "Sequential Write speed",
+                  "data": "Up to 5500 MB/s"
+              }
+          ]
+      },
+      {
+          "id": 30,
+          "category_id": 8,
+          "category_name": "Solid State Drive",
+          "amount": "2TB",
+          "name": "AORUS Gen4 AIC SSD 2TB",
+          "imgProduct": "assets/images/truong/SSD/26054.png",
+          "price": 120,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/SSD/30.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/SSD/30.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/SSD/30.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/SSD/30.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "* Test system configuration: configuration may vary by models, we will choose the latest platform for verification.",
+              "* Performance may vary based on SSD's firmware version and system hardware & configuration. Sequential performance measurements based on CrystalDiskMark v.5.1.2 and I0meter 1.1.0. "
+          ],
+          "features": [
+              "Form Factor: PCl Express Card",
+              "Interface: PCI-Express 4.0 x16, NVMe 1.3",
+              "Total Capacity: 2000GB*",
+              "Seq. Read Speed: up to 15,000 MB/s**",
+              "Seq. Write Speed: up to 9,500 MB/s**",
+              "Wear Leveling, Over-Provision Technologies"
+          ],
+          "specifying": [{
+                  "name": "Random Read IOPS",
+                  "data": "up to 750k"
+              },
+              {
+                  "name": "Sequential Read speed",
+                  "data": "Up to 15000 MB/s"
+              },
+              {
+                  "name": "External DDR Cache",
+                  "data": "512MB / per SSD"
+              },
+              {
+                  "name": "NAND",
+                  "data": "3D TLC NAND Flash"
+              },
+              {
+                  "name": "Total Capacity",
+                  "data": "2000GB"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "PCl Express Card"
+              },
+              {
+                  "name": "Interface",
+                  "data": "PCI-Express 4.0 x4, NVMe 1.4"
+              },
+              {
+                  "name": "Random Write IOPS",
+                  "data": "up to 700k"
+              },
+              {
+                  "name": "Dimension",
+                  "data": "80.5 x 11.25 x 23.5 mm"
+              },
+              {
+                  "name": "Mean time between failure (MTBF)",
+                  "data": "1.77 million hours"
+              },
+              {
+                  "name": "Power Consumption (Active)",
+                  "data": "Average: R : 7.6W, W : 8.4W"
+              },
+              {
+                  "name": "Power Consumption (Idle)",
+                  "data": "14.1mW"
+              },
+              {
+                  "name": "Sequential Write speed",
+                  "data": "Up to 9500 MB/s"
+              }
+          ]
+      },
+      {
+          "id": 31,
+          "category_id": 8,
+          "category_name": "Solid State Drive",
+          "amount": "1TB",
+          "name": "AORUS Gen4 SSD 1TB ",
+          "imgProduct": "assets/images/truong/SSD/32.1.png",
+          "price": 20,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/SSD/32.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/SSD/32.3.png"
+              }
+          ],
+          "bestFeatures": [
+              "* Test system configuration: configuration may vary by models, we will choose the latest platform for verification.",
+              "* Performance may vary based on SSD's firmware version and system hardware & configuration. Sequential performance measurements based on CrystalDiskMark v.5.1.2 and I0meter 1.1.0. "
+          ],
+          "features": [
+              "Form Factor: M.2 2280",
+              "Interface: PCI-Express 4.0 x4, NVMe 1.3",
+              "Total Capacity: 1000GB*",
+              "Sequential Read Speed : up to 5000 MB/s**",
+              "Sequential Write speed : up to 4400 MB/s**",
+              "Wear Leveling, Over-Provision technologies",
+              "TRIM & S.M.A.R.T supported",
+              "Warranty: Limited 5-years"
+          ],
+          "specifying": [{
+                  "name": "Random Read IOPS",
+                  "data": "up to 750k"
+              },
+              {
+                  "name": "Sequential Read speed",
+                  "data": "Up to 7000 MB/s"
+              },
+              {
+                  "name": "External DDR Cache",
+                  "data": "DDR4 1GB"
+              },
+              {
+                  "name": "NAND",
+                  "data": "3D TLC NAND Flash"
+              },
+              {
+                  "name": "Total Capacity",
+                  "data": "1000GB"
+              },
+              {
+                  "name": "Form Factor",
+                  "data": "M.2 2280"
+              },
+              {
+                  "name": "Interface",
+                  "data": "PCI-Express 4.0 x4, NVMe 1.3"
+              },
+              {
+                  "name": "Random Write IOPS",
+                  "data": "up to 700k"
+              },
+              {
+                  "name": "Dimension",
+                  "data": "80 x 22 x 2.3 mm"
+              },
+              {
+                  "name": "Mean time between failure (MTBF)",
+                  "data": "1.77 million hours"
+              },
+              {
+                  "name": "Power Consumption (Active)",
+                  "data": "Average: R : 6.6W; W : 6.4W"
+              },
+              {
+                  "name": "Power Consumption (Idle)",
+                  "data": "160mW"
+              },
+              {
+                  "name": "Sequential Write speed",
+                  "data": "Up to 4400 MB/s"
+              }
+          ]
+      },
+      {
+          "id": 32,
+          "category_id": 9,
+          "category_name": "Laptop",
+          "ram": 8,
+          "gen": "12th",
+          "name": "AORUS 17 KE4 ",
+          "imgProduct": "assets/images/truong/LAPTOP/32.1.png",
+          "price": 2300,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/LAPTOP/32.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/LAPTOP/32.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/LAPTOP/32.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/LAPTOP/32.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "The brand-new AORUS 17 redefines high-end gaming laptops. Combining powerful performance and mobility with the latest NVIDIA® GeForce RTX™ 30 Series Laptop GPUs, feel the power to run any AAA game smoothly."
+          ],
+          "features": [
+              "Windows 11 Home",
+              "NVIDIA® GeForce RTX™ 30 Series Laptop GPUs",
+              "12th Gen Intel® Core™ i9 Processor HX-Series",
+              "WINDFORCE Infinity Cooling System",
+              "17.3 FHD 360Hz NTSC 72% IPS Level Panel",
+              "Supports DDR5",
+              "Thunderbolt™ 4",
+              "World's First Microsoft Azure AI Notebook"
+          ],
+          "specifying": [{
+                  "name": "OS",
+                  "data": "Windows 11 Home"
+              },
+              {
+                  "name": "CPU",
+                  "data": "12th Gen Intel® Core™ i7-12700H (2.3GHz~4.7GHz)"
+              },
+              {
+                  "name": " Adapter  ",
+                  "data": "240W"
+              },
+              {
+                  "name": " Battery",
+                  "data": "Li Polymer 99Wh"
+              },
+              {
+                  "name": " Security",
+                  "data": "Firmware-based TPM, supports Intel® Platform Trust Technology (Intel® PTT)"
+              },
+              {
+                  "name": "Communications",
+                  "data": "WIFI: Intel® Wi-Fi 6E AX211 (Gig+) Wireless (802.11ax, a/b/g/n/ac/ax compatible)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "2x 2.5W Speaker , Microphone"
+              },
+              {
+                  "name": "Keyboard Type",
+                  "data": "Island-style RGB Fusion Keyboard with per-key backlit control"
+              },
+              {
+                  "name": "Storage",
+                  "data": "2x M.2 SSD slots (Type 2280, supports 2x NVMe PCIe Gen4)"
+              },
+              {
+                  "name": "Video Graphics",
+                  "data": "NVIDIA® GeForce RTX™ 3060 Laptop GPU 6GB GDDR6"
+              },
+              {
+                  "name": "System Memory",
+                  "data": "2x DDR4 slots (DDR4-3200, Max 64GB)"
+              },
+              {
+                  "name": "Display",
+                  "data": "17.3 Thin Bezel FHD 1920x1080 IPS-level Anti-glare Display LCD (360Hz, 72% NTSC)"
+              },
+              {
+                  "name": "Weight",
+                  "data": "~2.70 kg"
+              }
+          ]
+      },
+      {
+          "id": 33,
+          "category_id": 9,
+          "category_name": "Laptop",
+          "ram": 8,
+          "gen": "12th",
+          "name": "AORUS 17 YE4  ",
+          "imgProduct": "assets/images/truong/LAPTOP/33.1.png",
+          "price": 2430,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/LAPTOP/33.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/LAPTOP/33.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/LAPTOP/33.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/LAPTOP/33.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "The brand-new AORUS 17 redefines high-end gaming laptops. Combining powerful performance and mobility with the latest NVIDIA® GeForce RTX™ 30 Series Laptop GPUs, feel the power to run any AAA game smoothly."
+          ],
+          "features": [
+              "Windows 11 Home",
+              "NVIDIA® GeForce RTX™ 30 Series Laptop GPUs",
+              "12th Gen Intel® Core™ i7 Processor H-Series",
+              "WINDFORCE Infinity Cooling System",
+              "15.6 FHD 360Hz IPS Level Panel",
+              "15.6” FHD 240Hz IPS Level Panel",
+              "Supports PCIe Gen 4 SSD",
+              "Thunderbolt™ 4"
+          ],
+          "specifying": [{
+                  "name": "OS",
+                  "data": "Windows 11 Home"
+              },
+              {
+                  "name": "CPU",
+                  "data": "12th Gen Intel® Core™ i7-12700H (2.3GHz~4.7GHz)"
+              },
+              {
+                  "name": " Adapter  ",
+                  "data": "240W"
+              },
+              {
+                  "name": " Battery",
+                  "data": "Li Polymer 99Wh"
+              },
+              {
+                  "name": " Security",
+                  "data": "Firmware-based TPM, supports Intel® Platform Trust Technology (Intel® PTT)"
+              },
+              {
+                  "name": "Communications",
+                  "data": "WIFI: Intel® Wi-Fi 6E AX211 (Gig+) Wireless (802.11ax, a/b/g/n/ac/ax compatible)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "2x 2.5W Speaker , Microphone"
+              },
+              {
+                  "name": "Keyboard Type",
+                  "data": "Island-style RGB Fusion Keyboard with per-key backlit control"
+              },
+              {
+                  "name": "Storage",
+                  "data": "2x M.2 SSD slots (Type 2280, supports 2x NVMe PCIe Gen4)"
+              },
+              {
+                  "name": "Video Graphics",
+                  "data": "NVIDIA® GeForce RTX™ 3080 Ti Laptop GPU 16GB GDDR6"
+              },
+              {
+                  "name": "System Memory",
+                  "data": "2x DDR4 slots (DDR4-3200, Max 64GB)"
+              },
+              {
+                  "name": "Display",
+                  "data": "17.3 Thin Bezel FHD 1920x1080 IPS-level Anti-glare Display LCD (360Hz, 72% NTSC)"
+              },
+              {
+                  "name": "Weight",
+                  "data": "~2.70 kg"
+              }
+          ]
+      },
+      {
+          "id": 34,
+          "category_id": 9,
+          "category_name": "Laptop",
+          "ram": 16,
+          "gen": "11th",
+          "name": "AORUS 17 KE5 ",
+          "imgProduct": "assets/images/truong/LAPTOP/34.1.png",
+          "price": 2100,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/LAPTOP/34.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/LAPTOP/34.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/LAPTOP/34.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/LAPTOP/34.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "The brand-new AORUS 17 redefines high-end gaming laptops. Combining powerful performance and mobility with the latest NVIDIA® GeForce RTX™ 30 Series Laptop GPUs, feel the power to run any AAA game smoothly."
+          ],
+          "features": [
+              "Windows 11 Pro",
+              "NVIDIA® GeForce RTX™ 30 Series Laptop GPUs",
+              "11th Gen. Intel® Core™ i7 Processor H-Series",
+              "WINDFORCE infinity Cooling System",
+              "17.3” FHD 300Hz NTSC 72% IPS Panel",
+              "Supports PCIe Gen4 SSD",
+              "Thunderbolt™ 4",
+              "Up to 8 Hours of Battery Life"
+          ],
+          "specifying": [{
+                  "name": "OS",
+                  "data": "Windows 11 Home"
+              },
+              {
+                  "name": "CPU",
+                  "data": "11th Gen Intel® Core™ i7-11700H (2.3GHz~4.7GHz)"
+              },
+              {
+                  "name": " Adapter  ",
+                  "data": "240W"
+              },
+              {
+                  "name": " Battery",
+                  "data": "Li Polymer 99Wh"
+              },
+              {
+                  "name": " Security",
+                  "data": "Firmware-based TPM, supports Intel® Platform Trust Technology (Intel® PTT)"
+              },
+              {
+                  "name": "Communications",
+                  "data": "WIFI: Intel® Wi-Fi 6E AX211 (Gig+) Wireless (802.11ax, a/b/g/n/ac/ax compatible)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "2x 2.5W Speaker , Microphone"
+              },
+              {
+                  "name": "Keyboard Type",
+                  "data": "Island-style RGB Fusion Keyboard with per-key backlit control"
+              },
+              {
+                  "name": "Storage",
+                  "data": "2x M.2 SSD slots (Type 2280, supports 2x NVMe PCIe Gen4)"
+              },
+              {
+                  "name": "Video Graphics",
+                  "data": "Boost Clock 1605 MHz / Maximum Graphics Power 115 W"
+              },
+              {
+                  "name": "System Memory",
+                  "data": "2x DDR5 slots (DDR5-4800, Max 64GB)"
+              },
+              {
+                  "name": "Display",
+                  "data": "17.3 Thin Bezel FHD 1920x1080 IPS-level Anti-glare Display LCD (360Hz, 72% NTSC)"
+              },
+              {
+                  "name": "Weight",
+                  "data": "~2.70 kg"
+              }
+          ]
+      },
+      {
+          "id": 35,
+          "category_id": 9,
+          "category_name": "Laptop",
+          "ram": 16,
+          "gen": "12th",
+          "name": "AORUS 17 XE4 ",
+          "imgProduct": "assets/images/truong/LAPTOP/35.1.png",
+          "price": 2400,
+          "slide": [{
+                  "id": 1,
+                  "img": "assets/images/truong/LAPTOP/35.2.png"
+              },
+              {
+                  "id": 2,
+                  "img": "assets/images/truong/LAPTOP/35.3.png"
+              },
+              {
+                  "id": 3,
+                  "img": "assets/images/truong/LAPTOP/35.4.png"
+              },
+              {
+                  "id": 4,
+                  "img": "assets/images/truong/LAPTOP/35.5.png"
+              }
+          ],
+          "bestFeatures": [
+              "The brand-new AORUS 17 redefines high-end gaming laptops. Combining powerful performance and mobility with the latest NVIDIA® GeForce RTX™ 30 Series Laptop GPUs, feel the power to run any AAA game smoothly."
+          ],
+          "features": [
+              "Windows 11 Pro",
+              "NVIDIA® GeForce RTX™ 30 Series Laptop GPUs",
+              "CS:GO World’s Top Esports Team G2 Esports Certified",
+              "15.6” FHD 240Hz NTSC 72% IPS Panel",
+              "12th Intel® Core™ i7 Processor H-Series",
+              "WINDFORCE Infinity Cooling System",
+              "World's First Microsoft Azure AI Notebook"
+          ],
+          "specifying": [{
+                  "name": "OS",
+                  "data": "Windows 11 Home"
+              },
+              {
+                  "name": "CPU",
+                  "data": "12th Gen Intel® Core™ i7-12700H (2.3GHz~4.7GHz)"
+              },
+              {
+                  "name": " Adapter  ",
+                  "data": "240W"
+              },
+              {
+                  "name": " Battery",
+                  "data": "Li Polymer 99Wh"
+              },
+              {
+                  "name": " Security",
+                  "data": "Firmware-based TPM, supports Intel® Platform Trust Technology (Intel® PTT)"
+              },
+              {
+                  "name": "Communications",
+                  "data": "WIFI: Intel® Wi-Fi 6E AX211 (Gig+) Wireless (802.11ax, a/b/g/n/ac/ax compatible)"
+              },
+              {
+                  "name": "Audio",
+                  "data": "2x 2.5W Speaker , Microphone"
+              },
+              {
+                  "name": "Keyboard Type",
+                  "data": "Island-style RGB Fusion Keyboard with per-key backlit control"
+              },
+              {
+                  "name": "Storage",
+                  "data": "2x M.2 SSD slots (Type 2280, supports 2x NVMe PCIe Gen4)"
+              },
+              {
+                  "name": "Video Graphics",
+                  "data": "NVIDIA® GeForce RTX™ 3070 Ti Laptop GPU 8GB GDDR6"
+              },
+              {
+                  "name": "System Memory",
+                  "data": "2x DDR4 slots (DDR4-3200, Max 64GB)"
+              },
+              {
+                  "name": "Display",
+                  "data": "17.3 Thin Bezel FHD 1920x1080 IPS-level Anti-glare Display LCD (360Hz, 72% NTSC)"
+              },
+              {
+                  "name": "Weight",
+                  "data": "~2.70 kg"
+              }
+          ]
+      }
+  ]
+}

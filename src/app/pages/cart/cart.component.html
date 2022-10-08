@@ -1,0 +1,153 @@
+<div class="main">
+    <div class="container box-cart" style="padding-bottom: 50px;">
+        <h1>Cart</h1>
+        <div class="row justify-content-between mt-3" >
+            <div class="col-lg-7 col-12 pr-5 boxAllCart" *ngIf="cart.length !=0; else order">
+                <div class="row cardItem" *ngFor="let item of cart,let i = index" >
+                    <div class="col-lg-4 col-md-3 col-5">
+                        <img src="{{item.img}}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
+                    </div>
+                    <div class="col-lg-5 col-md-6 col-7"  >
+                        <p class="name">{{item.name}}</p>
+                        <span>{{item.category_name}}</span>
+                        <div class="d-flex align-items-center ml-0 mt-2 position-relative">
+                            <span class="span mr-2">Quantity:  </span>
+                            <div class="boxQuantity d-flex align-items-center">
+                                <span class="useQuantity reduceBut" (click)="reduceQuantity(i)">-</span>
+                                <span class="quantityInp mt-1" id="quantityInp" [(ngModel)]="item.quantity" id="quantityInp" type="text">{{item.quantity}}</span>
+                                <span class="useQuantity"  (click)="increaseQuantity(i)">+</span>
+                            </div>
+                            <span class="mt-2 remove" (click)="deleteItem(i)">Remove</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="position-relative">
+                            <p class="price" style="font-weight: 600;">${{item.price}}</p>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+            <ng-template #order >
+                <div class="col-lg-7 col-12 pr-5 boxAllCart" style="background-color: black; width: 40%;border-radius: 6px;height: 100px;" role="button" routerLink="/shop">
+                    <h6 style="color: #F86902;padding: 30px;font-size: 30px;text-align: center;">Go to shopping <i class="fa-solid fa-cart-shopping"></i></h6>
+                </div>
+            </ng-template>
+            <div class="col-lg-5 mb-4">
+                <div class="payment">
+                    <h3 class="text-light">Order Summary</h3>
+                    <div class="row">
+                        <div class="col-5">
+                            <p class="text-light">Shipping</p>
+                            <p class="text-light">Sales Tax </p>
+                            <h4 class="text-light">Subtotal</h4>
+                        </div>
+                        <div class="col-7">
+                            <p class="text-right text-light">Calculated at checkout</p>
+                            <p class="text-right text-light">Calculated at checkout</p>
+                            <h4 class="text-right text-light">${{subtotal}}</h4>
+                        </div>
+                    </div>
+                    <a class="btn text-light checkout" role="button" data-bs-toggle="modal" data-bs-target="#modalId">CHECKOUT</a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+<!-- Modal -->
+
+<!-- Modal Body -->
+<!-- if you want to close by clicking outside the modal, delete the last endpoint:data-bs-backdrop and data-bs-keyboard -->
+<div class="modal fade modalBox" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog max-width-0" role="document">
+        <div class="modal-content modalCustom">
+            <form [formGroup]="formCart">
+                <div class="modal-header d-block">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h2 class="text-center ml-4 mt-2">Shipping</h2>
+                </div>
+                <div class="modal-body">
+
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="formGroup">
+                                <label for="">Name</label>
+                                <input type="text" formControlName="name">
+                                <div class="errorSpan" *ngIf="form.name.invalid && (form.name.dirty || form.name.touched)" required>
+                                    <div class="" *ngIf="form.name.errors?.['required']">
+                                        <span class="text-danger font-italic ">*Please enter the name of the consignee</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="formGroup">
+                                <label for="">Email</label>
+                                <input type="text" formControlName="email">
+                                <div class="errorSpan" *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)" required>
+                                    <div class="" *ngIf="form.email.errors?.['required']">
+                                        <span class="text-danger font-italic ">*Please enter the email of the consignee</span>
+                                    </div>
+                                    <div class="" *ngIf="!form.email.errors?.['partern']">
+                                        <span class="text-danger font-italic ">*Please enter a valid email</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="formGroup">
+                                <label for="">Address</label>
+                                <input type="text" formControlName="address">
+                                <div class="errorSpan" *ngIf="form.address.invalid && (form.address.dirty || form.address.touched)" required>
+                                    <div class="" *ngIf="form.address.errors?.['required']">
+                                        <span class="text-danger font-italic ">*Please enter the address of the consignee</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="formGroup">
+                                <label for="">Telephone Number</label>
+                                <input type="text" formControlName="telephoneNumber">
+                                <div class="errorSpan" *ngIf="form.telephoneNumber.invalid && (form.telephoneNumber.dirty || form.telephoneNumber.touched)" required>
+                                    <div class="" *ngIf="form.telephoneNumber.errors?.['required']">
+                                        <span class="text-danger font-italic ">*Please enter the Telephone number of the consignee</span>
+                                    </div>
+                                    <div class="" *ngIf="!form.telephoneNumber.errors?.['partern']">
+                                        <span class="text-danger font-italic ">*Please enter a valid telephone number</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="formGroup">
+                                        <h4 class="ml-3 mt-2">Subtotal: <span class="h4span text-dark">${{subtotal}}</span></h4>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="formGroup">
+                                        <h4 class="ml-3 mt-2">Date: <span class="h4span text-dark">{{dateBuy}}</span></h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer d-block">
+                    <div class="ml-4 mt-2">
+                        <h2 class="text-center" >Billing</h2>
+                        <div class="boxBilling">
+                            <div class="d-flex align-items-center ml-0 mt-2">
+                                <input type="checkbox" id="checkbox"><label for="checkbox" class="labelCheckbox" >Billing address is the same as shipping</label>
+                            </div>
+                        </div>
+                        <button type="submit" data-dismiss="modal"  aria-label="Close" class="btn btn-primary text-light checkout checkoutModal mt-3 mb-4" role="button" (click)="checkout()" [disabled]=" form.name.invalid || form.address.invalid || form.email.invalid || form.telephoneNumber.invalid">CHECKOUT</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
