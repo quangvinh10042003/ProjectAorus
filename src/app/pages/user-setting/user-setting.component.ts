@@ -36,6 +36,11 @@ export class UserSettingComponent implements OnInit {
   constructor(private app: ItemService, private router: Router) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.accountID = JSON.parse(localStorage.getItem("accountSignin") as string)
     this.accountSignIn = localStorage.getItem('accountSignin');
     this.accountSignIn = JSON.parse(this.accountSignIn);

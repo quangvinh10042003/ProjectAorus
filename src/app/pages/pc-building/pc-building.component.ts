@@ -1,6 +1,6 @@
 import Swal from 'sweetalert2';
 import { Route, Router } from '@angular/router';
-import { AccountService } from './../../services/account.service';
+import { AccountService } from './../../service/account.service';
 import { ProductsService } from './../../services/products.service';
 import { CategoryService } from './../../services/category.service';
 import { Component, OnInit } from '@angular/core';
@@ -23,7 +23,6 @@ export class PcBuildingComponent implements OnInit {
     { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
     { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
     { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-    { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
   ];
   listProduct: any;
   listAllItem: any;
@@ -32,6 +31,11 @@ export class PcBuildingComponent implements OnInit {
   constructor(private router: Router, private categorySer: CategoryService, private productSer: ProductsService, private accountSer: AccountService) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.categorySer.getAll().subscribe((data: any) => {
       this.listCategory = data;
     })
@@ -40,7 +44,6 @@ export class PcBuildingComponent implements OnInit {
       this.listAllItem = data;
     })
     let id: any = localStorage.getItem('accountSignin');
-    console.log(id);
     id = JSON.parse(id);
     this.accountSer.getItem(id).subscribe((data: any) => {
       this.acc = data;
@@ -87,8 +90,8 @@ export class PcBuildingComponent implements OnInit {
     })
   }
   addToCart() {
+   
     let id: any = localStorage.getItem('accountSignin');
-    console.log(id);
     id = JSON.parse(id);
     let account: any;
     let listItemChosenFake: any = [
@@ -101,44 +104,52 @@ export class PcBuildingComponent implements OnInit {
       { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
       { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
       { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+     
     ];
-    console.log(listItemChosenFake);
     if (JSON.stringify(this.listItemChosen) == JSON.stringify(listItemChosenFake)) {
       Swal.fire(
         'Looks like you have not selected any products yet',
         'Please choose a product'
       )
     } else {
+      
       for (let i = 0; i < 9; i++) {
         let checkData: any = null;
         if (this.listItemChosen[i].name == '') {
+          // continue;
         }
         else {
           this.productSer.getItem(parseInt(this.listItemChosen[i].id)).subscribe((data: any) => {
-            account = this.acc;
-            checkData = this.acc.cart.find((item: any) => {
-              return item.id == parseInt(this.listItemChosen[i].id);
+            this.accountSer.getItem(id).subscribe((acc:any)=>{
+              account = acc;
+              checkData = acc.cart.find((item: any) => {
+                return item.id == parseInt(this.listItemChosen[i].id);
+              })
+              console.log(checkData);
+              
+              if (checkData) {
+                checkData.quantity += 1;
+                this.accountSer.editItem(acc, id).subscribe(() => {
+                 
+                });
+                this.accountSer.getItem(id).subscribe((account) => {
+                  this.acc = account;
+                })
+              } else {
+                this.acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
+                console.log(this.acc);
+                this.accountSer.editItem(this.acc, id).subscribe(() => {
+                  this.accountSer.getItem(id).subscribe((account) => {
+                    this.acc = account;
+                    this.accountSer.totalCard.next(account.cart.length);
+                  })
+                });
+              }
             })
-            if (checkData) {
-              checkData.quantity += 1;
-              this.accountSer.editItem(this.acc, id).subscribe(() => {
-                this.accountSer.getItem(id).subscribe((acc) => {
-                  this.acc = acc;
-                })
-              });
-            } else {
-              this.acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
-              this.accountSer.editItem(this.acc, id).subscribe(() => {
-                this.accountSer.getItem(id).subscribe((acc) => {
-                  this.acc = acc;
-                })
-              });
-            }
+            
           })
         }
       }
-
       Swal.fire({
         position: 'top-end',
         icon: 'success',
@@ -146,9 +157,7 @@ export class PcBuildingComponent implements OnInit {
         showConfirmButton: false,
         timer: 1500
       })
-      this.router.navigate(['cart']);
+      
     }
-
-
   }
 }

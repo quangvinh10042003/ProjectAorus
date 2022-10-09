@@ -1,4 +1,4 @@
-import { AccountService } from './../../services/account.service';
+import { AccountService } from './../../service/account.service';
 import { CategoryService } from './../../services/category.service';
 import { ProductsService } from './../../services/products.service';
 import { Component, OnInit } from '@angular/core';
@@ -30,6 +30,11 @@ export class ShopComponent implements OnInit {
   constructor(private accountSer: AccountService,private router: Router, private productSer: ProductsService, private actRoute: ActivatedRoute, private categorySer: CategoryService) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.idCompare1 = sessionStorage.getItem('itemCompare1');
     this.idCompare2 = sessionStorage.getItem('itemCompare2');
 
@@ -72,6 +77,7 @@ export class ShopComponent implements OnInit {
             this.accountSer.editItem(acc,id).subscribe();
           }else{
             acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
+            this.accountSer.totalCard.next(acc.cart.length);
             this.accountSer.editItem(acc,id).subscribe();
           }
         })

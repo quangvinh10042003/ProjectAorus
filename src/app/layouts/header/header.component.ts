@@ -1,3 +1,4 @@
+import { AccountService } from './../../service/account.service';
 import  Swal  from 'sweetalert2';
 import { ProductsService } from './../../services/products.service';
 import { Component, OnInit } from '@angular/core';
@@ -14,10 +15,23 @@ export class HeaderComponent implements OnInit {
   anh: any;
   listItemSearch:any;
   keyword:string = '';
-  totalCart:any;
-  constructor(private categorySer: CategoryService, private productSer: ProductsService, private router: Router) { }
+  totalCart:number=0;
+  checkStr:any
+  constructor(private categorySer: CategoryService, private productSer: ProductsService, private router: Router, private accService: AccountService) { }
 
   ngOnInit(): void {
+    this.checkStr = localStorage.getItem('accountSignin');
+    this.checkStr = JSON.parse(this.checkStr);
+
+    if(this.checkStr){
+      this.accService.getItem(this.checkStr).subscribe((data:any)=>{
+        this.accService.totalCard.next(data.cart.length);
+      })
+    }
+    this.accService.totalCard.subscribe((data:number)=>{
+      this.totalCart = data
+    })
+    
     this.categorySer.getAll().subscribe((data: any) => {
       this.listProducts = data;
     })

@@ -34,6 +34,11 @@ export class CompareComponent implements OnInit {
   constructor(private productSer: ProductsService) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     let id1 = sessionStorage.getItem('itemCompare1');
     let id2 = sessionStorage.getItem('itemCompare2');
     if (id1) {

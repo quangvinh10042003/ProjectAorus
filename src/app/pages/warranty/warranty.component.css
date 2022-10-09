@@ -1,6 +1,6 @@
 .body {
     background: #1c1c1c;
-    padding-top: 200px;
+    padding-top: 100px;
     padding-bottom: 50px;
 }
 
@@ -16,9 +16,7 @@
 .baner img {
     width: 100%;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.26), black);
-
 }
-
 
 .baner {
     position: relative;
@@ -38,9 +36,10 @@
 }
 
 .page-text {
-    margin-top: -450px;
+    top: 50%;
     position: absolute;
-    margin-left: 304px;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .page-wa {
@@ -108,25 +107,12 @@ ul>li {
     margin-top: 50px;
 }
 
-@media (max-width:1024px) {
-    .page-text {
-        margin-top: -316px;
-        position: absolute;
-        margin-left: 163px;
-    }
-}
+@media (max-width:1024px) {}
 
 @media (max-width:768px) {
-    .page-text {
-        margin-top: -246px;
-        position: absolute;
-        margin-left: 58px;
-    }
-
     .page-text h2 {
         font-size: 25px;
     }
-
     .layout {
         padding-left: 40px;
         padding-right: 40px;
@@ -134,69 +120,46 @@ ul>li {
 }
 
 @media (max-width:425px) {
-    .page-text {
-        margin-top: -184px;
-        position: absolute;
-        margin-left: 20px;
-    }
-
     .page-text h2 {
         font-size: 20px;
     }
-
     .layout {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .page-titles {
         font-size: 29px;
     }
 }
 
 @media (max-width:375px) {
-    .page-text {
-        margin-top: -149px;
-        position: absolute;
-        margin-left: 20px;
-    }
-
     .page-text h2 {
         font-size: 14px;
     }
-
     .layout {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .page-titles {
         font-size: 22px;
     }
 }
 
 @media (max-width:320px) {
-    .page-text {
-        margin-top: -142px;
-        position: absolute;
-        margin-left: 34px;
-    }
-
     .page-text h2 {
         font-size: 10px;
     }
-
     .layout {
         padding-left: 20px;
         padding-right: 20px;
     }
-
     .page-titles {
         font-size: 15px;
     }
 }
-@media (max-width:375px){
-    ul li p a{
+
+@media (max-width:375px) {
+    ul li p a {
         font-size: 13px;
     }
 }

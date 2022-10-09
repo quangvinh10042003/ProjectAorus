@@ -14,6 +14,11 @@ export class NewComponent implements OnInit {
   constructor(private app: ItemService) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.app.getNew().subscribe(data => {
       this.list = data
   

@@ -54,6 +54,11 @@ export class PasswordComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.accountSignin = localStorage.getItem('accountSignin');
     this.accountSignin = JSON.parse(this.accountSignin);
     console.log(this.accountSignin)

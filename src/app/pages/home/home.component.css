@@ -1,5 +1,6 @@
 .body {
     background-color: #000;
+    padding-top: 60px;
 }
 
 .height100 {
@@ -204,7 +205,6 @@ header:hover {
 }
 
 .itemGears img {
-
     height: 100%;
     transition: all .3s;
 }
@@ -338,65 +338,50 @@ footer p {
     .flexRowFooter {
         padding: 30px 40px;
     }
-
     .newFeed .boxImg {
         height: 200px;
     }
-
     .itemSellers {
         margin-top: 20px;
     }
-
     .itemSellers .boxImg {
         padding: 0px 15px;
     }
-
     .itemSellers .choseItem {
         padding: 0px 15px;
     }
-
     .itemSellers .name {
         padding: 0px 15px;
     }
-
     .itemSellers {
         padding: 0px 15px;
     }
-
     .choseItem a {
         padding: 5px 8px
     }
-
     .toggle {
         display: block;
     }
-
     .menu {
         display: none
     }
-
     .liSearch,
     .logoGiga {
         display: none !important;
     }
-
     .divImg {
         margin-left: 65px;
     }
-
     .containerFull {
         padding: 0px 40px;
     }
-
     .bannerBOX {
         padding-top: 80px;
         min-height: 400px;
     }
-
     .bannerBOX img {
         min-height: 400px;
     }
-
     .textBanner {
         right: 50%;
         top: 150px;
@@ -405,95 +390,80 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
+    .carolImg {
+        height: 250px;
+    }
+    .carolImg img {
+        height: 250px;
+    }
     .flexRowFooter p {
         text-align: center;
     }
-
     .gamingGears h1 {
         font-size: 24px;
     }
-
     .gamingGears h5 {
         font-size: 16px;
     }
-
     .bestSeller h1 {
         font-size: 24px;
     }
-
     .newFeed h1 {
         font-size: 24px;
     }
-
     .newFeed h6 {
         font-size: 16px;
     }
-
     .newFeed h4 {
         font-size: 20px;
     }
-
     .textBanner h3 {
         font-size: 20px !important;
     }
-
     .textBanner h6 {
         font-size: 12px !important;
     }
-
     .buttonBanner {
         padding: 6px 15px;
         width: 110px;
         font-size: 12px;
     }
-
     .containerFull {
         padding: 0px 30px;
     }
-
     .divImg {
         width: 140px;
     }
-
     .divImg img {
         margin-top: 22px;
     }
-
     .toggle i {
         font-size: 16px;
     }
-
     .rightNAV ul li a i {
         font-size: 16px;
     }
-
     .bannerBOX {
         padding-top: 80px;
         min-height: 260px;
     }
-
     .bannerBOX img {
         min-height: 260px;
     }
-
     .bannerBOX h3 {
         font-size: 24px;
     }
-
     .bannerBOX h6 {
         font-size: 14px;
     }
-
     .textBanner {
         right: 50%;
         top: 80px;
         transform: translate(50%, 0%);
     }
-
     .carouselButton {
         width: 40px;
     }
-
     .choseItem a {
         padding: 5px 5px;
         font-size: 12px;
@@ -502,7 +472,6 @@ footer p {
 
 .scale:hover .itemGears img {
     transform: scale(1.1);
-
 }
 
 .scale:hover .div h6 {
@@ -514,6 +483,7 @@ footer p {
 .scale {
     cursor: pointer;
 }
-.itemGears{
+
+.itemGears {
     padding: 20px;
 }

@@ -25,6 +25,11 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { UserIComponent } from './pages/user-i/user-i.component';
 import { UserSettingComponent } from './pages/user-setting/user-setting.component';
 import { PasswordComponent } from './pages/password/password.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { LoginComponent } from './pages/login/login.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { HistoryComponent } from './pages/history/history.component';
+import { CartComponent } from './pages/cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
@@ -47,7 +52,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomeComponent,
     UserIComponent,
     UserSettingComponent,
-    PasswordComponent
+    PasswordComponent,
+    RegisterComponent,
+    LoginComponent,
+    DetailComponent,
+    HistoryComponent,
+    CartComponent,
+    
   ],
   imports: [
     BrowserModule,

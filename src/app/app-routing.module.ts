@@ -1,7 +1,11 @@
 import { PcBuildingComponent } from './pages/pc-building/pc-building.component';
 import { CompareComponent } from './pages/compare/compare.component';
 import { ShopComponent } from './pages/shop/shop.component';
-
+import { CartComponent } from './pages/cart/cart.component';
+import { DetailComponent } from './pages/detail/detail.component';
+import { HistoryComponent } from './pages/history/history.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
@@ -36,8 +40,12 @@ const routes: Routes = [
   { path: "user", component: UserIComponent },
   { path: "usersetting", component: UserSettingComponent },
   { path: "password", component: PasswordComponent },
-];
-
+  { path: 'register', component: RegisterComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'detail/:id', component: DetailComponent },
+  { path: 'history', component: HistoryComponent },
+  { path: 'cart', component: CartComponent }
+]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

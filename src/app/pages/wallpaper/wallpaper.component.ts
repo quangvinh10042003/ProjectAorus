@@ -10,6 +10,11 @@ export class WallpaperComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
   }
 
 }

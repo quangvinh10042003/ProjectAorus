@@ -20,7 +20,7 @@
                             <span>User Setting</span>
                         </a>
                     </button>
-                    <button class="btn-user">
+                    <button class="btn-user" routerLink="/history">
                         <a class="text-decoration-none text-light">
                             <span class="btn-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
                             <span>History Order</span>
@@ -47,34 +47,27 @@
                         <form class="row g-3 ">
                             <div class="col-md-4">
                                 <label for="validationDefault01" class="form-label">First name</label>
-                                <input type="text" class="form-control ps-0" id="validationDefault01"
-                                    value="{{user.fullName}}" disabled required>
+                                <input type="text" class="form-control ps-0" id="validationDefault01" value="{{user.fullName}}" disabled required>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault02" class="form-label">Email Address</label>
-                                <input type="email" class="form-control ps-0" id="validationDefault02" required disabled
-                                    value="{{user.email}}">
+                                <input type="email" class="form-control ps-0" id="validationDefault02" required disabled value="{{user.email}}">
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefaultUsername" class="form-label">Telephone Number</label>
-                                <input type="text" class="form-control ps-0" value="{{user.phone}}"
-                                    id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required
-                                    disabled>
+                                <input type="text" class="form-control ps-0" value="{{user.phone}}" id="validationDefaultUsername" aria-describedby="inputGroupPrepend2" required disabled>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault03" class="form-label">Address</label>
-                                <input type="text" class="form-control ps-0" id="validationDefault03 "
-                                    value="{{user.address}}" required disabled>
+                                <input type="text" class="form-control ps-0" id="validationDefault03 " value="{{user.address}}" required disabled>
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault04" class="form-label">Country</label>
-                                <input type="text" class="form-control ps-0" id="validationDefault03 " required disabled
-                                    value="{{user.country}}">
+                                <input type="text" class="form-control ps-0" id="validationDefault03 " required disabled value="{{user.country}}">
                             </div>
                             <div class="col-md-4">
                                 <label for="validationDefault05" class="form-label">Password</label>
-                                <input type="password" class="form-control ps-0" id="validationDefault05" required
-                                    disabled value="{{user.password}}">
+                                <input type="password" class="form-control ps-0" id="validationDefault05" required disabled value="{{user.password}}">
                             </div>
                             <div class="col-12">
                                 <button class="btn rounded-0" type="submit" (click)="deleteUser(user.id)">Delete

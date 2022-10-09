@@ -13,6 +13,11 @@ export class UserIComponent implements OnInit {
   accountID: any;
   constructor(private app: ItemService, private router: Router) { }
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.accountID = localStorage.getItem("accountSignin")
     this.accountID = JSON.parse(this.accountID)
     this.app.getUser(this.accountID).subscribe((data: any) => {
@@ -31,11 +36,11 @@ export class UserIComponent implements OnInit {
       /* Read more about isConfirmed, isDenied below */
       if (result.isConfirmed) {
         Swal.fire('Saved!', '', 'success');
-        this.app.deleteItem(this.accountID).subscribe()
+        this.app.deleteItem(this.accountID).subscribe();
+        localStorage.removeItem('accountSignin');
         this.router.navigate(['/'])
       } else if (result.isDenied) {
         Swal.fire('Changes are not saved', '', 'info')
-        this.router.navigate(['account']);
       }
     })
 

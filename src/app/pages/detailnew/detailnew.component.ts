@@ -14,6 +14,11 @@ export class DetailnewComponent implements OnInit {
   constructor(private app: ItemService, private actRoute: ActivatedRoute, private router: Router) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     let id: any;
     id = this.actRoute.snapshot.params['id'];
     this.app.getDetailNew(id).subscribe((data: any) => {

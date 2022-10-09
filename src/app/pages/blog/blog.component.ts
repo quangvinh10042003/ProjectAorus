@@ -13,6 +13,11 @@ export class BlogComponent implements OnInit {
   constructor(private app: ItemService) { }
 
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
     this.app.getBlog().subscribe(data => {
       this.list = data
     })

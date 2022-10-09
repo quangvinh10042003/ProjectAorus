@@ -9,6 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   constructor() { }
   ngOnInit(): void {
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
   }
   submit(e: any) {
     Swal.fire({
