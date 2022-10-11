@@ -8,32 +8,7 @@
       "address": "",
       "country": "",
       "phone": "",
-      "cart": [
-        {
-          "id": 1,
-          "name": "B660M AORUS ELITE AX DDR4",
-          "img": "assets/images/vinhImg/detail/mainboard/mb1.webp",
-          "category_id": 1,
-          "quantity": 2,
-          "price": 1260
-        },
-        {
-          "id": 33,
-          "name": "AORUS 17 YE4  ",
-          "img": "assets/images/truong/LAPTOP/33.1.png",
-          "category_id": 9,
-          "quantity": 7,
-          "price": 2430
-        },
-        {
-          "id": 32,
-          "name": "AORUS 17 KE4 ",
-          "img": "assets/images/truong/LAPTOP/32.1.png",
-          "category_id": 9,
-          "quantity": 3,
-          "price": 2300
-        }
-      ],
+      "cart": [],
       "history": [
         {
           "consignee": "vinh",
@@ -60,9 +35,89 @@
               "price": 960
             }
           ]
+        },
+        {
+          "consignee": "vinh",
+          "subtotal": 49420,
+          "email": "a@gmail.com",
+          "address": "HA",
+          "phone": "0121212121",
+          "date": "10/10/2022",
+          "cart": [
+            {
+              "id": 1,
+              "name": "B660M AORUS ELITE AX DDR4",
+              "img": "assets/images/vinhImg/detail/mainboard/mb1.webp",
+              "category_id": 1,
+              "quantity": 2,
+              "price": 1260
+            },
+            {
+              "id": 33,
+              "name": "AORUS 17 YE4  ",
+              "img": "assets/images/truong/LAPTOP/33.1.png",
+              "category_id": 9,
+              "quantity": 19,
+              "price": 2430
+            },
+            {
+              "id": 5,
+              "name": "AORUS FV43U Gaming Monitor",
+              "img": "assets/images/vinhImg/detail/monitor/AORUS FV43U Gaming Monitor.webp",
+              "category_id": 2,
+              "quantity": 1,
+              "price": 730
+            }
+          ]
         }
       ],
       "id": 1
+    },
+    {
+      "email": "c@gmail.com",
+      "fullName": "a",
+      "password": "1",
+      "address": "",
+      "country": "",
+      "phone": "0122111111",
+      "cart": [],
+      "history": [
+        {
+          "consignee": "a",
+          "subtotal": 6770,
+          "email": "c@gmail.com",
+          "address": "HN",
+          "phone": "0122112111",
+          "date": "10/10/2022",
+          "cart": [
+            {
+              "id": 9,
+              "name": "AORUS MODEL X 12th",
+              "img": "assets/images/vinhImg/detail/pcCase/anh1.webp",
+              "category_id": 3,
+              "quantity": 3,
+              "price": 1580
+            },
+            {
+              "id": 10,
+              "name": "AORUS MODEL S 12th",
+              "img": "assets/images/vinhImg/detail/pcCase/anh2s12th.webp",
+              "category_id": 3,
+              "quantity": 1,
+              "price": 940
+            },
+            {
+              "id": 11,
+              "name": "AORUS MODEL X",
+              "img": "assets/images/vinhImg/detail/pcCase/anh3ModelX.webp",
+              "category_id": 3,
+              "quantity": 1,
+              "price": 1090
+            }
+          ]
+        }
+      ],
+      "id": 2
     }
   ],
   "banner": [

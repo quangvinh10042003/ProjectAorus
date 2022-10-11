@@ -166,7 +166,7 @@ export class CartComponent implements OnInit {
       subtotal: this.subtotal,
       email: this.form.email.value,
       address: this.form.address.value,
-      telephoneNumber: this.form.phone.value,
+      phone: this.form.phone.value,
       date: this.dateBuy,
       cart: this.cart
     })

@@ -57,6 +57,7 @@ export class DetailComponent implements OnInit {
     })
   }
   customOptions: OwlOptions = {
+    items:1,
     loop: true,
     autoplay:true,
     mouseDrag: true,
@@ -66,9 +67,15 @@ export class DetailComponent implements OnInit {
     navSpeed: 200,
     navText: ['', ''],
     responsive: {
-      0: {
-        items: 1
+        0:{
+          items:1,
       },
+      600:{
+          items:1,
+      },
+      1000:{
+          items:1,
+      }
     },
     nav: false
   }
