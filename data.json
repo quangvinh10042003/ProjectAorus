@@ -81,42 +81,7 @@
       "country": "",
       "phone": "0122111111",
       "cart": [],
-      "history": [
-        {
-          "consignee": "a",
-          "subtotal": 6770,
-          "email": "c@gmail.com",
-          "address": "HN",
-          "phone": "0122112111",
-          "date": "10/10/2022",
-          "cart": [
-            {
-              "id": 9,
-              "name": "AORUS MODEL X 12th",
-              "img": "assets/images/vinhImg/detail/pcCase/anh1.webp",
-              "category_id": 3,
-              "quantity": 3,
-              "price": 1580
-            },
-            {
-              "id": 10,
-              "name": "AORUS MODEL S 12th",
-              "img": "assets/images/vinhImg/detail/pcCase/anh2s12th.webp",
-              "category_id": 3,
-              "quantity": 1,
-              "price": 940
-            },
-            {
-              "id": 11,
-              "name": "AORUS MODEL X",
-              "img": "assets/images/vinhImg/detail/pcCase/anh3ModelX.webp",
-              "category_id": 3,
-              "quantity": 1,
-              "price": 1090
-            }
-          ]
-        }
-      ],
+      "history": [],
       "id": 2
     }
   ],

@@ -79,7 +79,9 @@ export class DetailComponent implements OnInit {
     },
     nav: false
   }
-
+  scroll():void{
+    document.documentElement.scrollTop = 800;
+  }
   addToCart():void{
     let id = this.actRouter.snapshot.params['id']
     this.productService.getItem(id).subscribe((data)=>{

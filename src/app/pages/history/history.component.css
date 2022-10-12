@@ -10,6 +10,18 @@
 .left{
     margin-top: 250px;
 }
+.class1:hover .item{
+    background-color: #F86902;
+}
+.class2:hover .item{
+    background-color: #F86902;
+}
+.class3:hover .item{
+    background-color: #F86902;
+}
+.class4:hover .item{
+    background-color: #F86902;
+}
 .item i{
     color: white;
     font-size: 25px;
@@ -108,9 +120,6 @@ margin-bottom: 10px !important;
 .head{
     border-bottom: 1px solid white;
     margin-bottom: 25px;
-}
-.subtotal h6{
-    
 }
 
 @media screen and (max-width: 1023px) {

@@ -293,6 +293,9 @@ table tr td{
 .listSpecifying{
     margin: 0 auto;
 }
+h6 a i{
+    color: white;
+}
 @media screen and (max-width: 769px) {
     .main .top{
         background-color: black;

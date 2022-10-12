@@ -3,53 +3,61 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-12 col-12 left">
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <span>User Profile</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-user-pen"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <span>User Profile</span>
+                <div class="class1">
+                    <div class="userProfile item" routerLink="/user/">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-regular fa-circle-user"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span >User Infomation</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-shirt"></i>
+                <div class="class2">
+                    <div class="userProfile item" routerLink="/usersetting/">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-wrench"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span>User Setting</span>
+                            </div>
                         </div>
-                        <div class="col-md-8">
-                            <span>Oder History</span>
-                        </div>  
                     </div>
                 </div>
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-right-from-bracket"></i>
+                <div class="class3">
+                    <div class="userProfile item" routerLink="/history/">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span>Oder History</span>
+                            </div>  
                         </div>
-                        <div class="col-md-8">
-                            <span (click)="signOut()">Sign Out</span>
+                    </div>
+                </div>
+                <div class="class4">
+                    <div class="userProfile item"(click)="signOut()">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </div>
+                            <div class="col-md-8">
+                                <span >Sign Out</span>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="mobile">
                     <select> 
                         <option value="" selected disabled hidden>Menu</option>
-                        <option value="1">User Profile</option>
-                        <option value="2">User Profile</option>
-                        <option value="3">Oder History</option>
-                        <option value="4">Sign Out</option>
+                        <option value="1" routerLink="/user/">User Information</option>
+                        <option value="2" routerLink="/usersetting/">User Setting</option>
+                        <option value="3" routerLink="/history/">Oder History</option>
+                        <option value="4" (click)="signOut()">Sign Out</option>
                     </select>
                 </div>
             </div>
@@ -63,7 +71,7 @@
                 <div class="else">
                     <ng-template #oder >
                         <div class="gotoshop col-lg-9 col-md-9 col-12" style="background-color: black; width: 40%;border-radius: 6px;" role="button" routerLink="/shop">
-                            <h6 style="color: #F86902;padding: 30px;font-size: 30px;text-align: center;">Go to shopping <i class="fa-solid fa-cart-shopping"></i></h6>
+                            <h6 style="color: #F86902;padding: 30px;font-size: 30px;text-align: center;">Go to shop <i class="fa-solid fa-cart-shopping"></i></h6>
                         </div>
                     </ng-template>
                 </div>

@@ -25,6 +25,11 @@ export class UserIComponent implements OnInit {
     })
 
   }
+  signOut(){
+    localStorage.removeItem(this.accountID);
+    this.router.navigate(['/login'])
+
+  }
   deleteUser(id: Number) {
     Swal.fire({
       title: 'Do you want to delete account?',
