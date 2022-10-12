@@ -1,8 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 header {
     background-image: linear-gradient(to bottom, black, rgb(69, 69, 69));
     color: #ffff;
@@ -176,7 +177,8 @@ header:hover {
         font-size: 16px;
     }
 }
-.main .top{
+
+.main .top {
     background-color: black;
     width: 100%;
     height: 190px;
@@ -185,66 +187,81 @@ header:hover {
     background-position: center;
     padding: 100px;
     color: white;
-    
 }
-.main .top .col-md-6,.main .top .col-md-6{
+
+.main .top .col-md-6,
+.main .top .col-md-6 {
     margin-top: 20px;
 }
-.main .top .col-md-6 h1{
+
+.main .top .col-md-6 h1 {
     font-size: 33px;
     line-height: 100%;
     color: #FF6400;
     font-weight: 620;
 }
-.group-option{
+
+.group-option {
     display: flex;
-    justify-content: space-between; margin-top: 10px;
+    justify-content: space-between;
+    margin-top: 10px;
     cursor: pointer;
     align-items: center;
 }
-.group-option h6{
+
+.group-option h6 {
     font-size: 18px;
 }
-.group-option i{
+
+.group-option i {
     font-size: 30px;
 }
-.hover h6{
-    color:#FF6400 ;
+
+.hover h6 {
+    color: #FF6400;
 }
-.hover:hover h6{
+
+.hover:hover h6 {
     border-bottom: 2px solid #FF6400;
     transition: 0.2s all;
 }
-.main .detail{
+
+.main .detail {
     background-image: url('https://www.gigabyte.com/FileUpload/Global/KeyFeature/2128/innergigabyteimages/specbg.png?fbclid=IwAR1KG4DHT0XN9JAqZzKF2_SFykCtIUh5gILK_NVRKuoj2awLI-mIQwIFm2s');
     height: 700px;
 }
-.main .detail .product img{
+
+.main .detail .product img {
     width: 100%;
     height: 600px;
 }
-.features span{
+
+.features span {
     font-size: 27px;
     font-weight: 600;
     color: #FF6400;
 }
-.functional i{
+
+.functional i {
     color: white;
     font-size: 10px;
     margin-right: 10px;
 }
-.functional h6{
+
+.functional h6 {
     color: white;
     margin: 15px 30px;
     font-size: 17px;
 }
-.price h6{
+
+.price h6 {
     font-size: 27px;
     color: white;
     font-weight: 600;
     margin-top: 30px;
 }
-.cart button{
+
+.cart button {
     background-color: #FF6400;
     width: 338px;
     padding: 10px;
@@ -252,39 +269,52 @@ header:hover {
     font-weight: 650;
     margin-top: 20px;
 }
-.specifying{
+
+.specifying {
     background-color: black;
     width: 100%;
     height: 800px;
 }
-.specifying .head h6{
+
+.specifying .head h6 {
     text-align: center;
     color: #FF6400;
     font-size: 28px;
     font-weight: 600;
 }
-table tr td{
+
+table tr td {
     color: white;
     font-weight: 500;
 }
-.product img{
+
+.product img {
     width: 100%;
     padding-right: 80px;
 }
-.listSpecifying .col-md-3 td,.listSpecifying .col-md-9 td{
+
+.listSpecifying .col-md-3 td,
+.listSpecifying .col-md-9 td {
     font-size: 19px;
 }
-.specifying .container .col-md-9 h6{
-    font-size: 25px;color:#FF6400 ;margin:20px 0px 30px 0px;padding-left: 130px;
+
+.specifying .container .col-md-9 h6 {
+    font-size: 25px;
+    color: #FF6400;
+    margin: 20px 0px 30px 0px;
+    padding-left: 130px;
 }
-.listSpecifying .col-md-9{
+
+.listSpecifying .col-md-9 {
     padding-left: 30px;
 }
-.listSpecifying{
+
+.listSpecifying {
     margin: 0 auto;
 }
+
 @media screen and (max-width: 769px) {
-    .main .top{
+    .main .top {
         background-color: black;
         width: 100%;
         height: 190px;
@@ -293,12 +323,12 @@ table tr td{
         background-position: center;
         padding: 100px;
         color: white;
-        
     }
-    .main .top .col-md-6,.main .top .col-md-6{
+    .main .top .col-md-6,
+    .main .top .col-md-6 {
         margin-top: 20px;
     }
-    .main .top .col-md-6 h1{
+    .main .top .col-md-6 h1 {
         font-size: 22px;
         line-height: 100%;
         color: #FF6400;
@@ -306,62 +336,63 @@ table tr td{
         margin-top: 10px;
         padding-right: 20px;
     }
-    .group-option{
+    .group-option {
         display: flex;
-        justify-content: space-between; margin-top: 10px;
+        justify-content: space-between;
+        margin-top: 10px;
         cursor: pointer;
         align-items: center;
     }
-    .product img{
+    .product img {
         width: 100%;
         height: 100px;
     }
-    .group-option h6{
+    .group-option h6 {
         font-size: 13px;
     }
-    .group-option i{
+    .group-option i {
         font-size: 20px;
     }
-    .hover h6{
-        color:#FF6400 ;
+    .hover h6 {
+        color: #FF6400;
     }
-    .hover:hover h6{
+    .hover:hover h6 {
         border-bottom: 2px solid #FF6400;
         transition: 0.2s all;
     }
-    .main .detail{
+    .main .detail {
         background-image: url('https://www.gigabyte.com/FileUpload/Global/KeyFeature/2128/innergigabyteimages/specbg.png?fbclid=IwAR1KG4DHT0XN9JAqZzKF2_SFykCtIUh5gILK_NVRKuoj2awLI-mIQwIFm2s');
         height: 700px;
     }
-    .main .detail .product img{
+    .main .detail .product img {
         width: 100%;
         height: 600px;
     }
-    .features span{
+    .features span {
         font-size: 22px;
         font-weight: 600;
         color: #FF6400;
     }
-    .listSpecifying .col-md-9{
+    .listSpecifying .col-md-9 {
         padding-left: 0px;
     }
-    .functional i{
+    .functional i {
         color: white;
         font-size: 10px;
         margin-right: 10px;
     }
-    .functional h6{
+    .functional h6 {
         color: white;
         margin: 15px 30px;
         font-size: 13px;
     }
-    .price h6{
+    .price h6 {
         font-size: 22px;
         color: white;
         font-weight: 600;
         margin-top: 30px;
     }
-    .cart button{
+    .cart button {
         background-color: #FF6400;
         width: 250px;
         padding: 10px;
@@ -369,35 +400,36 @@ table tr td{
         font-weight: 650;
         margin-top: 20px;
     }
-    .specifying{
+    .specifying {
         background-color: black;
         width: 100%;
         height: 800px;
     }
-    .specifying .head h6{
+    .specifying .head h6 {
         text-align: center;
         color: #FF6400;
         font-size: 23px;
         font-weight: 600;
     }
-    .specifying .container .col-md-9 h6{
+    .specifying .container .col-md-9 h6 {
         font-size: 23px;
         padding-left: 60px;
     }
-    table tr td{
+    table tr td {
         color: white;
         font-weight: 500;
         font-size: 17px;
     }
-    .product img{
+    .product img {
         width: 100%;
-    } 
-    .listSpecifying .col-md-9{
+    }
+    .listSpecifying .col-md-9 {
         padding-left: 30px;
-    }   
+    }
 }
+
 @media screen and (max-width: 321px) {
-    .main .top{
+    .main .top {
         background-color: black;
         width: 100%;
         min-height: 250px;
@@ -407,12 +439,12 @@ table tr td{
         background-position: center;
         padding: 100px;
         color: white;
-        
     }
-    .main .top .col-md-6,.main .top .col-md-6{
+    .main .top .col-md-6,
+    .main .top .col-md-6 {
         margin-top: 20px;
     }
-    .main .top .col-md-6 h1{
+    .main .top .col-md-6 h1 {
         font-size: 18px;
         line-height: 100%;
         color: #FF6400;
@@ -420,101 +452,102 @@ table tr td{
         margin-top: 10px;
         /* padding-right: 20px; */
     }
-    .group-option{
+    .group-option {
         display: flex;
-        justify-content: space-between; margin-top: 10px;
+        justify-content: space-between;
+        margin-top: 10px;
         cursor: pointer;
         align-items: center;
     }
-    .product img{
+    .product img {
         width: 100%;
         height: 100px;
     }
-    .group-option h6{
+    .group-option h6 {
         font-size: 13px;
         padding: 0px 10px;
     }
-    .group-option i{
+    .group-option i {
         font-size: 20px;
     }
-    .hover h6{
-        color:#FF6400 ;
+    .hover h6 {
+        color: #FF6400;
     }
-    .hover:hover h6{
+    .hover:hover h6 {
         border-bottom: 2px solid #FF6400;
         transition: 0.2s all;
     }
-    .main .detail{
+    .main .detail {
         background-image: url('https://www.gigabyte.com/FileUpload/Global/KeyFeature/2128/innergigabyteimages/specbg.png?fbclid=IwAR1KG4DHT0XN9JAqZzKF2_SFykCtIUh5gILK_NVRKuoj2awLI-mIQwIFm2s');
         height: 700px;
     }
-    .main .detail .product img{
+    .main .detail .product img {
         width: 100%;
         height: 600px;
     }
-    .features span{
+    .features span {
         font-size: 18px;
         font-weight: 600;
         color: #FF6400;
     }
-    .functional i{
+    .functional i {
         color: white;
         font-size: 10px;
         margin-right: 10px;
     }
-    .functional h6{
+    .functional h6 {
         color: white;
         margin: 15px 30px;
         font-size: 13px;
     }
-    .price h6{
+    .price h6 {
         font-size: 22px;
         color: white;
         font-weight: 600;
         margin-top: 30px;
     }
-    .cart button{
+    .cart button {
         background-color: #FF6400;
-        width: 300px;
+        width: 250px;
         padding: 10px;
         color: white;
         font-weight: 650;
         margin-top: 20px;
     }
-    .specifying{
+    .specifying {
         background-color: black;
         width: 100%;
-        height: 1200px; 
+        height: 1200px;
     }
-    .specifying .head h6{
+    .specifying .head h6 {
         text-align: center;
         color: #FF6400;
         font-size: 23px;
         font-weight: 600;
     }
-    .specifying .container .col-md-9 h6{
+    .specifying .container .col-md-9 h6 {
         font-size: 23px;
         padding-left: 60px;
     }
-    .listSpecifying table tr td{
+    .listSpecifying table tr td {
         color: white;
         font-weight: 500;
         font-size: 10px;
     }
-    .product img{
+    .product img {
         width: 100%;
         height: 100px;
     }
-    .end{
+    .end {
         padding-left: 0;
     }
-    .listSpecifying .col-md-9{
+    .listSpecifying .col-md-9 {
         padding-left: 0px;
     }
-
 }
+
 @media screen and (max-width: 450px) {
-    .main .top{
+    .main .top {
         background-color: black;
         width: 100%;
         min-height: 250px;
@@ -524,12 +557,12 @@ table tr td{
         background-position: center;
         padding: 100px;
         color: white;
-        
     }
-    .main .top .col-md-6,.main .top .col-md-6{
+    .main .top .col-md-6,
+    .main .top .col-md-6 {
         margin-top: 20px;
     }
-    .main .top .col-md-6 h1{
+    .main .top .col-md-6 h1 {
         font-size: 18px;
         line-height: 100%;
         color: #FF6400;
@@ -537,96 +570,96 @@ table tr td{
         margin-top: 10px;
         /* padding-right: 20px; */
     }
-    .group-option{
+    .group-option {
         display: flex;
-        justify-content: space-between; margin-top: 10px;
+        justify-content: space-between;
+        margin-top: 10px;
         cursor: pointer;
         align-items: center;
     }
-    .product img{
+    .product img {
         width: 100%;
         height: 100px;
     }
-    .group-option h6{
+    .group-option h6 {
         font-size: 13px;
         padding: 0px 10px;
     }
-    .group-option i{
+    .group-option i {
         font-size: 20px;
     }
-    .hover h6{
-        color:#FF6400 ;
+    .hover h6 {
+        color: #FF6400;
     }
-    .hover:hover h6{
+    .hover:hover h6 {
         border-bottom: 2px solid #FF6400;
         transition: 0.2s all;
     }
-    .main .detail{
+    .main .detail {
         background-image: url('https://www.gigabyte.com/FileUpload/Global/KeyFeature/2128/innergigabyteimages/specbg.png?fbclid=IwAR1KG4DHT0XN9JAqZzKF2_SFykCtIUh5gILK_NVRKuoj2awLI-mIQwIFm2s');
         height: 700px;
     }
-    .main .detail .product img{
+    .main .detail .product img {
         width: 100%;
         height: 600px;
     }
-    .features span{
+    .features span {
         font-size: 18px;
         font-weight: 600;
         color: #FF6400;
     }
-    .functional i{
+    .functional i {
         color: white;
         font-size: 10px;
         margin-right: 10px;
     }
-    .functional h6{
+    .functional h6 {
         color: white;
         margin: 15px 30px;
         font-size: 13px;
     }
-    .price h6{
+    .price h6 {
         font-size: 22px;
         color: white;
         font-weight: 600;
         margin-top: 30px;
     }
-    .cart button{
+    .cart button {
         background-color: #FF6400;
-        width: 300px;
+        width: 250px;
         padding: 10px;
         color: white;
         font-weight: 650;
         margin-top: 20px;
     }
-    .specifying{
+    .specifying {
         background-color: black;
         width: 100%;
-        height: 1200px; 
+        height: 1200px;
     }
-    .specifying .head h6{
+    .specifying .head h6 {
         text-align: center;
         color: #FF6400;
         font-size: 23px;
         font-weight: 600;
     }
-    .specifying .container .col-md-9 h6{
+    .specifying .container .col-md-9 h6 {
         font-size: 23px;
         padding-left: 60px;
     }
-    .listSpecifying table tr td{
+    .listSpecifying table tr td {
         color: white;
         font-weight: 500;
         font-size: 10px;
     }
-    .product img{
+    .product img {
         width: 100%;
         height: 100px;
     }
-    .end{
+    .end {
         padding-left: 0;
     }
-    .listSpecifying .col-md-9{
+    .listSpecifying .col-md-9 {
         padding-left: 0px;
     }
-
 }
