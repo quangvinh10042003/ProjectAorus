@@ -42,7 +42,7 @@ export class CartComponent implements OnInit {
     ]),
     phone: new FormControl('', [
       Validators.required,
-      Validators.pattern('^[0][1-9]{9}$'),
+      Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$"),
     ]),
   })
   constructor(private accountService:AccountService,private categorySer:CategoryService,private actRouter:ActivatedRoute,private productService:ProductService,private router:Router) { }

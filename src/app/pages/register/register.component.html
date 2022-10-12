@@ -21,7 +21,7 @@
                                 <div *ngIf="form.email.errors?.['required']">
                                     <span class="">*Email entry required</span>
                                 </div>
-                                <div *ngIf="!form.email.errors?.['patten']">
+                                <div *ngIf="!form.email.errors?.['parten']">
                                     <span class="">*Please provide a valid email</span>
                                 </div>
                             </div>
@@ -40,13 +40,13 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">TelephoneNumber *</label>
-                        <input type="tel" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter your telephone number here" formControlName="telephoneNumber">
+                        <input type="tel" class="form-control" id="" aria-describedby="emailHelp" placeholder="Enter your telephone number here" formControlName="phone">
                         <div class="validators">
-                            <div *ngIf="form.telephoneNumber.invalid && (form.telephoneNumber.dirty || form.telephoneNumber.touched)">
-                                <div *ngIf="form.telephoneNumber.errors?.['required']">
-                                    <span class="">*required to enter the correct telephoneNumber</span>
+                            <div *ngIf="form.phone.invalid && (form.phone.dirty || form.phone.touched)">
+                                <div *ngIf="form.phone.errors?.['required']">
+                                    <span class="">*required to enter the correct telephone</span>
                                 </div>
-                                <div *ngIf="!form.telephoneNumbererrors?.['patten']">
+                                <div *ngIf="!form.phone.errors?.['parten']">
                                     <span class="">*Please provide a valid telephoneNumber</span>
                                 </div>
                             </div>
@@ -88,7 +88,7 @@
                                 <button routerLink="/login">You have already  account</button>
                             </div>
                             <div class="col-md-5 col-5" style="cursor: pointer;">
-                                <button type="submit" [disabled]="form.email.invalid || form.fullName.invalid || form.telephoneNumber.invalid || form.password.invalid">Register</button>
+                                <button type="submit" [disabled]="form.email.invalid || form.fullName.invalid || form.phone.invalid || form.password.invalid">Register</button>
                             </div>
 
                         </div>
