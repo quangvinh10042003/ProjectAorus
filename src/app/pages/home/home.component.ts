@@ -82,9 +82,8 @@ export class HomeComponent implements OnInit {
             this.accountSer.editItem(acc, id).subscribe();
           } else {
             acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
-          this.accountSer.totalCard.next(acc.cart.length);
+             this.accountSer.totalCard.next(acc.cart.length);
             this.accountSer.editItem(acc, id).subscribe(() => {
-
             });
           }
         })
@@ -103,6 +102,9 @@ export class HomeComponent implements OnInit {
         }
       })
     }
-
+  }
+  compare(id:number){
+    sessionStorage.setItem('itemCompare1',JSON.stringify(id));
+    this.router.navigate(['compare']);
   }
 }

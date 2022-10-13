@@ -1,220 +1,142 @@
 <div class="alllll">
     <div class="main col-12">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-12 left">
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-user"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <span>User Profile</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-user-pen"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <span>User Profile</span>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-12 col-12 left">
+                    <div class="class1">
+                        <div class="userProfile item" routerLink="/user/">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <i class="fa-regular fa-circle-user"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <span>User Infomation</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-shirt"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <span>Oder History</span>
-                        </div>  
-                    </div>
-                </div>
-                <div class="userProfile item">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                        </div>
-                        <div class="col-md-8">
-                            <span (click)="signOut()">Sign Out</span>
+                    <div class="class2">
+                        <div class="userProfile item" routerLink="/usersetting/">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <i class="fa-solid fa-wrench"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <span>User Setting</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="mobile">
-                    <select> 
+                    <div class="class3">
+                        <div class="userProfile item" routerLink="/history/">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <span>Oder History</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="class4">
+                        <div class="userProfile item" (click)="signOut()">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <i class="fa-solid fa-right-from-bracket"></i>
+                                </div>
+                                <div class="col-md-8">
+                                    <span>Sign Out</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile">
+                        <select> 
                         <option value="" selected disabled hidden>Menu</option>
-                        <option value="1">User Profile</option>
-                        <option value="2">User Profile</option>
-                        <option value="3">Oder History</option>
-                        <option value="4">Sign Out</option>
+                        <option value="1" routerLink="/user/">User Information</option>
+                        <option value="2" routerLink="/usersetting/">User Setting</option>
+                        <option value="3" routerLink="/history/">Oder History</option>
+                        <option value="4" (click)="signOut()">Sign Out</option>
                     </select>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-9 col-md-9 col-12 right">
-                <div class="oderHistory">
-                    <h4>Oder History</h4>
-                </div>
-                <div class="remove" *ngIf="listHistory.length !=0;else oder">
-                    <h6 (click)="removeAllItem()">Remove All Order </h6>
-                </div>
-                <div class="else">
-                    <ng-template #oder >
-                        <div class="gotoshop col-lg-9 col-md-9 col-12" style="background-color: black; width: 40%;border-radius: 6px;" role="button" routerLink="/shop">
-                            <h6 style="color: #F86902;padding: 30px;font-size: 30px;text-align: center;">Go to shopping <i class="fa-solid fa-cart-shopping"></i></h6>
-                        </div>
-                    </ng-template>
-                </div>
-                <div class="product col-md-12">
-                    <div class="row product-mg mb-4" *ngFor="let product of listHistory,let i = index">
-                        <div class="div row" *ngFor="let item of product.cart">
-                            <div class="col-md-4">
-                                <div class="">
-                                    <div class="date"  style="margin-left: 15px;color: rgb(225, 225, 225)" >
-                                        <h6 >Date: {{product.date}}</h6>
+                <div class="col-lg-9 col-md-12 col-12 right">
+                    <div class="oderHistory">
+                        <h4 class="text-lg-left text-lg-start text-center">Oder History</h4>
+                    </div>
+                    <div class="remove" *ngIf="listHistory.length !=0;else oder">
+                        <h6 (click)="removeAllItem()">Remove All Order </h6>
+                    </div>
+                    <div class="else">
+                        <ng-template #oder>
+                            <div class="gotoshop col-lg-9 col-md-9 col-12 mx-lg-2 mx-auto" style="background-color: black; width: 40%;border-radius: 6px;" role="button" routerLink="/shop">
+                                <h6 class="h6toShop">Go to shop <i class="fa-solid fa-cart-shopping"></i></h6>
+                            </div>
+                        </ng-template>
+                    </div>
+                    <div class="product col-md-12 col-12">
+                        <div class="row product-mg mb-4 me-0" *ngFor="let product of listHistory">
+                            <div class="div row px-0" *ngFor="let item of product.cart, let i = index">
+                                <div class="col-12" [ngClass]="  i ==0 ? 'head' : ''">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-4">
+                                            <div class="date marginBotH6">
+                                                <h6 *ngIf="i==0">Date: {{product.date}}</h6>
+                                            </div>
+                                            <div class="consignee">
+                                                <h6 *ngIf="i==0">Consignee <span class="d-lg-inline-block d-none">: </span><span class="d-lg-inline-block d-block">{{product.consignee}}</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-4">
+                                            <div class="addres text-center marginBotH6">
+                                                <h6 *ngIf="i==0">Address <span class="d-lg-inline-block d-none">: </span><span class="d-lg-inline-block d-block">{{product.address}}</span></h6>
+                                            </div>
+                                            <div class="telephoneNumber text-center">
+                                                <h6 *ngIf="i==0">Telephone<span class="d-lg-inline-block d-none">: </span><span class="d-lg-inline-block d-block">{{product.phone}}</span></h6>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-md-4 col-4">
+                                            <div class="delete text-end">
+                                                <span (click)="removeItem(item.i)" *ngIf="i==0">Remove</span>
+                                            </div>
+                                            <div class="subtotal text-end">
+                                                <h6 *ngIf="i==0">Subtotal <span class="d-lg-inline-block d-none">: </span> <span class="d-lg-inline-block d-block">${{product.subtotal}}</span></h6>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="img">
-                                        <img src="{{item.img}}" alt="" class="card-img"  >
+                                </div>
+                                <div class="col-md-2 col-3">
+                                    <div class="">
+                                        <div class="img">
+                                            <img src="{{item.img}}" alt="" class="card-img">
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 detail">
-                                <div class="subtotal">
-                                    <h6 style="color: rgb(183, 183, 183) ;">Subtotal : ${{product.subtotal}}</h6>
+                                <div class="col-md-7 col-7 detail">
+                                    <div class="name">
+                                        <h4 style="color: #F86902;">{{item.name}} </h4>
+                                    </div>
+                                    <div class="branch">
+                                        <h5>{{item.category_name}}</h5>
+                                    </div>
+                                    <div class="quantity">
+                                        <h6>Quantity : {{item.quantity}}</h6>
+                                    </div>
                                 </div>
-                                <div class="name">
-                                    <h4 style="color: #F86902;">{{item.name}} </h4>
-                                </div>
-                                <div class="branch">
-                                    <h5>{{item.category_name}}</h5> 
-                                </div>
-                                <div class="quantity">
-                                   <h6>Quantity : {{item.quantity}}</h6>
-                                </div>
-                                <div class="consignee">
-                                    <h6>Consignee : <span>{{product.consignee}}</span></h6>
-                                </div>
-                                <div class="address">
-                                    <h6>Address : <span>{{product.address}}</span></h6>
-                                </div>
-                                <div class="Telephone Number : ">
-                                    <h6>Telephone Number: <span>{{product.telephoneNumber}}</span></h6>
-                                </div>
-                               
-                               
-                            </div>
-                            <div class="col-md-2 price">
-                                <div class="delete">
-                                    <span (click)="removeItem(item.i)">Remove</span>
-                                </div>
-                                <div class="price">
-                                    <h5>Price : ${{item.price}} </h5>
-                                </div>
-                               
-                            </div>
-                        </div>
-                     
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
+                                <div class="col-md-3 col-2 price">
 
-<!-- main mobile  -->
-<div class="menu-mobile position-relative" >
-    <h4 class="oder">
-        Oder History
-    </h4>
-    <div class="row" style="margin-bottom: 20px;">
-       
-       
-        <div class="col-md-4 col-4" style="margin-top: 200px;">
-           
-            <div class="mobile">
-                <select> 
-                    <option value="" selected disabled hidden>Menu</option>
-                    <option value="1">User Profile</option>
-                    <option value="2">User Profile</option>
-                    <option value="3">Oder History</option>
-                    <option value="4">Sign Out</option>
-                </select>
-            </div>
-        </div>
-        <div class="col-md-8 col-8"  style="margin-top: 200px;">
-                <div class="remove" *ngIf="listHistory.length !=0;else oder">
-                    <h6 (click)="removeAllItem()">Remove All Order </h6>
-                </div>
-                <ng-template #oder >
-                    <div class="gotoshop" style="background-color: black; width: 40%;border-radius: 6px;" role="button" routerLink="/shop">
-                        <h6 style="color: #F86902;padding: 30px;font-size: 30px;text-align: center;">Go to shopping <i class="fa-solid fa-cart-shopping"></i></h6>
-                    </div>
-                </ng-template>
-        </div>
-    </div>
-    <div class="col-md-12">
-        <div class="product col-md-12" *ngFor="let product of listHistory,let i = index">
-            <div class="divn" style="background-color: black;">
-                <div class="row" *ngFor="let item of product.cart">
-                    <div class="col-md-4 col-4">
-                        <div class="row">
-                            <div class="date"  style="color: rgb(225, 225, 225)" >
-                                <h6 >Date: {{product.date}}</h6>
-                            </div>
-                            <div class="img">
-                                <img src="{{item.img}}" alt="" class="card-img"  >
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-5 col-4 detail">
-                        <div class="subtotal">
-                            <h6 style="color: rgb(183, 183, 183) ;">Subtotal : ${{product.subtotal}}</h6>
-                        </div>
-                        <div class="name">
-                            <h4 style="color: #F86902;">{{item.name}} </h4>
-                        </div>
-                        <div class="branch">
-                            <h5>{{item.category_name}}</h5>
-                        </div>
-                        <div class="quantity">
-                            <h6>Quantity : {{item.quantity}}</h6>
-                         </div>
-                        <div class="consignee">
-                            <h6>Consignee : <span>{{product.consignee}}</span></h6>
-                        </div>
-                        <div class="address">
-                            <h6>Address : <span>{{product.address}}</span></h6>
-                        </div>
-                        <div class="Telephone Number : ">
-                            <h6>Telephone Number: <span>{{product.telephoneNumber}}</span></h6>
-                        </div>
-                       
-                       
-                    </div>
-                    <div class="col-md-3 col-3 price">
-                        <div class="delete">
-                            <span  (click)="removeItem(item.i)">Remove</span>
-                        </div>
-                        <div class="price">
-                            <h5>Price : ${{item.price}} </h5>
-                        </div>
-                       
-                    </div>
-                    <div class="row subMobile" style="position: relative;">
-                        <div class="col-6 delete">
-                            <span style="margin-left: 20px;padding-top: 10px;">Remove</span>
-                        </div>
-                        <div class="col-6 priceMobile"  >
-                            <h5 style="position: absolute;top: 0%;right: 10%;" >Price : $4000 </h5>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+                                    <div class="price">
+                                        <h5>Price <span class="d-lg-inline-block d-none">: </span> ${{item.price}} </h5>
+                                    </div>
 
-</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>

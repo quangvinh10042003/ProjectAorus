@@ -17,12 +17,13 @@
                                 <span class="quantityInp mt-1" id="quantityInp" [(ngModel)]="item.quantity" id="quantityInp" type="text">{{item.quantity}}</span>
                                 <span class="useQuantity" (click)="increaseQuantity(i)">+</span>
                             </div>
-                            <span class="mt-2 remove" (click)="deleteItem(i)">Remove</span>
+                            <span class="mt-2 d-md-block d-none remove" (click)="deleteItem(i)">Remove</span>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3">
                         <div class="position-relative">
                             <p class="price" style="font-weight: 600;">${{item.price}}</p>
+                            <span class="remove removeMobile d-md-none d-block " (click)="deleteItem(i)">Remove</span>
                         </div>
                     </div>
                 </div>

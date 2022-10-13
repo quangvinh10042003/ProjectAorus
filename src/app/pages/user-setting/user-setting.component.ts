@@ -27,7 +27,8 @@ export class UserSettingComponent implements OnInit {
       Validators.minLength(8)
     ]),
     phone: new FormControl(''),
-
+    cart: new FormControl([]),
+    history: new FormControl([])
   })
   get accountForm(): any {
     return this.formGroup.controls;

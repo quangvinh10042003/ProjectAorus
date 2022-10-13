@@ -20,7 +20,7 @@ export class RegisterComponent implements OnInit {
     fullName:new FormControl('',[
       Validators.required,
     ]),
-    telephoneNumber:new FormControl('',[
+    phone:new FormControl('',[
       Validators.required,
       Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")
     ]),
@@ -29,7 +29,6 @@ export class RegisterComponent implements OnInit {
     ]),
     address:new FormControl(''),
     country:new FormControl(''),
-    phone:new FormControl(''),
     cart:new FormControl([]),
     history:new FormControl([]),
   })

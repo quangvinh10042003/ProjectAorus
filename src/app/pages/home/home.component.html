@@ -11,7 +11,7 @@
                 <div class="textBanner">
                     <h3 class="text-light text-center">LESS IS MORE</h3>
                     <h6 class="text-light text-center mt-2">OUR PROJECT STEAL</h6>
-                    <button class="text-light buttonBanner mt-4">SEE MORE</button>
+                    <button class="text-light buttonBanner mt-4" routerLink="/shop/3">SEE MORE</button>
                 </div>
             </div>
             <div class="carousel-item carolImg">
@@ -19,7 +19,7 @@
                 <div class="textBanner">
                     <h3 class="text-light text-center">Reshape the Game</h3>
                     <h6 class="text-light text-center mt-2">AORUS 17 &17X GAMING LAPTOP</h6>
-                    <button class="text-light buttonBanner mt-4">SEE MORE</button>
+                    <button class="text-light buttonBanner mt-4" routerLink="/shop/9">SEE MORE</button>
                 </div>
             </div>
             <div class="carousel-item carolImg">
@@ -27,7 +27,7 @@
                 <div class="textBanner">
                     <h3 class="text-light text-center">4K Pro Gaming On!</h3>
                     <h6 class="text-light text-center mt-2">GIGABYTE AORUS 4K Monitors</h6>
-                    <button class="text-light buttonBanner mt-4">SEE MORE</button>
+                    <button class="text-light buttonBanner mt-4" routerLink="/shop/2">SEE MORE</button>
                 </div>
             </div>
         </div>
@@ -50,7 +50,7 @@
                 <div class="row mt-5">
                     <owl-carousel-o [options]="customOptions">
                         <ng-template carouselSlide *ngFor="let item of banner">
-                            <div class=" scale">
+                            <div class=" scale" routerLink="/shop/{{item.id}}">
                                 <div class="itemGears">
                                     <img class="card-img" src="{{item.img}}" alt="">
                                 </div>
@@ -74,7 +74,7 @@
                             <h6 class="text-center text-light name">{{item.name}}</h6>
                             <div class="d-flex choseItem">
                                 <a routerLink="/detail/{{item.id}}">Learn More</a>
-                                <a href="Compare.html">Compare</a>
+                                <a (click)="compare(item.id)">Compare</a>
                                 <a (click)="addToCart(item.id)">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>

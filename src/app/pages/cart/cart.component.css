@@ -109,7 +109,8 @@ img {
     background-color: #FF6400;
     border-color: #FF6400 !important;
 }
-.errorSpan span{
+
+.errorSpan span {
     font-size: 14px;
 }
 
@@ -359,6 +360,16 @@ img {
         font-size: 17px;
         top: 6px;
         left: -162px;
+    }
+    .removeMobile {
+        position: absolute;
+        height: 20px;
+        margin-left: 0px;
+        width: 100px;
+        font-size: 17px;
+        top: 0px !important;
+        left: -10px;
+        z-index: 800;
     }
     .box-cart {
         min-height: 470px;

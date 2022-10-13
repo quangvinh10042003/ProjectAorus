@@ -46,7 +46,6 @@ export class PasswordComponent implements OnInit {
     phone: new FormControl(''),
     cart: new FormControl([]),
     history: new FormControl([])
-
   })
   constructor(private app: ItemService, private route: Router) { }
   get form(): any {

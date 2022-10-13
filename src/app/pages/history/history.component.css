@@ -1,280 +1,424 @@
-*{
+* {
     /* margin: 0; */
     /* padding: 0; */
     box-sizing: border-box;
 }
-.main{
+
+.main {
     background-color: #1e1e1e;
     width: 100%;
 }
-.left{
+
+.left {
     margin-top: 250px;
 }
-.item i{
+
+.class1:hover .item {
+    background-color: #F86902;
+}
+
+.class2:hover .item {
+    background-color: #F86902;
+}
+
+.class3:hover .item {
+    background-color: #F86902;
+}
+
+.class4:hover .item {
+    background-color: #F86902;
+}
+
+.item i {
     color: white;
     font-size: 25px;
     margin-left: 30px;
 }
-.userProfile{
+
+.userProfile {
     background-color: black;
     width: 100%;
     height: 50px;
     color: white;
     padding: 10px;
 }
-.userProfile span{
+
+.userProfile span {
     font-size: 20px;
     font-weight: 600;
 }
-.item{
+
+.item {
     margin-bottom: 10px;
     cursor: pointer;
-}   
-.right .oderHistory h4{
-    color:#F86902 ;
+}
+
+.right .oderHistory h4 {
+    color: #F86902;
     font-size: 36px;
     margin-top: 168px;
     font-weight: 600;
     margin-bottom: 39px;
 }
-.remove{
+
+.remove {
     background-color: black;
     color: white;
     width: 239px;
     text-align: center;
     cursor: pointer;
 }
-.remove h6{
+
+.remove h6 {
     font-size: 20px;
     padding: 13px;
 }
-.product{
+
+.product {
     width: 100%;
     color: white;
     margin-bottom: 30px;
     min-height: 700px;
 }
-.product .img{
+
+.product .img {
     width: 70%;
 }
-.product .img img{
+
+.product .img img {
     width: 100%;
     height: 100%;
     /* padding: 10px; */
 }
 
-.product .detail .name{
+.product .detail .name {
     margin-bottom: 10px;
 }
-.product .detail .branch{
+
+.product .detail .branch {
     margin-bottom: 10px;
 }
-.product .detail h6{
+
+.product .detail h6 {
     margin-bottom: 10px;
     padding: 4px 0px;
     color: rgb(219, 219, 219);
     font-weight: 500;
 }
-.product .detail h6 span{
+
+.product .detail h6 span {
     color: rgb(147, 147, 147) !important;
 }
-.delete span{
+
+.delete span {
     border-bottom: 1px solid gray;
     cursor: pointer;
     color: rgb(126, 126, 126);
-   
 }
-.delete{
-    margin-bottom: 20px;
+
+.delete {
+    margin-bottom: 8px;
 }
-.mobile{
+
+.marginBotH6 {
+    margin-bottom: 10px !important;
+}
+
+.h6toShop {
+    color: #F86902;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mobile {
     display: none;
 }
-.menu-mobile{
+
+.menu-mobile {
     display: none;
 }
-.product-mg{
-    padding: 15px;background-color: black; margin-left: 0;
+
+.product-mg {
+    padding: 15px;
+    background-color: black;
+    margin-left: 0;
     margin-bottom: 30px;
     /* height: 246px; */
     /* overflow: hidden; */
 }
-.subMobile{
-        display: none;
-    }
 
-#oder{
-    background-color: black; width: 40%;border-radius: 6px;
+.subMobile {
+    display: none;
 }
-@media screen and (max-width: 1100px) {
-    .oder{
-        position: absolute;font-size: 30px;color:#F86902;margin-bottom: 0px;text-align: center;top: 10%;right: 47%;
+
+.head {
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 1023px) {
+    .main {
+        background-color: #1e1e1e;
+        width: 100%;
     }
-    .priceMobile{
+    .left {
+        margin-top: 150px;
+    }
+    .item i {
+        color: white;
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    .item {
         display: none;
     }
-    .item{
-        display: none   ;
-    }
-    .mobile{
+    .mobile {
         display: block;
+        width: 40%;
+        margin: auto;
     }
-    .remove{
-        width: 80%;
-    }
-   .mobile select{
+    .mobile select {
         background-color: black;
         color: white;
-        padding: 9px 15px;
+        width: 100%;
+        padding: 10px;
+        font-weight: 600;
         font-size: 20px;
-        border-radius: 0px;
-        font-weight: 600;
-        margin-right: 20px;
-        border: 1px solid black;
+    }
+    .userProfile {
+        background-color: black;
         width: 100%;
-   } 
-   .mobile select option{
-        /* padding: 9px 15px; */
-        border-radius: 0px;
-        padding: 20px;
-   }
-   .product{
-     width: 100%;
-     min-height: 290px;
-   }
-   .menu-mobile{
-    display: block;
-    background-color:  #1e1e1e;
-    min-height: 1000px;
-    padding: 20px;
-   }
-   .main{
-    display: none;
-   }
-   .price h5{
-    font-size: 15px;
-   }
-}
-@media screen and (max-width: 475px) {
-    .price{
-        position: absolute;
-        right: 7%;
-        top: 90%;
-        display: none;
-
+        height: 50px;
+        color: white;
+        padding: 10px;
     }
-    .item{
-        display: none   ;
+    .userProfile span {
+        font-size: 20px;
+        font-weight: 600;
     }
-    .mobile{
-        display: block;
+    .item {
+        margin-bottom: 10px;
+        cursor: pointer;
     }
-    .remove{
-        width: 80%;
+    .right .oderHistory h4 {
+        color: #F86902;
+        font-size: 36px;
+        margin-top: 80px;
+        font-weight: 600;
+        margin-bottom: 39px;
     }
-    .priceMobile{
-        display: block;
-    }
-   .mobile select{
+    .remove {
         background-color: black;
         color: white;
-        padding: 9px 15px;
-        font-size: 15px;
-        border-radius: 0px;
-        font-weight: 600;
-        margin-right: 20px;
-        border: 1px solid black;
+        width: 239px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .remove h6 {
+        font-size: 20px;
+        padding: 13px;
+    }
+    .product {
         width: 100%;
-   } 
-   .mobile select option{
-        /* padding: 9px 15px; */
-        border-radius: 0px;
-        /* padding: 20px; */
+        color: white;
+        margin-bottom: 30px;
+        min-height: 700px;
+    }
+    .product .img {
+        width: 70%;
+    }
+    .product .img img {
         width: 100%;
-   }
-   .product{
-     width: 100%;
-     min-height: 150px;
-     background-color: black;
-   }
-   .menu-mobile{
-    display: block;
-    background-color:  #1e1e1e;
-    height: 800px;
-    padding: 20px;
-   }
-   .main{
-    display: none;
-   }
-   .priceMobile h5{
-    font-size: 12px;
-    padding-left: 30px;
-    padding-top: 10px;
-   }
-   .date h6{
-    display: none;
-    font-size: 12px;
-   }
-   .product .col-4{
-    width: 50%;
-   }
-   .product .col-5{
-    width: 100%;
-   }
-   .img{
-    /* margin: 0 auto; */
-   }
-   img{
-    width: 100%;
-    margin-right: 50px;
-   }
-   .detail .subtotal h6{
-    font-size: 10px;
-   }
-   .name h4{
-    font-size: 10px;
-    margin-top: 0px;
-   }
-   .branch h5{
-    font-size: 9px;
-   }
-   .consignee,.address,.Telephone{
-    margin-bottom: 1px;
-   }
-   .consignee h6,.address h6,.Telephone h6{
-    margin-bottom: 3px;
-    font-size: 8px;
-    display: none;
-   }
-   .quantity h6{
-    font-size: 10px;
-   }
-   .mobile{
-    width: 100%;
-   }
-   .remove{
-    width: 100%;
-   }
-   .remove h6{
-    font-size: 13px;
-   }
-   .see span{
-    position: absolute; right: 45%;font-size: 30px;color: white;cursor:pointer ;top: 53%;
-   }
-   .col-2{
-    width: 100%;
-   }
-   .delete span{
-    font-size: 10px;
-   }
-   .price h5{
-    font-size: 10px;
-   }
-   .divn{
-    height: 100px;
-   }
-   .subMobile{
-    display: block;
-   }
+        height: 100%;
+        /* padding: 10px; */
+    }
+    .product .detail .name {
+        margin-bottom: 10px;
+    }
+    .product .detail .branch {
+        margin-bottom: 10px;
+    }
+    .product .detail h6 {
+        margin-bottom: 10px;
+        padding: 4px 0px;
+        color: rgb(219, 219, 219);
+        font-weight: 500;
+    }
+    .product .detail h6 span {
+        color: rgb(147, 147, 147) !important;
+    }
+    .delete span {
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        color: rgb(126, 126, 126);
+    }
+    .delete {
+        margin-bottom: 8px;
+    }
+    .marginBotH6 {
+        margin-bottom: 10px !important;
+    }
+    .menu-mobile {
+        display: none;
+    }
+    .product-mg {
+        padding: 15px;
+        background-color: black;
+        margin-left: 0;
+        margin-bottom: 30px;
+        /* height: 246px; */
+        /* overflow: hidden; */
+    }
+    .price h5 {
+        font-size: 16px;
+    }
+}
 
+@media screen and (max-width: 475px) {
+    .h6toShop {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .gotoshop {
+        width: 60% !important;
+    }
+    .marginBotH6 h6 {
+        font-size: 10px;
+    }
+    .main {
+        background-color: #1e1e1e;
+        width: 100%;
+    }
+    .left {
+        margin-top: 100px;
+    }
+    .item i {
+        color: white;
+        font-size: 25px;
+        margin-left: 30px;
+    }
+    .item {
+        display: none;
+    }
+    .mobile {
+        display: block;
+        width: 60%;
+    }
+    .mobile select {
+        background-color: black;
+        color: white;
+        width: 100%;
+        padding: 7px;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .userProfile {
+        background-color: black;
+        width: 100%;
+        height: 50px;
+        color: white;
+        padding: 10px;
+    }
+    .userProfile span {
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .item {
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+    .right .oderHistory h4 {
+        color: #F86902;
+        font-size: 36px;
+        margin-top: 168px;
+        font-weight: 600;
+        margin-bottom: 39px;
+    }
+    .remove {
+        background-color: black;
+        color: white;
+        width: 239px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .remove h6 {
+        font-size: 17px;
+        padding: 11px;
+    }
+    .product {
+        width: 100%;
+        color: white;
+        margin-bottom: 30px;
+        min-height: 700px;
+    }
+    .product .img {
+        width: 70%;
+    }
+    .product .img img {
+        width: 100%;
+        height: 100%;
+        /* padding: 10px; */
+    }
+    .product .detail .name {
+        margin-bottom: 10px;
+    }
+    .product .detail .branch {
+        margin-bottom: 10px;
+    }
+    .product .detail h6 {
+        margin-bottom: 10px;
+        padding: 4px 0px;
+        color: rgb(219, 219, 219);
+        font-weight: 500;
+    }
+    .product .detail h6 span {
+        color: rgb(147, 147, 147) !important;
+    }
+    .delete span {
+        border-bottom: 1px solid gray;
+        cursor: pointer;
+        color: rgb(126, 126, 126);
+        font-size: 10px;
+    }
+    .delete {
+        margin-bottom: 17px;
+        margin-top: -7px;
+    }
+    .right .oderHistory h4 {
+        margin-top: 20px;
+    }
+    .consignee h6,
+    .telephoneNumber h6 {
+        font-size: 10px;
+    }
+    .telephoneNumber h6 {
+        padding-top: 0px;
+    }
+    .quantity h6 {
+        font-size: 11px;
+    }
+    .subtotal h6 {
+        font-size: 10px;
+    }
+    .name h4 {
+        font-size: 14px;
+    }
+    .marginBotH6 {
+        margin-bottom: 10px !important;
+    }
+    .menu-mobile {
+        display: none;
+    }
+    .product-mg {
+        /* padding: 15px; */
+        width: 300px;
+        background-color: black;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+    .price h5 {
+        font-size: 12px;
+    }
 }
