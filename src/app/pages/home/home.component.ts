@@ -107,4 +107,7 @@ export class HomeComponent implements OnInit {
     sessionStorage.setItem('itemCompare1',JSON.stringify(id));
     this.router.navigate(['compare']);
   }
+  navigateByCategory(id:number){
+    this.router.navigate([`shop/${id}`])
+  }
 }

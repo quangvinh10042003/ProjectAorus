@@ -100,6 +100,10 @@ export class PasswordComponent implements OnInit {
       }
     })
   }
+  signOut(){
+    localStorage.removeItem('accountSignin');
+    this.route.navigate(['login']);
+  }
   hideErr(id: string, icon: string) {
     let labelErr2 = document.getElementById('labelErr2') as HTMLLabelElement | null;
     let labelErr3 = document.getElementById('labelErr3') as HTMLLabelElement | null;
@@ -162,6 +166,8 @@ export class PasswordComponent implements OnInit {
       this.route.navigate(['usersetting'])
     } else if (e == 3) {
       this.route.navigate(['history'])
+    }else{
+      this.signOut();
     }
   }
 }

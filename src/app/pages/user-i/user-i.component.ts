@@ -26,7 +26,7 @@ export class UserIComponent implements OnInit {
 
   }
   signOut(){
-    localStorage.removeItem(this.accountID);
+    localStorage.removeItem('accountSignin');
     this.router.navigate(['/login'])
 
   }
@@ -57,6 +57,8 @@ export class UserIComponent implements OnInit {
       this.router.navigate(['usersetting'])
     } else if (e == 3) {
       this.router.navigate(['history'])
+    }else if (e==4){
+      this.signOut();
     }
   }
 }

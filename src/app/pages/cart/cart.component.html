@@ -8,8 +8,8 @@
                         <img src="{{item.img}}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt="">
                     </div>
                     <div class="col-lg-5 col-md-6 col-7">
-                        <p class="name">{{item.name}}</p>
-                        <span>{{item.category_name}}</span>
+                        <p class="name" routerLink="/shop/{{item.id}}">{{item.name}}</p>
+                        <span class="text-light">{{category[i]}}</span>
                         <div class="d-flex align-items-center ml-0 mt-2 position-relative">
                             <span class="span mr-2">Quantity:  </span>
                             <div class="boxQuantity d-flex align-items-center">

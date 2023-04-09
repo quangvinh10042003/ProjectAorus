@@ -52,11 +52,11 @@
                         </div>
                     </div>
                     <div class="mobile">
-                        <select> 
+                        <select #select (change)="changeRouter(select.value)"> 
                         <option value="" selected disabled hidden>Menu</option>
-                        <option value="1" routerLink="/user/">User Information</option>
-                        <option value="2" routerLink="/usersetting/">User Setting</option>
-                        <option value="3" routerLink="/history/">Oder History</option>
+                        <option value="1">User Information</option>
+                        <option value="2" routerLink="/usersetting">User Setting</option>
+                        <option value="3" routerLink="/history">Oder History</option>
                         <option value="4" (click)="signOut()">Sign Out</option>
                     </select>
                     </div>

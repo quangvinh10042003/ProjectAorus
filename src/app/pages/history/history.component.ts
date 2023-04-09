@@ -14,6 +14,7 @@ export class HistoryComponent implements OnInit {
   cart:any;
   account:any;
   category:any = [];
+  listNewHistory:any = [];
   listHistory:any =[];
   dateBuy: any;
   getCart: number = 0;
@@ -42,7 +43,10 @@ export class HistoryComponent implements OnInit {
     if (this.checkData) {
       this.accService.getItem(this.checkData).subscribe((data:any)=>{
         this.listHistory = data.history
-        
+        for (let i = this.listHistory.length-1; i < this.listHistory.length && i>=0; i--) {
+          this.listNewHistory.push(this.listHistory[i]);
+        }
+        this.listHistory = this.listNewHistory;
       })
     }
     
@@ -124,9 +128,20 @@ export class HistoryComponent implements OnInit {
     })
   }
   signOut(){
-    localStorage.removeItem(this.checkData);
+    localStorage.removeItem('accountSignin');
     this.router.navigate(['/login'])
 
+  }
+  changeRouter(e: any) {
+    if (e == 1) {
+      this.router.navigate(['user'])
+    } else if (e == 2) {
+      this.router.navigate(['usersetting'])
+    } else if (e == 3) {
+      this.router.navigate(['history'])
+    }else if (e==4){
+      this.signOut();
+    }
   }
 
 }

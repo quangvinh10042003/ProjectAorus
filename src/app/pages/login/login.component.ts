@@ -51,6 +51,7 @@ export class LoginComponent implements OnInit {
         document.getElementById('errorLogin')?.classList.remove('d-none');
       }
       else {
+        localStorage.removeItem('accountSignin');
         localStorage.setItem('accountSignin', JSON.stringify(user.id))
         this.accountService.totalCard.next(user.cart.length);
         this.router.navigate([''])

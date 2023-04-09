@@ -349,5 +349,10 @@ export class ShopComponent implements OnInit {
     this.pageNum = page;
     this.startOfProduct = this.pageNum * 12 - 12;
     this.endOfProduct = this.pageNum * 12;
+    document.documentElement.scroll({ 
+      top: 0, 
+      left: 0, 
+      behavior: 'smooth' 
+    });
   }
 }

@@ -51,6 +51,10 @@ export class UserSettingComponent implements OnInit {
       })
     }
   }
+  signOut(){
+    localStorage.removeItem('accountSignin');
+    this.router.navigate(['login']);
+  }
   submitForm() {
     Swal.fire({
       title: 'Do you want to save these edits?',
@@ -78,6 +82,8 @@ export class UserSettingComponent implements OnInit {
       this.router.navigate(['usersetting'])
     } else if (e == 3) {
       this.router.navigate(['history'])
+    } else{
+      this.signOut();
     }
   }
 }

@@ -177,6 +177,13 @@ export class CartComponent implements OnInit {
       this.accountService.totalCard.next(0);
       this.getAllData();
     });
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Thank you for purchasing from us!',
+      showConfirmButton: false,
+      timer: 1500
+    })
   }
  
 

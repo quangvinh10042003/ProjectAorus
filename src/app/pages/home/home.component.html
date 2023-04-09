@@ -50,7 +50,7 @@
                 <div class="row mt-5">
                     <owl-carousel-o [options]="customOptions">
                         <ng-template carouselSlide *ngFor="let item of banner">
-                            <div class=" scale" routerLink="/shop/{{item.id}}">
+                            <div class=" scale" (dblclick)="navigateByCategory(item.id)">
                                 <div class="itemGears">
                                     <img class="card-img" src="{{item.img}}" alt="">
                                 </div>
@@ -86,7 +86,7 @@
             <div class="newFeed">
                 <h1 class="text-center text-light">NEWS FEED</h1>
                 <h6 class="text-center text-light">Discover PC builds inspiration, DIY tips, gaming tricks, worldwide AORUS events, and more.</h6>
-                <h4 class="text-center text-light mt-4">GET STARTED ></h4>
+                <h4 class="text-center text-light mt-4 pointer" routerLink="/new">GET STARTED ></h4>
                 <div class="row mt-5">
                     <div class="col-lg-3 col-md-4 mb-5" *ngFor="let items of new" routerLink="/new/{{items.id}}">
                         <div class="itemNews position-relative">

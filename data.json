@@ -1,99 +1,83 @@
 {
   "registerForm": [
     {
-      "email": "a@gmail.com",
       "fullName": "vinh",
-      "telephoneNumber": "0365227464",
-      "password": "12345678",
-      "address": "",
-      "country": "",
-      "phone": "",
+      "address": "ha noi",
+      "country": "vietname",
+      "email": "haivldx123@gmail.com",
+      "password": "1",
+      "phone": "0365227464",
       "cart": [],
       "history": [
         {
-          "consignee": "vinh",
-          "subtotal": 2240,
-          "email": "a@gmail.com",
-          "address": "hà noi",
-          "telephoneNumber": "0365272464",
-          "date": "9/10/2022",
+          "consignee": "sim",
+          "subtotal": 7960,
+          "email": "haivldx123@gmail.com",
+          "address": "longbien",
+          "phone": "0365227464",
+          "date": "15/10/2022",
           "cart": [
+            {
+              "id": 7,
+              "name": "AORUS FI32U Gaming Monitor",
+              "img": "assets/images/vinhImg/detail/monitor/GIGABYTE AORUS FI32U Gaming Monitor.webp",
+              "category_id": 2,
+              "quantity": 5,
+              "price": 590
+            },
             {
               "id": 26,
               "name": "ATC800",
               "img": "assets/images/truong/CPU/26.1.png",
               "category_id": 7,
-              "quantity": 2,
+              "quantity": 1,
               "price": 160
+            },
+            {
+              "id": 1,
+              "name": "B660M AORUS ELITE AX DDR4",
+              "img": "assets/images/vinhImg/detail/mainboard/mb1.webp",
+              "category_id": 1,
+              "quantity": 1,
+              "price": 1260
+            },
+            {
+              "id": 17,
+              "name": "AORUS RGB Memory DDR5 32GB (2x16GB) 6000MHz",
+              "img": "assets/images/cuongimg/m.png",
+              "category_id": 5,
+              "quantity": 1,
+              "price": 210
+            },
+            {
+              "id": 21,
+              "name": "UD1000GM PG5",
+              "img": "assets/images/cuongimg/p.png",
+              "category_id": 6,
+              "quantity": 1,
+              "price": 120
+            },
+            {
+              "id": 32,
+              "name": "AORUS 17 KE4 ",
+              "img": "assets/images/truong/LAPTOP/32.1.png",
+              "category_id": 9,
+              "quantity": 1,
+              "price": 2300
             },
             {
               "id": 3,
               "name": "Z590 AORUS MASTER(1.0)",
               "img": "assets/images/vinhImg/detail/mainboard/mb3.webp",
               "category_id": 1,
-              "quantity": 2,
-              "price": 960
-            }
-          ]
-        },
-        {
-          "consignee": "vinh",
-          "subtotal": 49420,
-          "email": "a@gmail.com",
-          "address": "HA",
-          "phone": "0121212121",
-          "date": "10/10/2022",
-          "cart": [
-            {
-              "id": 1,
-              "name": "B660M AORUS ELITE AX DDR4",
-              "img": "assets/images/vinhImg/detail/mainboard/mb1.webp",
-              "category_id": 1,
-              "quantity": 2,
-              "price": 1260
-            },
-            {
-              "id": 33,
-              "name": "AORUS 17 YE4  ",
-              "img": "assets/images/truong/LAPTOP/33.1.png",
-              "category_id": 9,
-              "quantity": 19,
-              "price": 2430
-            },
-            {
-              "id": 5,
-              "name": "AORUS FV43U Gaming Monitor",
-              "img": "assets/images/vinhImg/detail/monitor/AORUS FV43U Gaming Monitor.webp",
-              "category_id": 2,
               "quantity": 1,
-              "price": 730
+              "price": 960,
+              "category_name": "Motherboard"
             }
           ]
         }
       ],
       "id": 1
-    },
-    {
-      "email": "s@gmail.com",
-      "fullName": "NKT",
-      "phone": "0363590281",
-      "password": "1",
-      "address": "",
-      "country": "",
-      "cart": [],
-      "history": [],
-      "id": 2
-    },
-    {
-      "email": "abc@gmail.com",
-      "fullName": "abc",
-      "phone": "1111111111",
-      "password": "1",
-      "address": "",
-      "country": "",
-      "cart": [],
-      "history": [],
-      "id": 3
     }
   ],
   "banner": [
