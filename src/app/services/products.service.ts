@@ -14,13 +14,13 @@ export class ProductsService {
   getItem(id:number):Observable<any>{
     return this.http.get<any>(`${urlAPI}/${id}`);
   }
-  editItem(id:number, data:any){
+  editItem(id:number, data:any):Observable<any>{
     return this.http.put(`${urlAPI}/${id}`,data);
   }
-  deleteItem(id:number){
+  deleteItem(id:number):Observable<any>{
     return this.http.delete(`${urlAPI}/${id}`);
   }
-  addItem(data:any){
+  addItem(data:any):Observable<any>{
     return this.http.post(`${urlAPI}`,data)
   }
 }

@@ -31,6 +31,7 @@ import { DetailComponent } from './pages/detail/detail.component';
 import { HistoryComponent } from './pages/history/history.component';
 import { CartComponent } from './pages/cart/cart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MenuUserComponent } from './layouts/menu-user/menu-user.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -58,6 +59,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DetailComponent,
     HistoryComponent,
     CartComponent,
+    MenuUserComponent,
     
   ],
   imports: [

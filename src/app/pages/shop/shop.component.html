@@ -1,3 +1,98 @@
+<style>
+    @media screen and (max-width:1024px) {
+        .containerFull {
+            padding: 0px 40px;
+        }
+        .itemSellers {
+            margin-top: 20px;
+        }
+        .itemSellers .boxImg {
+            padding: 0px 15px;
+        }
+        .itemSellers .choseItem {
+            padding: 0px 0px;
+        }
+        .itemSellers .name {
+            padding: 0px 15px;
+        }
+        .itemSellers {
+            padding: 0px 15px;
+        }
+        .choseItem a {
+            padding: 5px 2px;
+        }
+        .category {
+            margin-left: 10px;
+            border: 1px solid #fff;
+            padding: 5px 15px;
+        }
+        .buttonClearAll {
+            left: 40px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .itemSellers .choseItem {
+            padding: 0px 45px;
+        }
+        .butInBoxCompare {
+            width: 100px;
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .compareBox h5 {
+            font-size: 12px;
+        }
+        .buttonClearAll {
+            left: 20px;
+        }
+        .containerFull {
+            padding: 0px 30px;
+        }
+        .itemSellers {
+            padding: 0;
+        }
+        .bestSeller h1 {
+            font-size: 24px;
+        }
+        .itemSellers .choseItem {
+            padding: 0px 30px;
+        }
+        .category {
+            padding: 3px 6px;
+        }
+        .category span {
+            font-size: 12px;
+        }
+        select {
+            padding: 7px 7px;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .page span {
+            font-size: 12px;
+        }
+        .banner h1 {
+            font-size: 32px;
+        }
+        .banner h1 {
+            top: 170px;
+        }
+        .banner {
+            height: 260px;
+        }
+        .zBanner {
+            height: 260px;
+        }
+        .choseItem a {
+            font-size: 12px;
+            padding: 5px 8px;
+        }
+    }
+</style>
+
 <body>
     <div class="banner">
         <img src="../../../assets/images/vinhImg/banner/banner shop.jfif" class="card-img" alt="">
@@ -21,7 +116,7 @@
                         </span>
                     </div>
                 </div>
-                <div class="page">
+                <div class="page" *ngIf="listProduct">
                     <span class="d-md-inline d-none">{{listProduct.length}} Products
                     </span>
 

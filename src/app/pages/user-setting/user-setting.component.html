@@ -6,44 +6,11 @@
         </div>
         <div class="col-lg-12">
             <div class="row">
-                <div class="col-lg-3 hj">
-                    <div class=""></div>
-                    <button class="btn-user " routerLink="/user/">
-                        <a class="text-decoration-none text-light">
-                            <span class="btn-icon"><i class="fa-regular fa-circle-user"></i></span>
-                            <span>User Infomation</span>
-                        </a>
-                    </button>
-                    <button class="btn-user active" routerLink="/usersetting/">
-                        <a class="text-decoration-none text-light">
-                            <span class="btn-icon"><i class="fa-solid fa-wrench"></i></span>
-                            <span>User Setting</span>
-                        </a>
-                    </button>
-                    <button class="btn-user" routerLink="/history">
-                        <a class="text-decoration-none text-light">
-                            <span class="btn-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
-                            <span>History Order</span>
-                        </a>
-                    </button>
-                    <button class="btn-user" (click)="signOut()">
-                        <span class="btn-icon"><i class="fa-solid fa-right-to-bracket"></i></span>
-                        <span>Sign Out</span>
-                    </button>
+                <div class="col-md-3">
+                    <app-menu-user></app-menu-user>
                 </div>
-                <div class="col-md-3 hk col-sm-1">
-                    <select #select class="selectForm rounded-0 text-light" (change)="changeRouter(select.value)">
-                        <option selected disabled hidden>User Menu <i class="fa-solid fa-angle-down opitions"></i>
-                        </option>
-                        <option value="1">User InfomationOne <i class="fa-solid fa-angle-down text-light btn-user"></i>
-                        </option>
-                        <option value="2">User Setting <i class="fa-solid fa-angle-down text-light"></i></option>
-                        <option value="3">History Order <i class="fa-solid fa-angle-down text-light"></i></option>
-                        <option value="4">Sign Out <i class="fa-solid fa-angle-down text-light"></i></option>
-                    </select>
-
-                </div>
-                <div class="col-lg-9 mt-10">
+                <div class="col-lg-9 mt-10 row">
+                    <div class="col-lg-1"></div>
                     <div class="col-lg-9 mt-10 content user-content ">
                         <form class="row g-3" [formGroup]="formGroup" (ngSubmit)="submitForm()">
                             <div class="col-md-4">

@@ -15,7 +15,7 @@ export class AccountService {
   getItem(id:number):Observable<any>{
     return this.http.get<any>(`${urlAPI}/${id}`)
   }
-  editItem(data:any, id:number){
+  editItem(data:any, id:number):Observable<any>{
     return this.http.put(`${urlAPI}/${id}`,data);
   }
   delete( id:number):Observable<any[]>{

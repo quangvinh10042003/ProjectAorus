@@ -25,7 +25,7 @@
 
 .title h2 {
     color: #fff;
-    font-size: 64px;
+    font-size: 50px;
     line-height: 3.5;
     text-align: center;
 }
@@ -184,6 +184,13 @@
 .content {
     display: inline-block;
     opacity: 1;
+    background-color: #050017c7;
+    box-shadow: 0px 0px 6px 2px #ff660085;
+    padding: 20px 40px;
+}
+
+.content label {
+    margin-bottom: 0px !important;
 }
 
 .password {
