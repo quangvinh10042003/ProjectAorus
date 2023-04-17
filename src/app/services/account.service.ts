@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
-const urlAPI = "http://localhost:3000/registerForm"
+const urlAPI = "https://json-aorus.onrender.com/registerForm"
 @Injectable({
   providedIn: 'root'
 })

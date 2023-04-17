@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { Account } from '../Model/account';
 
-const urlAPI = "http://localhost:3000/registerForm"
+const urlAPI = "https://json-aorus.onrender.com/registerForm"
 @Injectable({
   providedIn: 'root'
 })

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-const urlAPICategory = " http://localhost:3000/category"
+const urlAPICategory = "https://json-aorus.onrender.com/category"
 @Injectable({
   providedIn: 'root'
 })
