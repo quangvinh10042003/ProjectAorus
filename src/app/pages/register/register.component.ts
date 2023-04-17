@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { AccountService } from 'src/app/service/account.service';
+import { AccountService } from 'src/app/services/account.service';
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2'
 @Component({
@@ -25,7 +25,8 @@ export class RegisterComponent implements OnInit {
       Validators.pattern("^((\\+91-?)|0)?[0-9]{10}$")
     ]),
     password:new FormControl('',[
-      Validators.required
+      Validators.required,
+      Validators.minLength(8)
     ]),
     address:new FormControl(''),
     country:new FormControl(''),
@@ -46,7 +47,7 @@ export class RegisterComponent implements OnInit {
     }
   }
   register():void{
-    this.http.post<any[]>("http://localhost:3000/registerForm",this.formIn4.value).subscribe((data)=>{
+    this.accountService.addItem(this.formIn4.value).subscribe((data)=>{
       this.formIn4.reset();
       this.router.navigate(['login'])
       Swal.fire({

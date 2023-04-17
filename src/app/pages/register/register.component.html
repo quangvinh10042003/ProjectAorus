@@ -177,6 +177,9 @@
                                 <div *ngIf="form.password.errors?.['required']">
                                     <span class="">*Password enter required</span>
                                 </div>
+                                <div *ngIf="form.password.errors?.['minLength']">
+                                    <span class="">*Password must have 8 characters</span>
+                                </div>
                             </div>
                         </div>
                         <div class="eye d-none" id="showText" (click)="showPass()" id="showText">

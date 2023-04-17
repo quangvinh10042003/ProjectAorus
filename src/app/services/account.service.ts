@@ -21,5 +21,8 @@ export class AccountService {
   delete( id:number):Observable<any[]>{
     return this.http.delete<any[]>(`${urlAPI}/${id}`)
   }
+  addItem(data:any):Observable<any>{
+    return this.http.post<any>(`${urlAPI}`,data)
+  }
   
 }
