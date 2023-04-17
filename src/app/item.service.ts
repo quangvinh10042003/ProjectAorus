@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-const Api = 'http://localhost:3000/news'
-const blog = 'http://localhost:3000/blogs'
-const home = 'http://localhost:3000/product'
-const user = 'http://localhost:3000/registerForm'
-const banner = 'http://localhost:3000/banner'
+const Api = 'https://json-aorus.onrender.com/news'
+const blog = 'https://json-aorus.onrender.com/blogs'
+const home = 'https://json-aorus.onrender.com/product'
+const user = 'https://json-aorus.onrender.com/registerForm'
+const banner = 'https://json-aorus.onrender.com/banner'
 @Injectable({
   providedIn: 'root'
 })
