@@ -13,32 +13,32 @@ const banner = 'https://json-aorus.onrender.com/banner'
 export class ItemService {
 
   constructor(private http: HttpClient) { }
-  getNew() {
+  getNew():Observable<any> {
     return this.http.get<any>(`${Api}`)
   }
-  getBlog() {
+  getBlog():Observable<any> {
     return this.http.get<any>(`${blog}`)
   }
-  getDetailBlog(id: Number) {
+  getDetailBlog(id: Number):Observable<any> {
     return this.http.get<any>(`${blog}/${id}`)
   }
   getDetailNew(id: Number) {
     return this.http.get<any>(`${Api}/${id}`)
 
   }
-  getHome() {
+  getHome():Observable<any> {
     return this.http.get<any>(`${home}`)
   }
-  getUser(id: Number) {
+  getUser(id: Number):Observable<any> {
     return this.http.get<any>(`${user}/${id}`)
   }
-  getBanner() {
+  getBanner():Observable<any> {
     return this.http.get<any>(`${banner}`)
   }
   deleteItem(id:number):Observable<any[]>{
     return this.http.delete<any[]>(`${user}/${id}`)
   }
-  editData(data: any, id:number){
+  editData(data: any, id:number):Observable<any>{
      return this.http.put(`${user}/${id}`,data)
   }
 }
