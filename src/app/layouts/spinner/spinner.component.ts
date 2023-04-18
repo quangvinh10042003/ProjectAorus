@@ -8,7 +8,7 @@ import { ItemService } from 'src/app/item.service';
   styleUrls: ['./spinner.component.css']
 })
 export class SpinnerComponent {
-  time:number = 3;
+  time:number = 5;
   list: any = [];
   new: any = [];
   banner: any = [];
@@ -35,6 +35,6 @@ export class SpinnerComponent {
       }
     }, 1000);
     setTimeout(() => {
-    }, 3000);
+    }, 5000);
   }
 }

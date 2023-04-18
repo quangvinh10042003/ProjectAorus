@@ -18,8 +18,8 @@ export class AppComponent {
   }
   loadData() {
     setTimeout(() => {
-      this.isLoading = false; // Tắt spinner sau 3 giây
+      this.isLoading = false;
       sessionStorage.setItem('isLoading', 'false');
-    }, 3000);
+    }, 5000);
   }
 }
