@@ -11,7 +11,8 @@ import { AccountService } from 'src/app/service/account.service';
 })
 export class LoginComponent implements OnInit {
   checkEye: boolean = true;
-
+  err1:boolean = false;
+  err2:boolean = false;
   formLogin = new FormGroup({
     email: new FormControl('', [
       Validators.required,
@@ -31,7 +32,16 @@ export class LoginComponent implements OnInit {
     }
 
   }
-
+  enterInput(num:number){
+    switch (num) {
+      case 1:
+        this.err1 = false;
+        break;
+      case 2:
+        this.err2 = false;
+        break;
+    }
+  }
   get form(): any {
     return this.formLogin.controls
   }
@@ -43,20 +53,31 @@ export class LoginComponent implements OnInit {
     });
   }
   login(): void {
-    this.accountService.getAll().subscribe((data) => {
-      const user = data.find((a: any) => {
-        return a.email === this.formLogin.value.email && a.password === this.formLogin.value.password;
+    if(this.form.email.invalid || this.form.password.invalid){
+      if(this.form.email.invalid){
+        this.err1 = true;
+      }
+      if(this.form.password.invalid){
+        this.err2 = true;
+      }
+    }else{
+      this.err1 = false;
+      this.err2 = false;
+      this.accountService.getAll().subscribe((data) => {
+        const user = data.find((a: any) => {
+          return a.email === this.formLogin.value.email && a.password === this.formLogin.value.password;
+        })
+        if (!user) {
+          document.getElementById('errorLogin')?.classList.remove('d-none');
+        }
+        else {
+          localStorage.removeItem('accountSignin');
+          localStorage.setItem('accountSignin', JSON.stringify(user.id))
+          this.accountService.totalCard.next(user.cart.length);
+          this.router.navigate([''])
+        }
       })
-      if (!user) {
-        document.getElementById('errorLogin')?.classList.remove('d-none');
-      }
-      else {
-        localStorage.removeItem('accountSignin');
-        localStorage.setItem('accountSignin', JSON.stringify(user.id))
-        this.accountService.totalCard.next(user.cart.length);
-        this.router.navigate([''])
-      }
-    })
+    }
   }
   showEye() {
     let buttonEye = document.getElementById('showText') as HTMLDivElement | null;

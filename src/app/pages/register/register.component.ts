@@ -11,7 +11,10 @@ import Swal from 'sweetalert2'
 })
 export class RegisterComponent implements OnInit {
   checkEye: boolean = true;
-
+  err1:boolean = false;
+  err2:boolean = false;
+  err3:boolean = false;
+  err4:boolean = false;
   formIn4 = new FormGroup({
     email:new FormControl('',[
       Validators.required,
@@ -47,17 +50,38 @@ export class RegisterComponent implements OnInit {
     }
   }
   register():void{
-    this.accountService.addItem(this.formIn4.value).subscribe((data)=>{
-      this.formIn4.reset();
-      this.router.navigate(['login'])
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: 'Successful account registration',
-        showConfirmButton: false,
-        timer: 1500
+
+    if(this.form.email.invalid || this.form.fullName.invalid || this.form.phone.invalid || this.form.password.invalid){
+      if(this.form.email.invalid){
+        this.err1 = true;
+      }
+      if(this.form.fullName.invalid){
+        this.err2 = true;
+      }
+      if(this.form.phone.invalid){
+        this.err3 = true;
+      }
+      if(this.form.password.invalid){
+        this.err4 = true;
+      }
+    }else{
+      this.err1 = false;
+      this.err2 = false;
+      this.err3 = false;
+      this.err4 = false;
+      this.accountService.addItem(this.formIn4.value).subscribe((data)=>{
+        this.formIn4.reset();
+        this.router.navigate(['login'])
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Successful account registration',
+          showConfirmButton: false,
+          timer: 1500
+        })
       })
-    })
+    }
+    
   } 
   get form():any{
     return this.formIn4.controls;
@@ -84,5 +108,20 @@ export class RegisterComponent implements OnInit {
       this.checkEye = true;
     }
   }
-
+  enterInput(num:number){
+    switch (num) {
+      case 1:
+        this.err1 = false;
+        break;
+      case 2:
+        this.err2 = false;
+        break;
+      case 3:
+        this.err3 = false;
+        break;
+      case 4:
+        this.err4 = false;
+        break;
+    }
+  }
 }

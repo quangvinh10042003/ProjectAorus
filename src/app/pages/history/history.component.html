@@ -303,7 +303,7 @@
                         </ng-template>
                     </div>
                     <div class="product col-md-12 col-12">
-                        <div class="row product-mg mb-4 me-0" *ngFor="let product of listHistory">
+                        <div class="row product-mg mb-4 me-0" *ngFor="let product of listHistory, let ind = index">
                             <div class="div row px-0" *ngFor="let item of product.cart, let i = index">
                                 <div class="col-12" [ngClass]="  i ==0 ? 'head' : ''">
                                     <div class="row">
@@ -325,7 +325,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-4 col-4">
                                             <div class="delete text-end">
-                                                <span (click)="removeItem(item.i)" *ngIf="i==0">Remove</span>
+                                                <span (click)="removeItem(ind)" *ngIf="i==0">Remove</span>
                                             </div>
                                             <div class="subtotal text-end">
                                                 <h6 *ngIf="i==0">Subtotal <span class="d-lg-inline-block d-none">: </span> <span class="d-lg-inline-block d-block">${{product.subtotal}}</span></h6>

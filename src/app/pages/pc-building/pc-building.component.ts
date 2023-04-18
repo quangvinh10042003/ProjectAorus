@@ -45,9 +45,12 @@ export class PcBuildingComponent implements OnInit {
     })
     let id: any = localStorage.getItem('accountSignin');
     id = JSON.parse(id);
-    this.accountSer.getItem(id).subscribe((data: any) => {
-      this.acc = data;
-    })
+    if(id){
+      this.accountSer.getItem(id).subscribe((data: any) => {
+        this.acc = data;
+      })
+    }
+    
   }
   choseTypeProduct(category_id: number) {
     this.listProduct = this.listAllItem.filter((data: any) => {
@@ -90,74 +93,89 @@ export class PcBuildingComponent implements OnInit {
     })
   }
   addToCart() {
-   
+    
     let id: any = localStorage.getItem('accountSignin');
     id = JSON.parse(id);
-    let account: any;
-    let listItemChosenFake: any = [
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-      { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
-     
-    ];
-    if (JSON.stringify(this.listItemChosen) == JSON.stringify(listItemChosenFake)) {
-      Swal.fire(
-        'Looks like you have not selected any products yet',
-        'Please choose a product'
-      )
-    } else {
-      
-      for (let i = 0; i < 9; i++) {
-        let checkData: any = null;
-        if (this.listItemChosen[i].name == '') {
-          // continue;
-        }
-        else {
-          this.productSer.getItem(parseInt(this.listItemChosen[i].id)).subscribe((data: any) => {
-            this.accountSer.getItem(id).subscribe((acc:any)=>{
-              account = acc;
-              checkData = acc.cart.find((item: any) => {
-                return item.id == parseInt(this.listItemChosen[i].id);
-              })
-              console.log(checkData);
-              
-              if (checkData) {
-                checkData.quantity += 1;
-                this.accountSer.editItem(acc, id).subscribe(() => {
-                 
-                });
-                this.accountSer.getItem(id).subscribe((account) => {
-                  this.acc = account;
+    if(id){
+      let account: any;
+      let listItemChosenFake: any = [
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+        { id: "", name: "", imgProduct: "", bestFeatures: [], price: "" },
+      ];
+      if (JSON.stringify(this.listItemChosen) == JSON.stringify(listItemChosenFake)) {
+        Swal.fire(
+          'Looks like you have not selected any products yet',
+          'Please choose a product'
+        )
+      } else {
+        
+        for (let i = 0; i < 9; i++) {
+          let checkData: any = null;
+          if (this.listItemChosen[i].name == '') {
+            // continue;
+          }
+          else {
+            this.productSer.getItem(parseInt(this.listItemChosen[i].id)).subscribe((data: any) => {
+              this.accountSer.getItem(id).subscribe((acc:any)=>{
+                account = acc;
+                checkData = acc.cart.find((item: any) => {
+                  return item.id == parseInt(this.listItemChosen[i].id);
                 })
-              } else {
-                this.acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
-                console.log(this.acc);
-                this.accountSer.editItem(this.acc, id).subscribe(() => {
+                console.log(checkData);
+                
+                if (checkData) {
+                  checkData.quantity += 1;
+                  this.accountSer.editItem(acc, id).subscribe(() => {
+                  
+                  });
                   this.accountSer.getItem(id).subscribe((account) => {
                     this.acc = account;
-                    this.accountSer.totalCard.next(account.cart.length);
                   })
-                });
-              }
+                } else {
+                  this.acc.cart.push({ id: data.id, name: data.name, img: data.imgProduct, category_id: data.category_id, quantity: 1, price: data.price });
+                  console.log(this.acc);
+                  this.accountSer.editItem(this.acc, id).subscribe(() => {
+                    this.accountSer.getItem(id).subscribe((account) => {
+                      this.acc = account;
+                      this.accountSer.totalCard.next(account.cart.length);
+                    })
+                  });
+                }
+              })
+              
             })
-            
-          })
+          }
         }
+        Swal.fire({
+          position: 'top-end',
+          icon: 'success',
+          title: 'Your building has been added to cart',
+          showConfirmButton: false,
+          timer: 1500
+        })
+        
       }
+    }else{
       Swal.fire({
-        position: 'top-end',
-        icon: 'success',
-        title: 'Your building has been added to cart',
-        showConfirmButton: false,
-        timer: 1500
+        title: 'You are not logged in',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Login'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          this.router.navigate(['login']);
+        }
       })
-      
     }
+      
   }
 }

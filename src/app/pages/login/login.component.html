@@ -19,7 +19,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email *</label>
-                        <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
+                        <input type="email" (keyup)="enterInput(1)" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
                         <div class="validator">
                             <div *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)">
                                 <div *ngIf="form.email.errors?.['required']">
@@ -29,16 +29,22 @@
                                     <span class="">*Please provide a valid email</span>
                                 </div>
                             </div>
+                            <div *ngIf="err1 && !form.email.dirty && !form.email.touched">
+                                <span class="">*Email entry required</span>
+                            </div>
                         </div>
                     </div>
                     <div class="form-group eyes">
                         <label for="exampleInputPassword1">Password *</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter password here" formControlName="password" (keyup)="showEye()">
+                        <input type="password" (keyup)="enterInput(2)" class="form-control" id="password" placeholder="Enter password here" formControlName="password" (keyup)="showEye()">
                         <div class="validators">
                             <div *ngIf="form.password.invalid && (form.password.dirty || form.password.touched)">
                                 <div *ngIf="form.password.errors?.['required']">
                                     <span class="">*password enter required</span>
                                 </div>
+                            </div>
+                            <div *ngIf="err2 && !form.password.dirty && !form.password.touched">
+                                <span class="">*Password entry required</span>
                             </div>
                         </div>
                         <div class="eye d-none" id="showText" (click)="showPass()" id="showText">
@@ -67,7 +73,7 @@
                                 <button type="button" routerLink="/register">Create your account?</button>
                             </div>
                             <div class="col-md-5 col-5">
-                                <button type="submit" [disabled]="form.email.invalid || form.password.invalid ">LOGIN</button>
+                                <button type="submit">LOGIN</button>
                             </div>
                         </div>
                     </div>
