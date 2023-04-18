@@ -97,7 +97,6 @@
                         <p class="mb-0 text-light">${{item.price}}</p>
                     </div>
                 </div>
-
             </div>
         </div>
         <button class="buttonClose" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
@@ -108,8 +107,8 @@
               Products
             </button>
             <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                <li><a class="dropdown-item" routerLink="/shop">All Product</a></li>
-                <li *ngFor="let item of listProducts"><a class="dropdown-item">{{item.name}}</a></li>
+                <li><a class="dropdown-item" routerLink="/shop" data-bs-dismiss="offcanvas">All Product</a></li>
+                <li *ngFor="let item of listProducts" (click)="navigate(item.id)" data-bs-dismiss="offcanvas"><a class="dropdown-item">{{item.name}}</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -117,10 +116,10 @@
               Explore
             </button>
             <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                <li><a class="dropdown-item" routerLink="/new">News</a></li>
-                <li><a class="dropdown-item" routerLink="/blog">Blogs</a></li>
-                <li><a class="dropdown-item" routerLink="/wallpaper">Wallpaper</a></li>
-                <li><a class="dropdown-item" routerLink="/compare">Comparision</a></li>
+                <li><a class="dropdown-item" routerLink="/new" data-bs-dismiss="offcanvas">News</a></li>
+                <li><a class="dropdown-item" routerLink="/blog" data-bs-dismiss="offcanvas">Blogs</a></li>
+                <li><a class="dropdown-item" routerLink="/wallpaper" data-bs-dismiss="offcanvas">Wallpaper</a></li>
+                <li><a class="dropdown-item" routerLink="/compare" data-bs-dismiss="offcanvas">Comparision</a></li>
             </ul>
         </div>
         <div class="dropdown">
@@ -128,12 +127,12 @@
               Service
             </button>
             <ul class="dropdown-menu dropdown-menu-dark ulDropdown">
-                <li><a class="dropdown-item" routerLink="/warranty">Warranty</a></li>
-                <li><a class="dropdown-item" routerLink="/about">About AORUS</a></li>
-                <li><a class="dropdown-item" routerLink="/aboutg">About GIGABYTE</a></li>
-                <li><a class="dropdown-item" routerLink="/contact">Contact us</a></li>
+                <li><a class="dropdown-item" routerLink="/warranty" data-bs-dismiss="offcanvas">Warranty</a></li>
+                <li><a class="dropdown-item" routerLink="/about" data-bs-dismiss="offcanvas">About AORUS</a></li>
+                <li><a class="dropdown-item" routerLink="/aboutg" data-bs-dismiss="offcanvas">About GIGABYTE</a></li>
+                <li><a class="dropdown-item" routerLink="/contact" data-bs-dismiss="offcanvas">Contact us</a></li>
             </ul>
         </div>
-        <button class="buttonDropdown" routerLink="/compare">PC Building</button>
+        <button class="buttonDropdown" routerLink="/pcBuilding" data-bs-dismiss="offcanvas">PC Building</button>
     </div>
 </div>

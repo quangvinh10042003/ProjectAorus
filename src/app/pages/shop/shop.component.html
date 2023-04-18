@@ -1,5 +1,5 @@
 <style>
-    @media screen and (max-width:1024px) {
+    @media screen and (max-width: 1024px) {
         .containerFull {
             padding: 0px 40px;
         }
@@ -31,7 +31,7 @@
         }
     }
     
-    @media screen and (max-width:768px) {
+    @media screen and (max-width: 768px) {
         .itemSellers .choseItem {
             padding: 0px 45px;
         }
@@ -41,7 +41,7 @@
         }
     }
     
-    @media screen and (max-width:480px) {
+    @media screen and (max-width: 480px) {
         .compareBox h5 {
             font-size: 12px;
         }
@@ -95,9 +95,11 @@
 
 <body>
     <div class="banner">
-        <img src="assets/images/vinhImg/banner/banner shop.jfif" class="card-img" alt="">
+        <img src="assets/images/vinhImg/banner/banner shop.jfif" class="card-img" alt="" />
         <div class="zBanner"></div>
-        <h1 class="text-center" *ngIf="namePageCategory; else elseH1">{{namePageCategory}}</h1>
+        <h1 class="text-center" *ngIf="namePageCategory; else elseH1">
+            {{ namePageCategory }}
+        </h1>
         <ng-template #elseH1>
             <h1>Products</h1>
         </ng-template>
@@ -105,7 +107,8 @@
     <div class="container-fluid containerFull">
         <div class="main">
             <div class="headerNAV text-light">
-                Home <span class="text-secondary me-2 ms-2">/</span> Products <span *ngIf="namePageCategory"><span class="text-secondary me-2 ms-2">/</span> {{namePageCategory}}s</span>
+                Home <span class="text-secondary me-2 ms-2">/</span> Products
+                <span *ngIf="namePageCategory"><span class="text-secondary me-2 ms-2">/</span> {{ namePageCategory }}s</span>
             </div>
             <div class="d-flex justify-content-between pb-4">
                 <div class="filter">
@@ -117,7 +120,8 @@
                     </div>
                 </div>
                 <div class="page" *ngIf="listProduct">
-                    <span class="d-md-inline d-none">{{listProduct.length}} Products
+                    <span class="d-md-inline d-none">{{ listProduct.length }}
+                        Products
                     </span>
 
                     <span class="text-secondary ms-2 me-2 d-md-inline d-none">|</span>
@@ -131,151 +135,173 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid containerFull bgShop  pb-5">
-        <div class="row ">
+    <div class="container-fluid containerFull bgShop pb-5">
+        <div class="row">
             <div class="col-lg-3 d-lg-block d-none">
                 <div class="list-group categoryList">
                     <div class="position-relative">
                         <a class="list-group-item list-group-item-action position-relative" (click)="navigate(1)">
                             Mainboard
                         </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(0)"><i class="fas fa-plus" id="button0"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(0)"><i class="fas fa-minus d-none" id="buttonClose0"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(0)"><i
+                                class="fas fa-plus" id="button0"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(0)"><i
+                                class="fas fa-minus d-none" id="buttonClose0"></i></span>
                         <div class="openBox d-none" id="Filter0">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('12th',1)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('12th', 1)">
                                 CPU Intel Gen 12th
                             </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('11th',1)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('11th', 1)">
                                 CPU Intel Gen 11th
                             </a>
                         </div>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(3)">PC Case 
-                            
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(3)">PC
+                            Case
                         </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(1)"><i class="fas fa-plus" id="button1"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(1)"><i class="fas fa-minus d-none" id="buttonClose1"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(1)"><i
+                                class="fas fa-plus" id="button1"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(1)"><i
+                                class="fas fa-minus d-none" id="buttonClose1"></i></span>
                         <div class="openBox d-none" id="Filter1">
-
-                            <a class="list-group-item list-group-item-action position-relative" (click)="cpuFilter('intel',3)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="cpuFilter('intel', 3)">
                                 CPU Intel
                             </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="cpuFilter('ryzen',3)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="cpuFilter('ryzen', 3)">
                                 CPU Ryzen
                             </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(32,3)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(32, 3)">
                                 RAM 32GB
                             </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(64,3)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(64, 3)">
                                 RAM 64GB
                             </a>
                         </div>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(5)">Memory </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(2)"><i class="fas fa-plus" id="button2"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(2)"><i class="fas fa-minus d-none" id="buttonClose2"></i></span>
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(5)">Memory
+                        </a>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(2)"><i
+                                class="fas fa-plus" id="button2"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(2)"><i
+                                class="fas fa-minus d-none" id="buttonClose2"></i></span>
                         <div class="openBox d-none" id="Filter2">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter(64,5)">
-                            Amount 64Gb
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter(32,5)">
-                            Amount 32Gb
-                        </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter(64, 5)">
+                                Amount 64Gb
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter(32, 5)">
+                                Amount 32Gb
+                            </a>
                         </div>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(8)">SSD </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(3)"><i class="fas fa-plus" id="button3"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(3)"><i class="fas fa-minus d-none" id="buttonClose3"></i></span>
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(8)">SSD
+                        </a>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(3)"><i
+                                class="fas fa-plus" id="button3"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(3)"><i
+                                class="fas fa-minus d-none" id="buttonClose3"></i></span>
                         <div class="openBox d-none" id="Filter3">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter('2TB',8)">
-                            Amount 2TB
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter('1TB',8)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter('2TB', 8)">
+                                Amount 2TB
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter('1TB', 8)">
                                 Amount 1TB
-                        </a>
+                            </a>
                         </div>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(4)">Graphics Card </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(4)"><i class="fas fa-plus" id="button4"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(4)"><i class="fas fa-minus d-none" id="buttonClose4"></i></span>
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(4)">Graphics Card
+                        </a>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(4)"><i
+                                class="fas fa-plus" id="button4"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(4)"><i
+                                class="fas fa-minus d-none" id="buttonClose4"></i></span>
                         <div class="openBox d-none" id="Filter4">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('4th',4)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('4th', 4)">
                                 RTX Gen 4th
                             </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('3th',4)">
+                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('3th', 4)">
                                 RTX Gen 3th
                             </a>
                         </div>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(7)">CPU Cooler</a>
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(7)">CPU
+                            Cooler</a>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(2)">Monitor </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(6)"><i class="fas fa-plus" id="button6"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(6)"><i class="fas fa-minus d-none" id="buttonClose6"></i></span>
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(2)">Monitor
+                        </a>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(6)"><i
+                                class="fas fa-plus" id="button6"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(6)"><i
+                                class="fas fa-minus d-none" id="buttonClose6"></i></span>
                         <div class="openBox d-none" id="Filter6">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(165,2)">
-                            Refresh Rate 165Hz
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(144,2)">
-                            Refresh Rate 144Hz
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(120,2)">
-                            Refresh Rate 120Hz
-                        </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(165, 2)">
+                                Refresh Rate 165Hz
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(144, 2)">
+                                Refresh Rate 144Hz
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(120, 2)">
+                                Refresh Rate 120Hz
+                            </a>
                         </div>
                     </div>
                     <div class="position-relative">
-                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(6)">Power Supply </a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(7)"><i class="fas fa-plus" id="button7"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(7)"><i class="fas fa-minus d-none" id="buttonClose7"></i></span>
+                        <a class="list-group-item list-group-item-action position-relative" (click)="navigate(6)">Power
+                            Supply
+                        </a>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(7)"><i
+                                class="fas fa-plus" id="button7"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(7)"><i
+                                class="fas fa-minus d-none" id="buttonClose7"></i></span>
                         <div class="openBox d-none" id="Filter7">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="watFilter('1000W',6)">
-                            Wattage 1000W
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="watFilter('850W',6)">
-                            Wattage 850W
-                        </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="watFilter('1000W', 6)">
+                                Wattage 1000W
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="watFilter('850W', 6)">
+                                Wattage 850W
+                            </a>
                         </div>
                     </div>
                     <div class="position-relative">
                         <a class="list-group-item list-group-item-action position-relative" (click)="navigate(9)">Laptop</a>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(8)"><i class="fas fa-plus" id="button8"></i></span>
-                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(8)"><i class="fas fa-minus d-none" id="buttonClose8"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="openFilter(8)"><i
+                                class="fas fa-plus" id="button8"></i></span>
+                        <span class="float-end font-weight-bold buttonOpenFilter" (click)="closeFilter(8)"><i
+                                class="fas fa-minus d-none" id="buttonClose8"></i></span>
                         <div class="openBox d-none" id="Filter8">
-                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('12th',9)">
-                            CPU Gen 12th
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('11th',9)">
-                            CPU Gen 11th
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(16,9)">
-                            RAM 16GB
-                        </a>
-                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(8,9)">
-                            RAM 8GB
-                        </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('12th', 9)">
+                                CPU Gen 12th
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('11th', 9)">
+                                CPU Gen 11th
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(16, 9)">
+                                RAM 16GB
+                            </a>
+                            <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(8, 9)">
+                                RAM 8GB
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-9">
                 <div class="row productsList">
-                    <div class="col-lg-4 col-md-6" *ngFor="let item of listProduct, let i = index">
-                        <div class="itemSellers position-relative mb-4" *ngIf="i>=startOfProduct && i < endOfProduct">
-                            <h6 class="text-light price">${{item.price}}</h6>
+                    <div class="col-lg-4 col-md-6" *ngFor="let item of listProduct; let i = index">
+                        <div class="itemSellers position-relative mb-4" *ngIf="i >= startOfProduct && i < endOfProduct">
+                            <h6 class="text-light price">${{ item.price }}</h6>
                             <div class="boxImg">
-                                <img class="card-img" src="{{item.imgProduct}}" alt="">
+                                <img class="card-img" src="{{ item.imgProduct }}" alt="" />
                             </div>
-                            <h6 class="text-center text-light name">{{item.name}}</h6>
+                            <h6 class="text-center text-light name">{{ item.name }}</h6>
                             <div class="d-flex justify-content-between choseItem">
-                                <a routerLink="/detail/{{item.id}}">Learn More</a>
-                                <a id="compareButton{{item.id}}" (click)="compareChoose1(item.id, item.category_id)">Compare</a>
+                                <a routerLink="/detail/{{ item.id }}">Learn More</a>
+                                <a id="compareButton{{ item.id }}" (click)="compareChoose1(item.id, item.category_id)">Compare</a>
                                 <a (click)="addToCart(item.id)">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
@@ -284,22 +310,22 @@
                     </div>
                 </div>
                 <div class="navigatePages">
-                    <h6 class="text-center text-secondary">Page: {{pageNum}}</h6>
-                    <input type="button" (click)="firstPage()" value="<<">
-                    <input type="button" (click)="prevPage()" value="<">
-                    <div class="buttonPages" *ngFor="let item of listPage,let i=index">
-                        <div *ngIf="pageNum > 3 && pageNum <=  numberOfPage;else elsePageNum">
-                            <input type="button" (click)="chosePage(numberOfPage-5+item)" *ngIf="pageNum > numberOfPage-3; else elsePageSmall" value="{{numberOfPage-5+item}}">
+                    <h6 class="text-center text-secondary">Page: {{ pageNum }}</h6>
+                    <input type="button" (click)="firstPage()" value="<<" />
+                    <input type="button" (click)="prevPage()" value="<" />
+                    <div class="buttonPages" *ngFor="let item of listPage; let i = index">
+                        <div *ngIf="pageNum > 3 && pageNum <= numberOfPage; else elsePageNum">
+                            <input type="button" (click)="chosePage(numberOfPage - 5 + item)" *ngIf="pageNum > numberOfPage - 3; else elsePageSmall" value="{{ numberOfPage - 5 + item }}" />
                             <ng-template #elsePageSmall>
-                                <input type="button" (click)="chosePage(item+pageNum-3)" value="{{pageNum+item-3}}">
+                                <input type="button" (click)="chosePage(item + pageNum - 3)" value="{{ pageNum + item - 3 }}" />
                             </ng-template>
                         </div>
                         <ng-template #elsePageNum>
-                            <input type="button" (click)="chosePage(item)" value="{{item}}">
+                            <input type="button" (click)="chosePage(item)" value="{{ item }}" />
                         </ng-template>
                     </div>
-                    <input type="button" (click)="nextPage()" value=">">
-                    <input type="button" (click)="lastPage()" value=">>">
+                    <input type="button" (click)="nextPage()" value=">" />
+                    <input type="button" (click)="lastPage()" value=">>" />
                 </div>
             </div>
         </div>
@@ -313,140 +339,164 @@
                     <h3 class="text-light ms-2 mb-0">FILTER</h3>
                 </div>
             </div>
-            <button class="buttonClose bg-dark text-light" data-bs-dismiss="offcanvas" aria-label="Close"><i class="fa-solid fa-x"></i></button>
+            <button class="buttonClose bg-dark text-light" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-x"></i>
+            </button>
         </div>
         <div class="offcanvas-body">
             <div class="dropdown open">
-                <button class="btn dropdown-toggle text-light buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Motherboards</button>
+                <button class="btn dropdown-toggle text-light buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Motherboards
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(1)">
-                       Motherboard Products
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(1)">
+                        Motherboard Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('12th',1)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="genFilter('12th', 1)">
                         CPU Intel Gen 12th
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('11th',1)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="genFilter('11th', 1)">
                         CPU Intel Gen 11th
                     </a>
                 </div>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Monitors</button>
+                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Monitors
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(2)">
-                        Monitor Products 
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(2)">
+                        Monitor Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(165,2)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="refresh_rateFilter(165, 2)">
                         Refresh Rate 165Hz
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(144,2)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="refresh_rateFilter(144, 2)">
                         Refresh Rate 144Hz
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="refresh_rateFilter(120,2)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="refresh_rateFilter(120, 2)">
                         Refresh Rate 120Hz
                     </a>
                 </div>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Memorys</button>
+                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Memorys
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(5)">
-                        Memory Products 
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(5)">
+                        Memory Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter(64,5)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="amountFilter(64, 5)">
                         Amount 64Gb
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="amountFilter(32,5)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="amountFilter(32, 5)">
                         Amount 32Gb
                     </a>
                 </div>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Graphic Cards</button>
+                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Graphic Cards
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(4)">
-                        GPU Products 
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(4)">
+                        GPU Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('4th',4)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="genFilter('4th', 4)">
                         RTX Gen 4th
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('3th',4)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="genFilter('3th', 4)">
                         RTX Gen 3th
                     </a>
                 </div>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PC Cases</button>
+                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    PC Cases
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(3)">
-                        PC Case Products 
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(3)">
+                        PC Case Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="cpuFilter('intel',3)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="cpuFilter('intel', 3)">
                         CPU Intel
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="cpuFilter('ryzen',3)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="cpuFilter('ryzen', 3)">
                         CPU Ryzen
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(32,3)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="ramFilter(32, 3)">
                         RAM 32GB
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(64,3)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="ramFilter(64, 3)">
                         RAM 64GB
                     </a>
                 </div>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light buttonDropdown" type="button" (click)="navigate(7)">CPU Coolers</button>
+                <button class="btn text-light buttonDropdown" type="button" (click)="navigate(7)">
+                    CPU Coolers
+                </button>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Power Supplys</button>
+                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Power Supplys
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(6)">
-                        Power Products 
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(6)">
+                        Power Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="watFilter('1000W',6)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="watFilter('1000W', 6)">
                         Wattage 1000W
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="watFilter('850W',6)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="watFilter('850W', 6)">
                         Wattage 850W
                     </a>
                 </div>
             </div>
             <div class="dropdown open">
-                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Laptops</button>
+                <button class="btn text-light dropdown-toggle buttonDropdown" type="button" data-bs-toggle="dropdown" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Laptops
+                </button>
                 <div class="dropdown-menu dropdownMenuMobile" aria-labelledby="triggerId">
-                    <a class="list-group-item list-group-item-action position-relative" (click)="navigate(9)">
-                        Laptop Products 
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="navigate(9)">
+                        Laptop Products
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('12th',9)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="genFilter('12th', 9)">
                         CPU Gen 12th
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="genFilter('11th',9)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="genFilter('11th', 9)">
                         CPU Gen 11th
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(16,9)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="ramFilter(16, 9)">
                         RAM 16GB
                     </a>
-                    <a class="list-group-item list-group-item-action position-relative" (click)="ramFilter(8,9)">
+                    <a class="list-group-item list-group-item-action position-relative" data-bs-dismiss="offcanvas" (click)="ramFilter(8, 9)">
                         RAM 8GB
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="offcanvas offcanvas-bottom show compareBox" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel" data-bs-show="" data-bs-scroll="true" data-bs-backdrop="false">
-        <div class="offcanvas-body py-1 px-0 position-relative">
-            <div class="containerFull">
-                <div class="d-flex justify-content-between align-items-center pt-4">
-                    <div>
-                        <h5 class="text-light">Compare {{numberItemCompare}} / 2 Product(s)</h5>
-                    </div>
-                    <div class="">
-                        <button class="butInBoxCompare" routerLink="/compare">COMPARE</button>
-                    </div>
+
+    <div class="offcanvas-body py-1 px-0 compareBox">
+        <div class="containerFull">
+            <div class="d-flex justify-content-between align-items-center pt-4">
+                <div>
+                    <h5 class="text-light">
+                        Compare {{ numberItemCompare }} / 2 Product(s)
+                    </h5>
+                </div>
+                <div class="">
+                    <button class="butInBoxCompare" routerLink="/compare">
+                            COMPARE
+                        </button>
                 </div>
             </div>
-            <button class="buttonClearAll" (click)="clearAllCompare()"><i class="fa-solid fa-x pe-2"></i> Clear all</button>
         </div>
+        <button class="buttonClearAll" (click)="clearAllCompare()">
+                <i class="fa-solid fa-x pe-2"></i> Clear all
+            </button>
     </div>
+
 </body>

@@ -21,6 +21,7 @@ import { UserIComponent } from './pages/user-i/user-i.component';
 import { UserSettingComponent } from './pages/user-setting/user-setting.component';
 import { WallpaperComponent } from './pages/wallpaper/wallpaper.component';
 import { WarrantyComponent } from './pages/warranty/warranty.component';
+import { SpinnerComponent } from './layouts/spinner/spinner.component';
 
 const routes: Routes = [
   { path: "shop/:id", component: ShopComponent },
@@ -44,7 +45,8 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'detail/:id', component: DetailComponent },
   { path: 'history', component: HistoryComponent },
-  { path: 'cart', component: CartComponent }
+  { path: 'cart', component: CartComponent },
+  { path: 'spinner', component: SpinnerComponent }
 ]
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -37,7 +37,6 @@ export class HomeComponent implements OnInit {
     })
     this.app.getBanner().subscribe((data: any) => {
       this.banner = data
-
     })
   }
   customOptions: OwlOptions = {

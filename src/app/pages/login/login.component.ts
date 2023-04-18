@@ -43,7 +43,7 @@ export class LoginComponent implements OnInit {
     });
   }
   login(): void {
-    this.http.get<any>("http://localhost:3000/registerForm").subscribe((data) => {
+    this.accountService.getAll().subscribe((data) => {
       const user = data.find((a: any) => {
         return a.email === this.formLogin.value.email && a.password === this.formLogin.value.password;
       })
