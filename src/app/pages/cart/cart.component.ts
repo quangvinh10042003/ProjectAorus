@@ -27,7 +27,6 @@ export class CartComponent implements OnInit {
   dataProduct:any;
   quantity:any;
   formCart = new FormGroup({
-    history:new FormControl([]),
     fullName: new FormControl('', [
       Validators.required,
     ]),
@@ -37,8 +36,6 @@ export class CartComponent implements OnInit {
     email: new FormControl('', [
       Validators.required,
       Validators.pattern('^[a-zA-Z_.][a-zA-Z0-9]{0,10}@[a-z0-9]{4,10}\.[a-z]{2,5}$')
-    ]),
-    password: new FormControl('', [
     ]),
     phone: new FormControl('', [
       Validators.required,
@@ -60,20 +57,8 @@ export class CartComponent implements OnInit {
     this.dateBuy = `${day}/${month}/${year}`;
     this.checkData = localStorage.getItem('accountSignin')
     this.checkData = JSON.parse(this.checkData);
-    this.accountService.getItem(this.checkData).subscribe();
-    this.accountService.getItem(this.checkData).subscribe((data:any)=>{
-      this.account = data;
-      this.cart = data.cart
-      console.log(this.cart);
-      
-      for(let i=0;i<this.cart.length;i++){
-        this.categorySer.getItem(this.cart[i].category_id).subscribe((item:any)=>{
-          this.category.push(item.name);
-        })  
-      }
-    })
     this.accountService.totalCard.subscribe((data: any) => {
-      this.getCart = data;
+      this.getCart = data; 
     })
     this.getAllData();
   }
@@ -84,8 +69,9 @@ export class CartComponent implements OnInit {
     this.subtotal = 0;
     this.listPrice = [];
     this.accountService.getItem(this.checkData).subscribe((data: any) => {
-      this.formCart.patchValue(data);
+     
       this.account = data;
+      this.formCart.patchValue(this.account);
       this.cart = data.cart;
       this.history = data.history;
       this.getCart = data.cart.length;

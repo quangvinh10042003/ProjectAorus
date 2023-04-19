@@ -29,6 +29,8 @@ h1 {
     border: none;
     text-align: center;
     font-weight: 600;
+    background-color: #000;
+    color: #fff;
 }
 
 .reduceBut {

@@ -132,7 +132,7 @@
                 <form [formGroup]="formIn4" (ngSubmit)="register()">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email *</label>
-                        <input type="email" (keyup)="enterInput(1)" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your email" formControlName="email">
+                        <input type="email" (keyup)="enterInput(1)" class="form-control" [ngClass]="{'inputError' : err1 && !form.email.dirty && !form.email.touched}" placeholder="Please enter your email" formControlName="email">
                         <div class="validator">
                             <div *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)">
                                 <div *ngIf="form.email.errors?.['required']">
@@ -149,7 +149,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">FullName *</label>
-                        <input type="email" (keyup)="enterInput(2)" class="form-control" id="" aria-describedby="emailHelp" placeholder="Please enter your name" formControlName="fullName">
+                        <input type="email" (keyup)="enterInput(2)" class="form-control" [ngClass]="{'inputError' : err2 && !form.fullName.dirty && !form.fullName.touched}" placeholder="Please enter your name" formControlName="fullName">
                         <div class="validators">
                             <div *ngIf="form.fullName.invalid && (form.fullName.dirty || form.fullName.touched)">
                                 <div *ngIf="form.fullName.errors?.['required']">
@@ -163,7 +163,7 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleInputEmail1">TelephoneNumber *</label>
-                        <input type="tel" class="form-control" (keyup)="enterInput(3)" aria-describedby="emailHelp" placeholder="Enter your telephone number here" formControlName="phone">
+                        <input type="tel" class="form-control" (keyup)="enterInput(3)" [ngClass]="{'inputError' : err3 && !form.phone.dirty && !form.phone.touched}" placeholder="Enter your telephone number here" formControlName="phone">
                         <div class="validators">
                             <div *ngIf="form.phone.invalid && (form.phone.dirty || form.phone.touched)">
                                 <div *ngIf="form.phone.errors?.['required']">
@@ -180,7 +180,7 @@
                     </div>
                     <div class="form-group eyes">
                         <label for="exampleInputPassword1">Password *</label>
-                        <input type="password" class="form-control" (keyup)="enterInput(4)" id="password" placeholder="Enter again password here" formControlName="password" (keyup)="showEye()">
+                        <input type="password" class="form-control" (keyup)="enterInput(4)" id="password" [ngClass]="{'inputError' : err4 && !form.password.dirty && !form.password.touched}" placeholder="Enter again password here" formControlName="password" (keyup)="showEye()">
                         <div class="validators">
                             <div *ngIf="form.password.invalid && (form.password.dirty || form.password.touched)">
                                 <div *ngIf="form.password.errors?.['required']">

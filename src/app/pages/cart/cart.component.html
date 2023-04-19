@@ -14,7 +14,7 @@
                             <span class="span mr-2">Quantity:  </span>
                             <div class="boxQuantity d-flex align-items-center">
                                 <span class="useQuantity reduceBut" (click)="reduceQuantity(i)">-</span>
-                                <span class="quantityInp mt-1" id="quantityInp" [(ngModel)]="item.quantity" id="quantityInp" type="text">{{item.quantity}}</span>
+                                <input class="quantityInp mt-1" id="quantityInp" [(ngModel)]="item.quantity" id="quantityInp" disabled name="quantity">
                                 <span class="useQuantity" (click)="increaseQuantity(i)">+</span>
                             </div>
                             <span class="mt-2 d-md-block d-none remove" (click)="deleteItem(i)">Remove</span>
@@ -63,20 +63,19 @@
 <div class="modal fade modalBox" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
     <div class="modal-dialog max-width-0" role="document">
         <div class="modal-content modalCustom">
-            <form [formGroup]="formCart">
+            <form [formGroup]="formCart" (ngSubmit)="checkout()">
                 <div class="modal-header d-block">
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     <h2 class="text-center ml-4 mt-2">Shipping</h2>
                 </div>
                 <div class="modal-body">
-
                     <div class="row">
                         <div class="col-lg-6 col-md-6">
                             <div class="formGroup">
                                 <label for="">Name</label>
-                                <input type="text" formControlName="fullName">
+                                <input type="text" formControlName="fullName" name="fullName">
                                 <div class="errorSpan" *ngIf="form.fullName.invalid && (form.fullName.dirty || form.fullName.touched)" required>
-                                    <div class="" *ngIf="form.fullName.errors?.['required']">
+                                    <div *ngIf="form.fullName.errors?.['required']">
                                         <span class="text-danger font-italic ">*Please enter the name of the consignee</span>
                                     </div>
                                 </div>
@@ -85,7 +84,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="formGroup">
                                 <label for="">Email</label>
-                                <input type="text" formControlName="email">
+                                <input type="text" formControlName="email" name="email">
                                 <div class="errorSpan" *ngIf="form.email.invalid && (form.email.dirty || form.email.touched)" required>
                                     <div class="" *ngIf="form.email.errors?.['required']">
                                         <span class="text-danger font-italic ">*Please enter the email of the consignee</span>
@@ -99,7 +98,7 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="formGroup">
                                 <label for="">Address</label>
-                                <input type="text" formControlName="address">
+                                <input type="text" formControlName="address" name="address">
                                 <div class="errorSpan" *ngIf="form.address.invalid && (form.address.dirty || form.address.touched)" required>
                                     <div class="" *ngIf="form.address.errors?.['required']">
                                         <span class="text-danger font-italic ">*Please enter the address of the consignee</span>
@@ -110,12 +109,12 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="formGroup">
                                 <label for="">Telephone Number</label>
-                                <input type="text" formControlName="phone">
+                                <input type="text" formControlName="phone" name="phone">
                                 <div class="errorSpan" *ngIf="form.phone.invalid && (form.phone.dirty || form.phone.touched)" required>
-                                    <div class="" *ngIf="form.phone.errors?.['required']">
+                                    <div *ngIf="form.phone.errors?.['required']">
                                         <span class="text-danger font-italic ">*Please enter the Telephone number of the consignee</span>
                                     </div>
-                                    <div class="" *ngIf="!form.phone.errors?.['partern']">
+                                    <div *ngIf="!form.phone.errors?.['partern']">
                                         <span class="text-danger font-italic ">*Please enter a valid telephone number</span>
                                     </div>
                                 </div>
@@ -145,7 +144,7 @@
                                 <input type="checkbox" id="checkbox"><label for="checkbox" class="labelCheckbox">Billing address is the same as shipping</label>
                             </div>
                         </div>
-                        <button type="submit" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary text-light checkout checkoutModal mt-3 mb-4" role="button" (click)="checkout()" [disabled]=" form.fullName.invalid || form.address.invalid || form.email.invalid || form.phone.invalid">CHECKOUT</button>
+                        <button type="submit" data-bs-dismiss="modal" aria-label="Close" class="btn btn-primary text-light checkout checkoutModal mt-3 mb-4" [disabled]=" form.fullName.invalid || form.address.invalid || form.email.invalid || form.phone.invalid">CHECKOUT</button>
                     </div>
                 </div>
             </form>

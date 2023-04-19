@@ -236,4 +236,7 @@
     .cardTitCustom {
         font-size: 16px;
     }
+    .price {
+        max-width: 150px;
+    }
 }

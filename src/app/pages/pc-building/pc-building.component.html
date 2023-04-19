@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-2 col-md-2 col-12 position-relative">
                     <div class="d-flex float-end">
-                        <span (click)="choseTypeProduct(1)" role="button" data-bs-toggle="modal" data-bs-target="#modalId"><i class="fas fa-edit  text-light editIcon"></i></span>
+                        <span role="button" data-bs-toggle="modal" data-bs-target="#modalId" (click)="choseTypeProduct(1)"><i class="fas fa-edit  text-light editIcon"></i></span>
                         <span (click)="deleteItem(1)"><i class="fas fa-trash mx-md-3 ms-3 text-light trashIcon"></i></span>
                     </div>
                     <span class="text-light price">${{listItemChosen[0].price}}</span>
